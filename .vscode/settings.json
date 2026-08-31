@@ -1,0 +1,31 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "lualatexmk",
+      "command": "/usr/local/texlive/2026/bin/universal-darwin/latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-lualatex",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {
+        "PATH": "/usr/local/texlive/2026/bin/universal-darwin:${env:PATH}"
+      }
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (lualatex)",
+      "tools": [
+        "lualatexmk"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.build.forceRecipeUsage": true,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.intellisense.citation.backend": "biblatex"
+}
