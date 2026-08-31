@@ -233,15 +233,15 @@
 \newenvironment{sectionwithreferences}[1]{%
     \@ifpackageloaded{biblatex}{%
         \begin{refsection}%
-        \section{#1}%
-    }{%
-        \ClassError{uofithesis}{sectionwithreferences requires biblatex}{%
-            Load biblatex before using the sectionwithreferences environment.
+            \section{#1}%
+        }{%
+            \ClassError{uofithesis}{sectionwithreferences requires biblatex}{%
+                Load biblatex before using the sectionwithreferences environment.
+            }%
         }%
-    }%
-}{%
-    \@ifpackageloaded{biblatex}{%
-        \chapterreferences%
+    }{%
+        \@ifpackageloaded{biblatex}{%
+            \chapterreferences%
         \end{refsection}%
     }{}%
 }

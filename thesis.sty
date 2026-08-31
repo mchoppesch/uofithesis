@@ -1,0 +1,228 @@
+% --------------------------------------------------
+
+% QoL
+
+%\texorpdfstring{math}{text}
+
+\newcommand{\NL}{\newline\noindent}
+\newcommand{\NLC}{\NL$\circ\,$}
+
+\DeclareRobustCommand{\rchi}{{\mathpalette\irchi\relax}}
+\newcommand{\irchi}[2]{\raisebox{\depth}{$#1\chi$}}
+
+\newcommand{\INT}{\textcolor{violet}{- - - - - INT NOTE - - - - -}}
+\newcommand{\PAP}{\textcolor{violet}{- - - - - PAPER - - - - -}}
+
+% TEXT COLOR
+\newcommand{\TCR}[1]{\textcolor{red}{#1}}
+\newcommand{\TCO}[1]{\textcolor{orange}{#1}}
+\newcommand{\TCB}[1]{\textcolor{blue}{#1}}
+\newcommand{\TCV}[1]{\textcolor{violet}{#1}}
+\newcommand{\TCP}[1]{\textcolor{Crimson}{#1}}
+\newcommand{\TCC}[1]{\textcolor{cyan}{#1}}
+\newcommand{\TCG}[1]{\textcolor{green}{#1}}
+
+% SHAPES
+\newcommand{\RA}{$\rightarrow$}
+\newcommand{\CM}{\TCG{\checkmark}}
+
+% --------------------------------------------------
+
+% ZDC
+\newcommand{\AZDC}{$\langle \text{E}_\text{ZDC}^\text{Pb-side} \rangle$}
+\newcommand{\AZDCp}{$\langle \text{E}_\text{ZDC}^\text{p-side} \rangle$}
+\newcommand{\EZDC}{$\text{E}_\text{ZDC}^\text{Pb-side}$}
+\newcommand{\EZDCp}{$\text{E}_\text{ZDC}^\text{p-side}$}
+
+\newcommand{\EAZDC}{\langle \text{E}_\text{ZDC}^\text{Pb-side} \rangle}
+\newcommand{\EAZDCp}{\langle \text{E}_\text{ZDC}^\text{p-side} \rangle}
+\newcommand{\EEZDC}{\text{E}_\text{ZDC}^\text{Pb-side}}
+\newcommand{\EEZDCp}{\mathrm{E}_\text{ZDC}^\text{p-side}}
+
+% OTHER [FCAL]
+\newcommand{\EATPB}{$\langle \text{FCal} \sum \text{E}_{\text{T}}^{\text{Pb-side} } \rangle$}
+\newcommand{\EATP}{$\langle \text{FCal} \sum \text{E}_{\text{T}}^{\text{p-side} }\rangle$}
+\newcommand{\FET}{$\text{FCal} \sum \text{E}_{\text{T}}$}
+\newcommand{\EFET}{\text{FCal} \sum \text{E}_{\text{T}}}
+\newcommand{\ETP}{$\text{FCal} \sum \text{E}_{\text{T}}^{\text{p-side} }$}
+
+% PT
+\newcommand{\PT}{$p_{\text{T}}$}
+\newcommand{\PTE}{p_{\text{T}}}
+\newcommand{\PTONE}{\mbox{\ensuremath{p_{\text{T}_\text{1}}}}}
+\newcommand{\PTTWO}{\mbox{\ensuremath{p_{\text{T}_\text{2}}}}}
+\newcommand{\PTCORR}{\mbox{$p_{\text{T}_\text{1}}-p_{\text{T}_\text{2}}$}}
+\newcommand{\PTAE}{p_{\text{T,Avg}}}
+\newcommand{\PTT}{$p_{\text{T}}^{\text{truth}}$}
+\newcommand{\PTTE}{p_{\text{T}}^{\text{truth}}}
+\newcommand{\PTR}{$p_{\text{T}}^{\text{reco}}$}
+\newcommand{\PTRE}{p_{\text{T}}^{\text{reco}}}
+\newcommand{\PTA}{$p_{\text{T,Avg}}$}
+\newcommand{\PTLEADCUT}{50 \GeV}
+\newcommand{\PTSUBCUT}{20 \GeV}
+\newcommand{\dPhi}{$\Delta \phi$}
+% ETA & RAP
+\newcommand{\ETA}{$\eta$}
+\newcommand{\RAP}{$y$}
+\newcommand{\YBOOSTE}{y_{\text{b}}}
+\newcommand{\YSTARE}{y^{*}}
+\newcommand{\YSTAR}{$y^{*}$}
+\newcommand{\YBOOST}{$y_{\text{b}}$}
+\newcommand{\AVGYS}{$\langle$\YSTAR$\rangle$}
+\newcommand{\AVGYB}{$\langle$\YBOOST$\rangle$}
+
+% RCP
+\newcommand{\RCP}{$R_\text{CP}$}
+\newcommand{\RCPZDC}{$R_\text{CP}^\text{ZDC}$}
+\newcommand{\RCPE}{R_\text{CP}}
+
+\newcommand{\xp}{$x_{p}$}
+\newcommand{\xPb}{$x_{\text{Pb}}$}
+\newcommand{\xf}{$x_{\text{F}}$}
+
+% TAB
+\newcommand{\TAB}{\ensuremath{T_{\text{AB}}}}
+\newcommand{\TPPB}{$\langle T_{\text{AB}} \rangle$}
+\newcommand{\TAA}{$\langle T_{\text{AA}} \rangle$}
+\newcommand{\TPPBE}{\langle T_{\text{AB}} \rangle}
+\newcommand{\NCOLL}{$\langle N_{\text{coll}} \rangle$}
+
+% RAA
+\newcommand{\Raa}{\ensuremath{R_{\text{AA}}}}
+\newcommand{\Taa}{\ensuremath{\langle T_{\mathrm{AA}} \rangle}}
+\newcommand{\diff}{\ensuremath{\text{d}}}
+\newcommand{\Njet}{\ensuremath{N_{\mathrm{jet}}}}
+\newcommand{\sigmapp}{\ensuremath{\sigma_{\mathrm{jet}}}}
+
+\newcommand{\pbpb}{Pb$+$Pb}
+\newcommand{\xexe}{Xe$+$Xe}
+\newcommand{\OO}{O$+$O}
+\newcommand{\nene}{Ne$+$Ne}
+\newcommand{\pPb}{$p+$Pb}
+
+\newcommand{\XJ}{\mbox{$x_{\text{J}}$}}
+
+\newcommand{\NPART}{$\langle N_{\TN{part}} \rangle$}
+\newcommand{\SNN}{\ensuremath{\sqrt{s_{_\text{NN}}}}}
+
+\newcommand{\JES}{$\langle \PTRE / \PTTE \rangle$}
+
+% \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%ARIC ADDED -> CIRCLE NUMBERS
+% \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+
+% MG TRIGGERS
+\newcommand{\MBT}{\texttt{HLT\_mb\_sptrk}}
+\newcommand{\MBTLO}{\texttt{HLT\_mb\_sptrk\_L1MBTS\_1}}
+
+% FROM PAPER
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\newcommand{\pythia}{\mbox{\textsc{Pythia}8}}
+
+% FLOW
+\newcommand{\vn}{\mbox{$v_{n}$}}
+\newcommand{\vtwo}{\mbox{$v_{\mathrm{2}}$}}
+\newcommand{\vthree}{\mbox{$v_{\mathrm{3}}$}}
+\newcommand{\vfour}{\mbox{$v_{\mathrm{4}}$}}
+
+% BEAM ORIENTATION
+\newcommand{\pxp}{$pp$}
+\newcommand{\pxA}{$p$+A}
+\newcommand{\AxA}{A+A}
+\newcommand{\dxAu}{$d$+Au}
+\newcommand{\pxPb}{$p$+Pb}
+\newcommand{\Pbxp}{Pb+$p$}
+\newcommand{\PbxPb}{Pb+Pb}
+\newcommand{\OxO}{O+O}
+\newcommand{\NexNe}{Ne+Ne}
+\newcommand{\DS}{dataset }
+\newcommand{\TN}[1]{ \text{#1} }
+
+% UNITS
+\newcommand{\NB}{$\textnormal{nb}^{-1}$}
+\newcommand{\TeV}{Te\kern-0.1em V}
+\newcommand{\GeV}{Ge\kern-0.1em V}
+
+% --------------------------------------------------
+
+\newcommand{\kt}{\mbox{$k_{t}$}}
+\newcommand{\antikt}{\mbox{anti-\kt}}
+
+% \newcommand{\TN}[1]{ \textnormal{#1} }
+%\newcommand{\PT}[1]{$p_{\TN{T}}$\phantom{#1}}
+% \newcommand{\PTE}{p_{\TN{T}}}
+% \newcommand{\PTT}{$p_{\TN{T}}^{\TN{truth}}$}
+% \newcommand{\PTTE}{p_{\TN{T}}^{\TN{truth}}}
+% \newcommand{\PTR}{$p_{T}^{\TN{reco}}$}
+% \newcommand{\PTRE}{p_{T}^{\TN{reco}}}
+% \newcommand{\PTA}{$p_{\TN{T,Avg}}$}
+% \newcommand{\PTAE}{p_{\TN{T,Avg}}}
+% \newcommand{\JES}{$\langle \PTRE / \PTTE \rangle$}
+% \newcommand{\ETA}{$\eta$}
+% \newcommand{\YSTAR}{$y^{*}$}
+% \newcommand{\YBOOST}{$y_{\TN{b}}$}
+% \newcommand{\YSTARE}{y^{*}}
+% \newcommand{\YBOOSTE}{y_{\TN{b}}}
+% \newcommand{\MDJ}{$m_{1,2}$}
+% \newcommand{\YLJ}{$y_{1}^{*}$}
+% \newcommand{\YSJ}{$y_{2}^{*}$}
+% \newcommand{\pxp}{$p$+$p$}
+% \newcommand{\pxA}{$p$+A}
+% \newcommand{\AxA}{A+A}
+% \newcommand{\pxPb}{$p$+Pb}
+% \newcommand{\Pbxp}{Pb+$p$}
+% \newcommand{\PbxPb}{Pb+Pb}
+% \newcommand{\TEV}{TeV}
+% \newcommand{\GEV}{GeV}
+% %\newcommand{\SNN}{$\sqrt{s_{NN}}$}
+% \newcommand{\SNN}{$\sqrt{s_{\mathrm{NN}}}$}
+% \newcommand{\Y}{$y$}
+
+% \newcommand{\xB}{$x_{\TN{B}}$}
+% \newcommand{\QSAT}{$Q_{\TN{s}}$}
+% \newcommand{\NCOLL}{$\langle N_{\TN{coll}} \rangle$}
+% \newcommand{\NPART}{$\langle N_{\TN{part}} \rangle$}
+% \newcommand{\TPPB}{$\langle T_{\TN{AB}} \rangle$}
+% \newcommand{\TPPBE}{\langle T_{\TN{AB}} \rangle}
+% \newcommand{\TAB}{\ensuremath{T_{\text{AB}}}}
+% \newcommand{\AKT}{anti-k$_{\text{t}}$}
+\newcommand{\ETPB}{$\text{E}_{\text{T}}^{\text{Pb} }$}
+% \newcommand{\MBT}{\texttt{HLT\_mb\_sptrk}}
+% \newcommand{\MBTLO}{\texttt{HLT\_mb\_sptrk\_L1MBTS\_1}}
+% \newcommand{\RCP}{$R_\TN{CP}$}
+% \newcommand{\RPPB}{$R_{\TN{pPb}}$}
+% \newcommand{\RCPE}{R_\TN{CP}}
+% \newcommand{\RPPBE}{R_{\TN{pPb}}}
+% \newcommand{\DETA}{$\Delta \eta$}
+% \newcommand{\DETAE}{\Delta \eta}
+% \newcommand{\DS}{data-set }
+% \newcommand{\AVGYS}{$\langle$\YSTAR$\rangle$}
+% \newcommand{\AVGYB}{$\langle$\YBOOST$\rangle$}
+% \newcommand{\xp}{$x_{p}$}
+% \newcommand{\xPb}{$x_{\TN{Pb}}$}
+% \newcommand{\TCR}[1]{\textcolor{red}{#1}}
+% \newcommand{\RAP}{$y$}
+
+% \newcommand{\SA}{ \sigma_{ \mathscr{A} } }
+% \newcommand{\SAP}{ \sigma_{ \mathscr{A} }^{\TN{probe}} }
+% \newcommand{\SAR}{ \sigma_{ \mathscr{A} }^{\TN{ref}} }
+% \newcommand{\SR}{ \sigma(\TN{R})}
+
+% \newcommand{\MSA}{ \mathscr{A} }
+
+% \newcommand{\PS}[1]{\phantom{#1}}
+% \newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+% \def\mathLarge#1{\mbox{\large $#1$}}
+
+% \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%ARIC ADDED -> CIRCLE NUMBERS
+%             \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+
+\newcommand*{\AtlasCoordFootnote}{%
+    ATLAS uses a right-handed coordinate system with its origin at the nominal interaction point (IP)
+    in the centre of the detector and the \(z\)-axis along the beam pipe.
+    The \(x\)-axis points from the IP to the centre of the LHC ring,
+    and the \(y\)-axis points upwards.
+    Cylindrical coordinates \((r,\phi)\) are used in the transverse plane,
+    \(\phi\) being the azimuthal angle around the \(z\)-axis.
+    The pseudorapidity is defined in terms of the polar angle \(\theta\) as \(\eta = -\ln \tan(\theta/2)\).
+The rapidity is defined as $y = \frac{1}{2} \ln\left[(E+p_{z}) / (E-p_{z})\right]$, where $E$ is the energy of a particle and $p_{z}$ is the momentum component in the beam direction.}

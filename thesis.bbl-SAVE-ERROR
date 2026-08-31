@@ -1,0 +1,553 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{WikimediaCommonsStandardModel}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=70b4555f059baf3fa9f0eef4b7f43028}{%
+           family={Cush},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{70b4555f059baf3fa9f0eef4b7f43028}
+      \strng{fullhash}{70b4555f059baf3fa9f0eef4b7f43028}
+      \strng{fullhashraw}{70b4555f059baf3fa9f0eef4b7f43028}
+      \strng{bibnamehash}{70b4555f059baf3fa9f0eef4b7f43028}
+      \strng{authorbibnamehash}{70b4555f059baf3fa9f0eef4b7f43028}
+      \strng{authornamehash}{70b4555f059baf3fa9f0eef4b7f43028}
+      \strng{authorfullhash}{70b4555f059baf3fa9f0eef4b7f43028}
+      \strng{authorfullhashraw}{70b4555f059baf3fa9f0eef4b7f43028}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Public domain, via Wikimedia Commons}
+      \field{title}{Standard Model of Elementary Particles}
+      \field{urlday}{31}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg
+      \endverb
+    \endentry
+    \entry{HION-2023-05}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ebfe6052e5f504e4a3579c49c44afe41}{%
+           family={{ATLAS Collaboration}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{fullhash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{fullhashraw}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{bibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorbibnamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authornamehash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorfullhash}{ebfe6052e5f504e4a3579c49c44afe41}
+      \strng{authorfullhashraw}{ebfe6052e5f504e4a3579c49c44afe41}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{nucl-ex}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{{Measurement of the Centrality Dependence of the Dijet Yield in \(p\)+Pb collisions at \(\sqrt{s_{\text{NN}}} = 8.16\,\text{TeV}\) with the ATLAS Detector}}
+      \field{volume}{132}
+      \field{year}{2024}
+      \field{pages}{102301}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.132.102301
+      \endverb
+      \verb{eprint}
+      \verb 2309.00033
+      \endverb
+    \endentry
+    \entry{Bierlich:2022pfr}{article}{}{}
+      \name{author}{14}{}{%
+        {{hash=dc949c276e1d3133014e0470aafb3e13}{%
+           family={Bierlich},
+           familyi={B\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=48eef11c7dbfae2b57c12531d60b0eaa}{%
+           family={Chakraborty},
+           familyi={C\bibinitperiod},
+           given={Smita},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d9ede315d9535d79d63b9d64a2307cfd}{%
+           family={Desai},
+           familyi={D\bibinitperiod},
+           given={Nishita},
+           giveni={N\bibinitperiod}}}%
+        {{hash=c7e06565f7dbcd7b5d921a08584f6153}{%
+           family={Gellersen},
+           familyi={G\bibinitperiod},
+           given={Leif},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2cddf7b2307493500b64084a048940fa}{%
+           family={Helenius},
+           familyi={H\bibinitperiod},
+           given={Ilkka},
+           giveni={I\bibinitperiod}}}%
+        {{hash=516a0cd8376e1ba0a0bcf1284dd920c9}{%
+           family={Ilten},
+           familyi={I\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c3c35f36776645cf718dcf70f2677bd3}{%
+           family={Lönnblad},
+           familyi={L\bibinitperiod},
+           given={Leif},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b2f5b287eab22155743b6f6e452539c9}{%
+           family={Mrenna},
+           familyi={M\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=312a31f430cf1ba02b15944e08cd63f6}{%
+           family={Prestel},
+           familyi={P\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5ddbf48ffa5a3584d1ed30c277c878fb}{%
+           family={Preuss},
+           familyi={P\bibinitperiod},
+           given={Christian\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=1f7e99224e14002bdface802b6379512}{%
+           family={Sjöstrand},
+           familyi={S\bibinitperiod},
+           given={Torbjörn},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c3c22a8af414c765ccbebc1bec6b6bdf}{%
+           family={Skands},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=84e49ffd8ce275ddbbb7a463c2554c8d}{%
+           family={Utheim},
+           familyi={U\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e8db6c7560fa07504ac70e0c28dca774}{%
+           family={Verheyen},
+           familyi={V\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SciPost}%
+      }
+      \strng{namehash}{7796720858cc351b041c32eaff704d44}
+      \strng{fullhash}{ddc39dbe0c60df5a1ea317676fa4faf3}
+      \strng{fullhashraw}{ddc39dbe0c60df5a1ea317676fa4faf3}
+      \strng{bibnamehash}{7796720858cc351b041c32eaff704d44}
+      \strng{authorbibnamehash}{7796720858cc351b041c32eaff704d44}
+      \strng{authornamehash}{7796720858cc351b041c32eaff704d44}
+      \strng{authorfullhash}{ddc39dbe0c60df5a1ea317676fa4faf3}
+      \strng{authorfullhashraw}{ddc39dbe0c60df5a1ea317676fa4faf3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{SciPost Phys. Codebases}
+      \field{title}{{A comprehensive guide to the physics and usage of PYTHIA 8.3}}
+      \field{year}{2022}
+      \field{pages}{8}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.21468/SciPostPhysCodeb.8
+      \endverb
+      \verb{eprint}
+      \verb 2203.11601
+      \endverb
+    \endentry
+    \entry{Ball:2012cx}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=94d87cff9b040898e52c57ff48676a9f}{%
+           family={{NNPDF Collaboration}},
+           familyi={N\bibinitperiod}}}%
+        {{hash=b8571ccdd252b9322da64848c8dd1c01}{%
+           family={Ball},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6dc64f35c19c0d8354ad9fabb073b4c4}
+      \strng{fullhash}{6dc64f35c19c0d8354ad9fabb073b4c4}
+      \strng{fullhashraw}{6dc64f35c19c0d8354ad9fabb073b4c4}
+      \strng{bibnamehash}{6dc64f35c19c0d8354ad9fabb073b4c4}
+      \strng{authorbibnamehash}{6dc64f35c19c0d8354ad9fabb073b4c4}
+      \strng{authornamehash}{6dc64f35c19c0d8354ad9fabb073b4c4}
+      \strng{authorfullhash}{6dc64f35c19c0d8354ad9fabb073b4c4}
+      \strng{authorfullhashraw}{6dc64f35c19c0d8354ad9fabb073b4c4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Nucl. Phys. B}
+      \field{title}{{Parton distributions with LHC data}}
+      \field{volume}{867}
+      \field{year}{2013}
+      \field{pages}{244}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.nuclphysb.2012.10.003
+      \endverb
+      \verb{eprint}
+      \verb 1207.1303
+      \endverb
+    \endentry
+    \entry{Agostinelli:2002hh}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=222e7d1c666d4ec44841beff15466852}{%
+           family={Agostinelli},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4034275bca42b52c1a394d599186c42e}
+      \strng{fullhash}{4034275bca42b52c1a394d599186c42e}
+      \strng{fullhashraw}{4034275bca42b52c1a394d599186c42e}
+      \strng{bibnamehash}{4034275bca42b52c1a394d599186c42e}
+      \strng{authorbibnamehash}{4034275bca42b52c1a394d599186c42e}
+      \strng{authornamehash}{4034275bca42b52c1a394d599186c42e}
+      \strng{authorfullhash}{4034275bca42b52c1a394d599186c42e}
+      \strng{authorfullhashraw}{4034275bca42b52c1a394d599186c42e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucl. Instrum. Meth. A}
+      \field{title}{{\textsc{Geant4} -- a simulation toolkit}}
+      \field{volume}{506}
+      \field{year}{2003}
+      \field{pages}{250}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/S0168-9002(03)01368-8
+      \endverb
+    \endentry
+    \entry{Adriani:2135330}{report}{}{}
+      \name{author}{31}{}{%
+        {{hash=76dfcece0a55f9a2243383e72e8f4cbe}{%
+           family={Adriani},
+           familyi={A\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+        {{hash=09a76734b4cf2057611f47508cc964a3}{%
+           family={Berti},
+           familyi={B\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fb9703ebb83c2a8ac670ee8d2d234551}{%
+           family={Bonechi},
+           familyi={B\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1fd6196c4de94ea5a68d042940619b76}{%
+           family={Bongi},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9895512169654bbb07b34f52f8cff504}{%
+           family={Castellini},
+           familyi={C\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=896021b25eb044cf5b71cf70cdcd0881}{%
+           family={D'Alessandro},
+           familyi={D\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3af5cbdbfc93ef5f094949c67994c477}{%
+           family={Haguenauer},
+           familyi={H\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c441be11cccd13bc87eeaf2cad86f393}{%
+           family={Itow},
+           familyi={I\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=70bc110e9829971112927f78aaef3b01}{%
+           family={Iwata},
+           familyi={I\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4ff8ab23e3aaed9988cac6be6ad1733d}{%
+           family={Kasahara},
+           familyi={K\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=49f5822128d2ffd1f01afd2cfca26be5}{%
+           family={Makino},
+           familyi={M\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6c5e173f189cd9d9bcd27205298ca4a5}{%
+           family={Masuda},
+           familyi={M\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4c45348ca497c0bf5c841abb53eb3347}{%
+           family={Matsubayashi},
+           familyi={M\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7e512bace29a17be38205a1bd20e7b44}{%
+           family={Matsubara},
+           familyi={M\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=60d695a6160a1753af591d197bdd3774}{%
+           family={Menjo},
+           familyi={M\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=38dbbd84c3b43fd410edfd51508d2b9f}{%
+           family={Muraki},
+           familyi={M\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4dce7a894bf50b7a72858a3a79605929}{%
+           family={Okuno},
+           familyi={O\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c4ec6cbacfb442e95edb0977445f1a1b}{%
+           family={Papini},
+           familyi={P\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1b2391118514a854f9d0191440fe174a}{%
+           family={Ricciarini},
+           familyi={R\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=77ca3b5168ac1fb0b4ebaa42dd03b6ce}{%
+           family={Sako},
+           familyi={S\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fba8d97b2fa7b18eb2f9607a490c2133}{%
+           family={Sakurai},
+           familyi={S\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=48a1e4f9aa44a68931a3bd8138ba6970}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7c5038d88dbe2335271d8faad89269b0}{%
+           family={Shimizu},
+           familyi={S\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=150e95af6fd4fd8d59869b7bdac045f7}{%
+           family={Tamura},
+           familyi={T\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7e30cebc5dc0c752dc33ab7600eef0a1}{%
+           family={Tiberio},
+           familyi={T\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a13e16c9045db5b8154ccf05b65f2a3c}{%
+           family={Torii},
+           familyi={T\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c9706ed78cc383231777164b85b19db9}{%
+           family={Tricomi},
+           familyi={T\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=002ece854d5731cb5ecaafb88025ba2e}{%
+           family={Turner},
+           familyi={T\bibinitperiod},
+           given={WC},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1713c8a398588c6f2d31f5385fda7f7f}{%
+           family={Ueno},
+           familyi={U\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f324f57b44d8e3fb900c6e12fd6c2a23}{%
+           family={Yoshida},
+           familyi={Y\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4dd42d158063fe903192c2b4a1c5dfc5}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={QD},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{5759e2abd167711ce86c0f2ab83225aa}
+      \strng{fullhash}{0051287e691b4d07892d4a396daac9af}
+      \strng{fullhashraw}{0051287e691b4d07892d4a396daac9af}
+      \strng{bibnamehash}{5759e2abd167711ce86c0f2ab83225aa}
+      \strng{authorbibnamehash}{5759e2abd167711ce86c0f2ab83225aa}
+      \strng{authornamehash}{5759e2abd167711ce86c0f2ab83225aa}
+      \strng{authorfullhash}{0051287e691b4d07892d4a396daac9af}
+      \strng{authorfullhashraw}{0051287e691b4d07892d4a396daac9af}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Study of forward physics in sqrt($s_NN$) = 8.1 TeV proton-Lead ion collisions with the LHCf detector at the LHC}}
+      \field{type}{techreport}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2135330
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2135330
+      \endverb
+    \endentry
+    \entry{Cekmecelioglu:2867369}{report}{}{}
+      \name{author}{5}{}{%
+        {{hash=ce9e07e98c55e0002b4da8240a6ffb21}{%
+           family={Cekmecelioglu},
+           familyi={C\bibinitperiod},
+           given={Yusuf\bibnamedelima Can},
+           giveni={Y\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8bc997b41a54fb9717a26357447c0b55}{%
+           family={Leitgeb},
+           familyi={L\bibinitperiod},
+           given={Clara\bibnamedelima Elisabeth},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=1786a18d573a8e0c00424142cd71909f}{%
+           family={Beresford},
+           familyi={B\bibinitperiod},
+           given={Lydia\bibnamedelima Audrey},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=59f7b413676028f9844579aa4daae2bb}{%
+           family={Trzebinski},
+           familyi={T\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a379412cccd90382a2e274ee324b0637}{%
+           family={Issever},
+           familyi={I\bibinitperiod},
+           given={Cigdem},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{9468a1f666a2aab89662704d3bc37ad8}
+      \strng{fullhash}{c262ae19c656bb1396974ba2b2aea2b9}
+      \strng{fullhashraw}{c262ae19c656bb1396974ba2b2aea2b9}
+      \strng{bibnamehash}{c262ae19c656bb1396974ba2b2aea2b9}
+      \strng{authorbibnamehash}{c262ae19c656bb1396974ba2b2aea2b9}
+      \strng{authornamehash}{9468a1f666a2aab89662704d3bc37ad8}
+      \strng{authorfullhash}{c262ae19c656bb1396974ba2b2aea2b9}
+      \strng{authorfullhashraw}{c262ae19c656bb1396974ba2b2aea2b9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{All figures including auxiliary figures are available at https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2023-024}
+      \field{title}{{Physics potential of a combined data taking of the LHCf and ATLAS Roman Pot detectors}}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2867369
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2867369
+      \endverb
+    \endentry
+    \entry{Jenni:1009649}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=2689074ab147e8b386a37745a10d5a5e}{%
+           family={Jenni},
+           familyi={J\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=48579ef9b2b26d9fcdfc215cf1ec2ee7}{%
+           family={Nessi},
+           familyi={N\bibinitperiod},
+           given={Marzio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=33ca0e511a1520d43fde683d5e904fb2}{%
+           family={Nordberg},
+           familyi={N\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{493a025ed4d7c3c5745c69d9e5096ef5}
+      \strng{fullhash}{493a025ed4d7c3c5745c69d9e5096ef5}
+      \strng{fullhashraw}{493a025ed4d7c3c5745c69d9e5096ef5}
+      \strng{bibnamehash}{493a025ed4d7c3c5745c69d9e5096ef5}
+      \strng{authorbibnamehash}{493a025ed4d7c3c5745c69d9e5096ef5}
+      \strng{authornamehash}{493a025ed4d7c3c5745c69d9e5096ef5}
+      \strng{authorfullhash}{493a025ed4d7c3c5745c69d9e5096ef5}
+      \strng{authorfullhashraw}{493a025ed4d7c3c5745c69d9e5096ef5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Zero Degree Calorimeters for ATLAS}}
+      \field{type}{techreport}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/1009649
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/1009649
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

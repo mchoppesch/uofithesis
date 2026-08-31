@@ -1,0 +1,55 @@
+\ProvidesPackage{thesisbiblatex}[2026/08/31 ATLAS-inspired biblatex adjustments]
+\RequirePackage{etoolbox}
+
+\@ifpackageloaded{biblatex}{
+    \ExecuteBibliographyOptions{
+        block=ragged,
+        minbibnames=1,
+        maxbibnames=5,
+        backref=true,
+        doi=false,
+        eprint=true,
+        date=year,
+        hyperref=true
+    }
+
+    \AtBeginBibliography{\singlespacing}
+
+    \AtEveryBibitem{%
+        \clearfield{month}%
+        \clearfield{urlyear}%
+        \clearfield{urlmonth}%
+        \clearfield{urlday}%
+        \clearlist{location}%
+    }
+
+    \DeclareFieldFormat[article,booklet,report,thesis,misc,software]{title}{\textit{#1}\isdot}
+    \DeclareFieldFormat[article]{journaltitle}{#1\isdot}
+    \DeclareFieldFormat[article]{journalsubtitle}{#1\isdot}
+    \DeclareFieldFormat[article]{volume}{\textbf{#1}\isdot}
+    \DeclareFieldFormat{url}{\textcolor{blue}{\mkbibbrackets{\href{#1}{\thesisbiblatexdisplayurl{#1}}}}}
+
+    \AtEveryBibitem{\ifentrytype{article}{\clearfield{number}}{}}
+    \AtEveryBibitem{\ifentrytype{article}{\clearlist{location}}{}}
+    \AtEveryBibitem{\ifentrytype{booklet}{\clearlist{location}}{}}
+    \AtEveryBibitem{\ifentrytype{report}{\clearlist{location}}{}}
+
+    \renewcommand*{\newunitpunct}{\addcomma\space}
+    \renewcommand{\bibpagespunct}{\space}
+    \DefineBibliographyStrings{english}{page={}, pages={}}
+    \DefineBibliographyStrings{american}{page={}, pages={}}
+    \DefineBibliographyStrings{british}{page={}, pages={}}
+    \DefineBibliographyStrings{UKenglish}{page={}, pages={}}
+    \DefineBibliographyStrings{USenglish}{page={}, pages={}}
+    \DefineBibliographyStrings{ngerman}{page={}, pages={}}
+    \renewbibmacro{in:}{}
+}{
+    \PackageError{thesisbiblatex}{The biblatex package must be loaded before thesisbiblatex}{}
+}
+
+\newcommand*{\thesisbiblatexdisplayurl}[1]{%
+    \expandafter\thesisbiblatexstripprotocol#1\@nil
+}
+\def\thesisbiblatexstripprotocol#1://#2\@nil{\nolinkurl{#2}}
+
+\endinput

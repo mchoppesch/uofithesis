@@ -1,0 +1,36 @@
+\subsection{Analysis Procedure}
+\label{ssec:unf_strat}
+
+The Pb-going FCal transverse energy is constructed by summing the transverse
+projection of the electromagnetic-scale tower energies in the hemisphere facing
+the Pb beam. This definition is consistent with previous ATLAS $p$+Pb
+centrality measurements. In typical events containing a hard scattering, the
+energy observed in the Pb-going ZDC is dominated by spectator neutrons
+evaporating from the struck nucleus.
+
+The ZDC energy scale is determined run by run from the response to a single
+spectator neutron. The low-energy spectrum contains distinguishable neutron
+peaks, and a simultaneous fit to the first three peaks and a background term
+validates the calibration. The fitted single-neutron peak is constrained to the
+nominal per-nucleon beam energy. The detector response below $1~\mathrm{TeV}$
+is limited by detector noise and low-energy backgrounds; this region is treated
+as a dedicated zero-energy bin. A residual in-time pileup contribution to the
+\EZDC distribution is removed with a data-driven template method.
+
+Finite jet-resolution effects cause migration in $x_p$. These effects are
+corrected with a two-dimensional iterative Bayesian unfolding procedure using
+RooUnfold. The response matrix contains $x_p$ and, in turn, either \EZDC or
+\ETPB. Since the available simulation does not model nuclear breakup in the ZDC
+or the full FCal response for the overlaid minimum-bias event, the calorimeter
+observable is propagated through the unfolding with diagonal migration
+matrices. This retains the measured correlation of calorimeter energy with
+$x_p$ while correcting the jet-related kinematic migration.
+
+The response matrix is reweighted as a function of reconstructed $x_p$ to
+match the data spectrum. For the ZDC measurement, pileup-subtracted data
+distributions are sampled to assign a ZDC energy to each simulated dijet event.
+The procedure is repeated with independent random seeds, and closure tests
+verify that the unfolding reproduces the particle-level simulation. Two
+iterations are used, balancing the convergence of the unfolded result against
+the growth of statistical uncertainty. Statistical uncertainties are evaluated
+by bootstrap resampling of both the data and response matrix.

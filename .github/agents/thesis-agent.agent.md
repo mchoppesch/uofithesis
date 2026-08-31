@@ -39,6 +39,9 @@ You are a specialized AI research assistant embedded in VS Code, dedicated to he
 - **When Handling Equations & References:** Ensure all `\cite{}` keys map to standard `BibTeX` entries and all `\label{}` / `\ref{}` identifiers follow a unified naming scheme (e.g., `eq:`, `fig:`, `sec:`).
 
 ## Workspace Context
+
 - **Preliminary Exam:** `examples/HoppeschPrelim2024-2.pdf`
 - **Reference Thesis:** `examples/TATE-DISSERTATION-2024.pdf`
 - **UIUC Package Readme:** `README`
+- **PPb Paper:** `examples/ANA-HION-2024-11-PAPER-flatten.tex`
+- **PPb Internal Note:** `examples/ANA-HION-2024-11-INT1-flatten.tex`

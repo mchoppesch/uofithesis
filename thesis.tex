@@ -28,7 +28,9 @@
 % For images:
 %  \includegraphics[alt={Alt text...}]{image.png}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage{tikz}
+\usepackage{thesis}
 % uofithesis sets accessible colors for use in charts, but you can also define
 % your own if needed
 \usepackage{pgfplots}
@@ -39,8 +41,22 @@
 % changed as needed.
 % If you need chapter-level references, instead of `\section`, use the
 % `sectionwithreferences` environment.
-\usepackage[hidelinks,pdfusetitle]{hyperref}
-\usepackage[backend=biber,style=ieee,defernumbers=true]{biblatex}
+\usepackage[
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    filecolor=blue,
+    pdfusetitle
+]{hyperref}
+\usepackage[backend=biber,style=numeric-comp,sorting=none,defernumbers=true]{biblatex}
+\addbibresource{bib/ATLAS.bib}
+\addbibresource{bib/ATLAS-useful.bib}
+\addbibresource{bib/CMS.bib}
+\addbibresource{bib/ConfNotes.bib}
+\addbibresource{bib/PubNotes.bib}
+\addbibresource{bib/mydocument.bib}
+\usepackage{thesisbiblatex}
 \usepackage[bottom]{footmisc}
 
 % At time of writing, chemistry packages are not compatible with accessibility
@@ -49,14 +65,12 @@
 \usepackage{chemfig}
 \pgfplotsset{compat=1.18}
 
-\addbibresource{./references.bib}
-
 % Raggedright is recommended for accessibility
 \raggedright
 \setlength{\parindent}{1.5em}
 
-\title{Investigations of Hot and Cold Nuclear matter Effects in Small Systems with the ATLAS Detector}
-\author{Matthew Hoppesch}
+\title{Investigations of Hot and Cold Nuclear Matter Effects in Small Systems with the ATLAS Detector}
+\author{Matthew Caleb Hoppesch}
 \department{Physics}
 
 % You can set a specific earned degree instead of Master/Doctor of Science/Philosophy
@@ -86,10 +100,11 @@
 %\AtBeginDocument{\setcounter{tocdepth}{1}}
 
 \begin{document}
+\pagenumbering{roman}
 
 % Uncomment the copyrightpage macro to include an automatic copyright page
 % before the title
-%\copyrightpage
+\copyrightpage
 \maketitle
 
 \abstract{
@@ -111,19 +126,24 @@
 \end{dedication}
 
 \tableofcontents
+\input{frontmatter/list_of_abbreviations.tex}
+\input{frontmatter/list_of_symbols.tex}
+
+\clearpage
+\pagenumbering{arabic}
 
 % Sections make up the Main Text. Always use sectioning commands to create sections,
 % subsections, etc. Do not use formatting commands to make regular text look like
 % a section heading, as this will not be tagged properly for accessibility.
-\input{chapters/01_introduction/chapter.tex}
-\input{chapters/02_high_energy_nuclear_collisions/chapter.tex}
-\input{chapters/03_quark_gluon_plasma/chapter.tex}
-\input{chapters/04_the_lhc_and_atlas/chapter.tex}
-\input{chapters/05_pA_collisions/chapter.tex}
-\input{chapters/06_geometry_estimators_pPb/chapter.tex}
-\input{chapters/07_jet_quenching_small_systems/chapter.tex}
-\input{chapters/08_centrality_dependent_dijet_imbalance/chapter.tex}
-\input{chapters/09_summary_and_conclusions/chapter.tex}
+\input{chapters/introduction/chapter.tex}
+\input{chapters/high_energy_nuclear_collisions/chapter.tex}
+\input{chapters/quark_gluon_plasma/chapter.tex}
+\input{chapters/the_lhc_and_atlas/chapter.tex}
+\input{chapters/pA_collisions/chapter.tex}
+\input{chapters/geometry_estimators_pPb/chapter.tex}
+\input{chapters/jet_quenching_small_systems/chapter.tex}
+\input{chapters/centrality_dependent_dijet_imbalance/chapter.tex}
+\input{chapters/summary_and_conclusions/chapter.tex}
 
 \printbibliography[heading=bibintoc,title={References}]
 
