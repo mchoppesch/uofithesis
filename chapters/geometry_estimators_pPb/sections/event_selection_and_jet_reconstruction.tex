@@ -1,0 +1,115 @@
+\subsection{Event Selection and Jet Reconstruction}
+\label{sec:event_sel1}
+\subsubsection{Event Selection}
+To be included in the analysis, events must be pass the relevant good run list (GRL) selection.  A new GRL for the 2016 8.16 TeV \pxPb\,data was created for this analysis to remove periods where the ZDC had an intolerable defect.  This GRL can be found at:
+\begin{quote}
+    \tiny
+    \texttt{GoodRunsLists/data16\_hip/20240611/data16\_hip8TeV.periodAllYear\_HEAD\_Unknown\_PHYS\_HeavyIonP\_All\_Good\_WITH\_IGNORES.xml}.
+\end{quote}
+\subsubsection{Pileup Rejection}
+
+To have a meaningful determination of per-event centrality, it is essential to analyze events where only one hadronic \pxPb\ collision occurred. To meet this requirement, an effective pile-up rejection strategy is needed, in particular for data with high $\mu$ (by Heavy Ion standards) like those analyzed in this note ($\mu$ ranging from 0.15 to 0.3 in most of the runs). The same pile-up rejection strategy described in \cite{Hill:2301540}, specifically established for this data-set, is chosen for this analysis. Events characterized by more than one vertex with 7 or more associated tracks are rejected at the level of event selection. % see Section~\ref{sec:pup_impact} for more details.
+By applying this pile-up rejection, residual pile-up contributions can be still noticed in the ZDC, see Figure~\ref{fig:result_corr_mb_ppb} where the correlation between \EZDC\ and \ETPB\ is demonstrated.
+
+\begin{figure}[ht]%!h
+    \centering
+    \begin{subfigure}{.49\linewidth}
+        \includegraphics[width=\linewidth]{chapters/geometry_estimators_pPb/figures/dataset_and_event_selection/ZdcFCal_bin_log_HLT_mb_sptrk_L1MBTS_1.pdf}
+    \end{subfigure}
+    \begin{subfigure}{.49\linewidth}
+        \includegraphics[width=\linewidth]{chapters/geometry_estimators_pPb/figures/dataset_and_event_selection/ZdcFCal_bin_lin_HLT_mb_sptrk_L1MBTS_1.pdf}
+    \end{subfigure}
+    \caption{Correlation between the Pb going neutral forward energy (\EZDC) and the transverse energy accumulated in the Pb-going FCal arm (\ETPB) for the \pxPb\ orientation.  \ETPB\ is binned a in logarithmic (left) and linear (right) fashion. \EZDC\ is normalized to the single neutron peak in order to display energy in terms of number of neutrons.}
+    \label{fig:result_corr_mb_ppb}
+\end{figure}
+
+This residual pile-up is not seen in the \ETPB\ spectrum, indicating that these backgrounds come from interactions that either only produce particles at very far forward rapidities or happen away from the IP.
+This residual was found to be present even when removing all the secondary vertices, and is suspected to be related to UPC \pxPb\ events.
+
+A procedure to characterize and remove this additional pile-up from the ZDC distributions is discussed in Section
+%~\ref{ssec:pup_template}.
+
+ATLAS Liquid Argon calorimeter~\cite{ATLAS-TDR-02}  cells receive ionization pulses resultant from the passage of charged particle tracks. These analog pulses are delivered to a Front-End Board (FEB) where they are amplified and shaped.  The characteristic shape of these FEB pulses is a large positive amplitude pulse lasting around 100 ns proceeded immediately by a smaller negative amplitude pulse lasting around 400 ns.  In the 2016 8.16 \TeV\ \pxPb\ dataset, bunches of colliding particles circulate with 100 ns spacing between them. The measurement of \ETPB\ is then biased negatively in events with preceding bunches having large event activity. Due to the physical constraints of transmission lines and the ZDCs location far from the interaction point, pulses seen in the ZDC have long characteristic decay time.  Therefore, by sampling the ZDCs ADC value just before a pulse arrives and comparing that to a common baseline it is possible to identify these events with preceding large event activity.
+%More details on this selection are given in Section~\ref{sec:oot_zdc}.
+
+Due to the difference in Z between the Pb ion (82) and the proton (1), most of the events from UPC \pxPb\ collisions are expected to involve the emission of a virtual photon from the Pb ion to the $p$, with subsequent low activity on the Pb-going side of the FCal. By applying a 0--90\% selection for the per-event dijet yield analysis, one can expect a substantial fraction of these events to be effectively rejected.  Diffractive events are associated with significant rapidity gaps in the particle production. To further enforce the UPC events rejection, a cut based on rapidity gaps, equal to one utilized in the centrality analysis \cite{Hill:2301540}, where events with $\Delta \eta_\mathrm{gap}^\mathrm{Pb} > 1.8$ were rejected.  In this analysis, such a cut rejects only a handful of events in the 0-90\% centrality class, as demonstrated by Figure
+\TCR{ADD Gaps figure}.
+%~\ref{fig:gap_ana}.
+
+\subsubsection{Jet Reconstruction}
+The jet reconstruction is common to both measurments reported in this thesis and is detailed in Section~\ref{sec:JetReco}.
+\subsubsection{Jet Calibration}
+For heavy ion jets in the 2016 dataset\footnote{For an overview of the heavy ion jet claibration, see section~\ref{sec:jet_calibration}.  This section will only describe peculiarities of the calibration specific to the 2016 dataset.}, the in-situ portion of the jet calibration was taken from \texttt{EMTopoJets}\footnote{\texttt{EMTopoJets} are calorimeter jets reconstructed somewhat similarly to \texttt{AntiKt4HIJets} but without any UE subtraction.  The \texttt{EMTopoJets} are calibrated by the ATLAS JetEtMiss group which has much more personpower than the ATLAS heavy ion jet group.}. A cross-calibration, derived using the direct balance method in events containing a Z boson or photon opposite to a jet, is used to bridge between \texttt{AntiKt4HIJets} and fully calibrated \texttt{EMTopoJets} jets by accounting for additional differences in response between them \cite{Ouellette:2655891}. Thanks to the cross-calibration, it is possible to characterize the performance of the \texttt{AntiKt4HIJets} without deriving a whole new in-situ calibration. This procedure also has an associated systematic uncertainty.
+\subsubsection{Jet Selection}
+Jets are reconstructed using the \antikt\ jet algorithm with a radius parameter of R~=~0.4.
+Jets are required to pass the `LooseBad' jet selection working point.
+\subsubsection{Jet Trigger Strategy}
+Events are considered only if the leading jet in the trigger has fired the corresponding trigger chosen for the (\ETA,\PT{}) region where the jet is reconstructed.
+The trigger selection for |\ETA|$<$3.0 and for |\ETA|$>$3.5
+\textcolor{black}{
+    above a \PT{ }of 40 GeV
+}
+is straightforward. In these regions, the fully efficient efficient trigger associated with the lowest prescale value is chosen. Efficiency values used to determine what trigger to choose in each (\ETA,\PT{}) region are reported in Table~\ref{tab:trigger_overview_pPb}. For triggers covering the same \ETA\,region, prescale values decrease as the \PT\ threshold increases.
+
+A different treatment is requested in the \ETA\,region corresponding to the transition between central and forward triggers, i.e. around \ETA = $\pm$3.2\footnote{Sign here is determined by the beam orientation, since this analysis covers only central and forward regions, discarding the backward where the energy accumulated in the FCal is used for \EATPB.}. To handle the trigger analysis in this region, an inclusive approach (see \cite{Lendermann:2009ah} and references therein), hereafter referred to as the Fully Efficient Trigger Combination (FETC) method, was chosen.
+In the FETC approach, a combined weight based on all the considered trigger items for the given kinematic region is determined for the entire event sample. For each event, at least one actual trigger item bit from the set of considered items is required to be set. The weight ($w_{j,k}$) calculation for an event $j$ in a given run $k$ is based on the probability to accept the event after the application of the prescale to all the $i$-th trigger items considered.
+If $r_{i,j}$ is the bit for the trigger item $i$ in the event $j$, and the same trigger item is prescaled by a factor $p_{i,k}$ during the run $k$, the probability that the event $j$ in the run $k$ is accepted by the trigger item $i$ after the prescale can be expressed as
+\begin{equation}
+    q_{i,j,k} = \frac{r_{i,j}}{p_{i,k}}
+\end{equation}
+Assuming the prescale decisions for each trigger item are independent from each other, the probability that at least one of the $N_{\TN{items}}$ trigger items accepts the event is given by
+\begin{equation}
+    q_{j,k} = 1 - \prod^{N_{\TN{items}}}_{i=1} \biggl ( 1-\frac{r_{i,j}}{p_{i,k}}\biggr )
+\end{equation}
+Starting from this, one can define the run dependent weight for event $j$ as
+\begin{equation}
+    w_{j,k} = \frac{1}{q_{j,k}}
+\end{equation}
+
+When combining all the considerations outlined above, one obtains a (\ETA,\PT{}) map that provides, per each jet with \PT{}$>$ 40 GeV
+and -4.5 $<$ \ETA $<$ 3.1 (-3.1 $<$ \ETA $<$ 4.5), the jet trigger(s) considered for the analysis of the \pxPb\,(\Pbxp) data. The three maps corresponding to the trigger configurations used in the \pxPb\,run are shown in Figure
+\TCR{add trigger map}.
+%~\ref{fig:trig_map_pPb}.
+
+The analysis reported in this note will use dijet events with a leading jet
+\PT{}$>$ 40 GeV and a sub-leading jet \PT{}$>$ 30 GeV. Only the dataset using \pxPb-ion trigger scheme is considered for the analysis presented in the CONF note, while the other two periods are used just for studies included in the Appendix of this Note and reported here for completeness.
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{ | c | c | c | c | c |}
+        \hline
+        \textbf{Trigger Chain} &  \textbf{$\PTE^{99}$ [GeV]} & \textbf{$\eta$} & \textbf{$\mathscr{L}$ [ub$^{-1}$]} & \textbf{$p_{\TN{T}}^{99}$ Monitor}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j30\_ion\_0eta490\_L1TE10}}   & 36  & [$-$4.9,4.9]   & 113.76 &  \multicolumn{1}{l|}{\scriptsize HLT\_mb\_sptrk} \\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j40\_ion\_L1J5}}    & 44     & [$-$3.2,3.2]   & 468.1 &  \multicolumn{1}{l|}{\scriptsize HLT\_mb\_sptrk}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j50\_ion\_L1J10}}    & 57    & [$-$3.2,3.2]   & 1120 &  \multicolumn{1}{l|}{\scriptsize HLT\_mb\_sptrk}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j60\_ion\_L1J20}} & 70        & [$-$3.2,3.2]   & 1562 &  \multicolumn{1}{l|}{\scriptsize HLT\_mb\_sptrk}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j75\_ion\_L1J20}}   & 80  & [$-$3.2,3.2]   & 3468 &  \multicolumn{1}{l|}{\scriptsize HLT\_mb\_sptrk}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j100\_ion\_L1J20}}   & 111 & [$-$3.2,3.2]   & 56671 &  \multicolumn{1}{l|}{\scriptsize HLT\_mb\_sptrk}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j15\_ion\_n320eta490\_L1MBTS\_1\_1}}   & 44  & [$-$3.2,$-$4.9]   & 77.5 &  \multicolumn{1}{l|}{\scriptsize HLT\_mb\_sptrk}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j25\_ion\_n320eta490\_L1TE5}}   & 40  & [$-$3.2,$-$4.9]   & 247.7 &  \multicolumn{1}{l|}{\scriptsize HLT\_mb\_sptrk}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j35\_ion\_n320eta490\_L1TE10}}   & 57  & [$-$3.2,$-$4.9]   & 179.9 &  \multicolumn{1}{l|}{\tiny HLT\_j25\_ion\_n320eta490\_L1TE5}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j45\_ion\_n320eta490}}   & 65  & [$-$3.2,$-$4.9]   & 5288 &  \multicolumn{1}{l|}{\tiny HLT\_j25\_ion\_n320eta490\_L1TE5}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j55\_ion\_n320eta490}}   & 80  & [$-$3.2,$-$4.9]   & 16635 &  \multicolumn{1}{l|}{\tiny HLT\_j25\_ion\_n320eta490\_L1TE5}\\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j65\_ion\_n320eta490}}   & 85  & [$-$3.2,$-$4.9]   & 53571 &  \multicolumn{1}{l|}{\tiny HLT\_j25\_ion\_n320eta490\_L1TE5}\\
+        \hline
+    \end{tabular}
+    \vspace{2mm}
+    \caption{
+        \textcolor{black}{
+            Overview of \pxPb\,\texttt{ion} triggers used in the analysis. The sampled luminosity, $\mathscr{L}$, recorded by each trigger is reported. The L1 for triggers that do not specify this detail in the chain name are:  \texttt{L1\_J15.31ETA49} for \texttt{HLT\_j45\_ion\_n320eta490} and \texttt{HLT\_j55\_ion\_n320eta490}, and \texttt{L1\_J20.31ETA49} for \texttt{HLT\_j65\_ion\_n320eta490}. $\PTE^{99}$ represents the 99\% efficiency point for a given chain, calculated taking into account both L1 and HLT efficiencies, and is reported in GeV.
+        }
+    }
+    \label{tab:trigger_overview_pPb}
+\end{table}

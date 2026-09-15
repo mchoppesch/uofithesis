@@ -49,7 +49,7 @@
     filecolor=blue,
     pdfusetitle
 ]{hyperref}
-\usepackage[backend=biber,style=numeric-comp,sorting=none,defernumbers=true]{biblatex}
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
 \addbibresource{bib/ATLAS.bib}
 \addbibresource{bib/ATLAS-useful.bib}
 \addbibresource{bib/CMS.bib}
@@ -58,6 +58,9 @@
 \addbibresource{bib/mydocument.bib}
 \usepackage{thesisbiblatex}
 \usepackage[bottom]{footmisc}
+
+% use floatbattier
+\usepackage{placeins}
 
 % At time of writing, chemistry packages are not compatible with accessibility
 % tagging, but there are no alternatives.
@@ -69,7 +72,7 @@
 \raggedright
 \setlength{\parindent}{1.5em}
 
-\title{Investigations of Hot and Cold Nuclear Matter Effects in Small Systems with the ATLAS Detector}
+\title{Investigations of partonic energy loss and initial state effects in small systems via dijet measurements with the ATLAS detector}
 \author{Matthew Caleb Hoppesch}
 \department{Physics}
 
@@ -108,9 +111,10 @@
 \maketitle
 
 \abstract{
-    The abstract must be placed immediately after the title page.
-    There is no word limit for the abstract.
-    No images or footnotes should appear in the abstract.
+    %! rewrite
+    This thesis presents two experimental studies of QCD using data recorded by the ATLAS experiment at the Large Hadron Collider.
+    The first study investigates proton-size fluctuations in proton--lead collisions. The internal momentum configuration of a proton can modify its effective transverse size, particularly when a single parton carries an unusually large fraction of the proton's momentum. Dijet production provides a means of probing this configuration because the dijet kinematics constrain the momentum fraction extracted from the proton. The relationship between this momentum fraction and both bulk particle production and forward neutron production is measured. These observables provide information about proton-size fluctuations and enable comparisons with theoretical models of the proton's internal structure. They also provide important constraints for interpreting proton--lead collisions as a control system for heavy-ion measurements.
+    The second study examines jet quenching in light-ion collisions using the dijet balance observable, defined as the ratio of the transverse momentum of the lower-momentum jet to that of the higher-momentum jet. Interactions between jets and the QGP modify this distribution by reducing the balance between the two jets. Measurements in oxygen--oxygen and neon--neon collisions provide access to a collision system smaller than previously studied heavy-ion systems while retaining a substantial transverse overlap between the colliding nuclei. A rigorous statistical analysis establishes that the dijet balance is significantly modified in light-ion collisions relative to proton--proton collisions. Together, these studies use dijets to investigate both the structure of cold QCD matter and the energy loss of hard-scattered partons traversing the QGP.
 }
 
 \acknowledgements{
@@ -136,12 +140,9 @@
 % subsections, etc. Do not use formatting commands to make regular text look like
 % a section heading, as this will not be tagged properly for accessibility.
 \input{chapters/introduction/chapter.tex}
-\input{chapters/high_energy_nuclear_collisions/chapter.tex}
-\input{chapters/quark_gluon_plasma/chapter.tex}
+\input{chapters/background/chapter.tex}
 \input{chapters/the_lhc_and_atlas/chapter.tex}
-\input{chapters/pA_collisions/chapter.tex}
 \input{chapters/geometry_estimators_pPb/chapter.tex}
-\input{chapters/jet_quenching_small_systems/chapter.tex}
 \input{chapters/centrality_dependent_dijet_imbalance/chapter.tex}
 \input{chapters/summary_and_conclusions/chapter.tex}
 

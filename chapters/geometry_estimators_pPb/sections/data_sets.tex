@@ -1,0 +1,116 @@
+\subsection{Data Sets}
+
+\subsubsection{2016 \texorpdfstring{\pxPb}{p+Pb} Data}
+The \pxPb\ data at \SNN~=~8.16~\TeV\ used for this analysis were delivered by the LHC to ATLAS in November and December of 2016. In \pxPb\ collisions at 8.16 \TeV\ the colliding beams have different energies per nucleon (6.5~\TeV\ protons colliding with $(Z/A)\times 6.5~\TeV\simeq 2.6~\TeV$ per nucleon in a lead nucleus), resulting in a collision system with \SNN~=~8.16~\TeV\ per nucleon pair. Under these conditions, the center-of-mass frame is shifted in rapidity, \RAP, by $\Delta\RAP=0.465$ in the direction of the proton beam. Data were collected in two different periods, characterized by opposite beam orientations. Due to technical issues with the ZDC instrumentation (see Section~\ref{sec:missing_zdc_mod}), only \textbf{Period B} was used for this measurement.
+
+The runs in this period were characterized by a total integrated luminosity of 55.9~\NB. Beam 1 consisted of protons and Beam 2 of Pb ions. The protons traveled toward negative rapidities in the ``A$\rightarrow$C'' direction, corresponding to clockwise motion in the accelerator according to ATLAS conventions.  All data sets used in this analysis, listed in Table~\ref{tab:datasets}, were processed using \textsc{ATHENA}~Release~21.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{| c | c |}
+        \hline
+        \rule{0pt}{2.25ex}
+        \textbf{2016 \SNN\ = 8.16 \TeV\ Data Samples}  & \textcolor{black}{ \textbf{Luminosity [nb$^{-1}$] } } \\
+        \hline
+        \hline
+        data16\_hip8TeV.00313063.physics\_Main.merge.AOD.r11416\_p3868 & 0.021 \\
+        \hline
+        data16\_hip8TeV.00313067.physics\_Main.merge.AOD.r11416\_p3868 & 0.486 \\
+        \hline
+        data16\_hip8TeV.00313100.physics\_Main.merge.AOD.r11416\_p3868 & 8.787 \\
+        \hline
+        data16\_hip8TeV.00313107.physics\_Main.merge.AOD.r11416\_p3868 & 11.053 \\
+        \hline
+        data16\_hip8TeV.00313136.physics\_Main.merge.AOD.r11416\_p3868 & 9.602 \\
+        \hline
+        data16\_hip8TeV.00313187.physics\_Main.merge.AOD.r11416\_p3868 & 3.030 \\
+        \hline
+        data16\_hip8TeV.00313259.physics\_Main.merge.AOD.r11416\_p3868 & 4.659 \\
+        \hline
+        data16\_hip8TeV.00313285.physics\_Main.merge.AOD.r11416\_p3868 & 4.272 \\
+        \hline
+        data16\_hip8TeV.00313295.physics\_Main.merge.AOD.r11416\_p3868 & 9.923 \\
+        \hline
+        data16\_hip8TeV.00313333.physics\_Main.merge.AOD.r11416\_p3868 & 3.791 \\
+        \hline
+        data16\_hip8TeV.00313435.physics\_Main.merge.AOD.r11416\_p3868 & 0.301 \\
+        \hline
+        \hline
+    \end{tabular}
+    \caption{\textcolor{black}{Data samples from \SNN\,= 8.16 \TeV\,\pxPb\,collisions collected during the 2016 Heavy Ion Run. The luminosity collected for each run is reported. All the data were processed using \textsc{ATHENA}~Release~21.}}
+    \label{tab:datasets}
+\end{table}
+
+\subsubsection{Trigger Configuration}
+
+Jet triggers used for Period B of the 2016 \pxPb\ run are listed in Table~\ref{tab:trigger_overview_pPb}
+All data comes from the physics\_Main stream. The working points of the triggers are described further in Section~\ref{sec:event_sel1}.
+
+\subsubsection{Monte Carlo Samples}
+
+In order to evaluate the performance of jet reconstruction and the jet response within ATLAS, dijet Monte Carlo samples generated using \pythia~\cite{Bierlich:2022pfr} with the A14 tune and the NNPDF23LO PDFs~\cite{Ball:2012cx} were produced. Dijet events are filtered using the JZ$*$R04 filters, which select events containing an \antikt\ $R=0.4$ jet in specific truth \PT{} ranges, referred to using the prefix ``JZ'' and an integer ranging from 1--5 in this analysis.
+
+The detector response was simulated using the full ATLAS detector simulation based on the Geant4 toolkit~\cite{Agostinelli:2002hh}. For \pxPb\ collisions, Pythia8 truth events are overlaid with real minimum-bias \pxPb\ data. For each event, the Pythia generation and subsequent simulations were run with conditions matching the collected data, allowing the simulation to account for underlying-event effects in the jet reconstruction. In this MC sample, the event activity originates mainly from the overlay contribution and therefore has no associated truth information.
+
+Tables~\ref{tab:pPbMC}~and~\ref{tab:pPbMCFF} list the \PT{} range, Pythia8 cross section and filter efficiency, and the number of events for the inclusive and forward-filtered \pxPb\ MC samples. For forward-filtered samples, a specific filter characterized by its own efficiency is applied to preferentially select events in which a jet exists at forward $\eta$, where the cross section is lower than for central jets. This allows smaller MC productions to provide increased statistics for events characterized by dijets in the forward region, namely low $x_{\TN{Pb}}$ and high $x_p$, providing satisfactory MC population over the full phase space considered. For the forward-filtered samples generated for this analysis, only jets in the proton-going direction are considered forward.
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{ | c | l | c | c | c |}
+        \hline
+        \rule{0pt}{2.25ex}
+        JZ   &  \hspace{2mm} $\PTE^{\TN{truth}}$ [GeV] & $\sigma$ [nb] & $\epsilon$ &  $N_{\TN{evt}}$ \\
+        \hline\hline
+        1    & 20--60      &   $7.3070\times 10^7$  &  $5.8782\times 10^{-3}$ & 4M \\
+        \hline
+        2    & 60--160     &  $1.2916\times 10^6$   &  $5.6911\times 10^{-3}$ & 4M \\
+        \hline
+        3    & 160--400    &  $1.1775\times 10^4$   &  $7.4572\times 10^{-3}$ & 4M \\
+        \hline
+        4    & 400--800    &  $8.9941\times 10^1$   &  $8.1320\times 10^{-3}$ & 4M \\
+        \hline
+        5    & $>$800      &  $1.1951$   &  $7.1577\times 10^{-3}$ & 4M \\
+        \hline
+    \end{tabular}
+    \vspace{2mm}
+    \caption{Summary of inclusive \SNN\ = 8.16~\TeV\ \pxPb\ Pythia8 MC samples.}
+    \label{tab:pPbMC}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{ | c | l | c | c | c | }
+        \hline
+        \rule{0pt}{2.25ex}
+        JZ   &  \hspace{2mm} $\PTE^{\TN{truth}}$ [GeV] & $\sigma$ [nb] & $\epsilon$ & $N_{\TN{evt}}$ \\
+        \hline\hline
+        1    & 20--60      &  $7.3070\times 10^7$   &  $9.0671\times 10^{-4}$ & 4M \\
+        \hline
+        2    & 60--160     &  $1.2916\times 10^6$   &  $5.3628\times 10^{-4}$ & 2M \\
+        \hline
+    \end{tabular}
+    \vspace{2mm}
+    \caption{Summary of forward-filtered \SNN\ = 8.16~\TeV\ \pxPb\ Pythia8 MC samples.}
+    \label{tab:pPbMCFF}
+\end{table}
+
+The ATLAS data-set names for the MC samples used in this analysis are listed below.
+\begin{quote}
+    \SNN\ = 8.16~\TeV\ \pxPb\ Inclusive\\
+    \noindent\rule{12cm}{0.4pt}\\
+    {\scriptsize
+        \texttt{mc16\_pPb8TeV.420011.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ1R04.merge.AOD.e6518\_d1603$*$}\\
+        \texttt{mc16\_pPb8TeV.420012.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ2R04.merge.AOD.e6394\_d1603$*$}\\
+        \texttt{mc16\_pPb8TeV.420013.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ3R04.merge.AOD.e6518\_d1603$*$}\\
+        \texttt{mc16\_pPb8TeV.420014.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ4R04.merge.AOD.e6518\_d1603$*$}\\
+        \texttt{mc16\_pPb8TeV.420015.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ5R04.merge.AOD.e6518\_d1603$*$}\\
+    }
+\end{quote}
+\begin{quote}
+    \SNN\ = 8.16~\TeV\ \pxPb\ Forward-filtered\\
+    \noindent\rule{12cm}{0.4pt}\\
+    {\scriptsize
+        \texttt{mc16\_pPb8TeV.420018.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ1R04\_MaxEta\_m3p0.merge.AOD.e8288\_d1603$*$}\\
+        \texttt{mc16\_pPb8TeV.420019.Pythia8EvtGen\_A14NNPDF23LO\_jetjet\_JZ2R04\_MaxEta\_m3p0.merge.AOD.e8288\_d1603$*$}\\
+    }
+\end{quote}

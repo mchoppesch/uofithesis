@@ -1,15 +1,51 @@
 \section{Introduction}
-The goal of physics is to create a mathematical model that accuratly describes a phyuical system.
-Different types of theories may be appropriate for describing different energy and length scales.
-Interactions between realitivly large and slow objects, all of those we encounter in day-to-day life, fall under the purvue of Classical Mechanics.
-When these large objects are accelerated to speeds approaching the speed of light, Relativistic Mechanics describes their interactions well.
-When one instead views the world at the smallest scales, one finds that the universe is made up of a few types of fundemental particles which are identical and indistingishable.
-The behavior of this fundemental matter at low energies is given by Quantum Mechanics, while at high energies it is described by Quantum Field Theory.
-Quantum Field Theory (QFT) represents the combination of relativity and quantum mechanics.
+%The goal of physics is to create a mathematical model that accuratly describes a phyuical system.
+%Different types of theories may be appropriate for describing different energy and length scales.
+%Interactions between realitivly large and slow objects, all of those we encounter in day-to-day life, fall under the purvue of Classical Mechanics.
+%When these large objects are accelerated to speeds approaching the speed of light, Relativistic Mechanics describes their interactions well.
+%When one instead views the world at the smallest scales, one finds that the universe is made up of a few types of fundemental particles which are identical and indistingishable.
+%The behavior of this fundemental matter at low energies is given by Quantum Mechanics, while at high energies it is described by Quantum Field Theory.
+%Quantum Field Theory (QFT) represents the combination of relativity and quantum mechanics.
+The purpose of this thesis is to describe a set of measurements that experimentally study the strong force in two very different temperature regimes using data recorded by the ATLAS experiment at the Large Hadron Collider (LHC).
+Quantum Chromodynamics (QCD) is the theory of the strong force, which acts between the fundamental constituents of matter, quarks and gluons, collectively called partons.
+QCD is characterized by weak interactions at high energy scales and strong interactions at low energy scales.
+This behavior gives rise to the interesting feature of confinement, in which quarks and gluons in a vacuum are always found in a bound, color-neutral state.
+However, understanding QCD in a vacuum is not enough. When QCD is coupled to an external system, thermodynamic quantities such as energy density and temperature become relevant.
+Since QCD governs how nuclear matter is bound together, the thermodynamic environment in which it is placed gives rise to a nuclear phase diagram with a transition around $T = 160$~\MeV.
 
-\TCR{add bridge to standard model}
+The curious nature of this phase change is that, above this temperature, the confinement principle described above no longer holds, and quarks and gluons move about freely in a state known as the quark-gluon plasma (QGP).
+This phase change defines two separate regimes of QCD, both worthy of study.
+\textbf{Cold QCD} is the state of nuclear matter in which the universe has existed for the vast majority of its history.
+It is important to study because it is the state we most often interact with as humans.
+\textbf{Hot QCD}, also known as the QGP, is the state of nuclear matter that existed in the very early universe. Since quarks and gluons are not confined to bound states, the QGP provides a laboratory for studying their interactions.
+Over the past 50 years, experimental heavy-ion physicists have built and used massive machines capable of probing both Cold and, more recently, Hot QCD through high-energy particle collisions.
 
-\input{chapters/introduction/sections/the_standard_model.tex}
-\input{chapters/introduction/sections/qcd.tex}
-\input{chapters/introduction/sections/jets.tex}
-\input{chapters/introduction/sections/parton_distribution_functions.tex}
+Jets are highly energetic sprays of collimated particles that originate from high-energy scatterings in particle collisions. Due to momentum conservation, they are most commonly produced in pairs through a highly energetic $2\rightarrow 2$ scattering process between two fundamental particles. These jet pairs form a dijet. This thesis presents two measurements that use dijets as experimental probes to study each phase independently.
+
+Protons are composite particles made up of three valence quarks and a number of `sea' quarks and gluons.
+When protons are given a certain amount of energy, such as in a particle accelerator, conservation of momentum ensures that the total momentum of each proton is shared among its constituent partons, but it does not ensure equal sharing between them.
+Constituent partons share the momentum of the parent proton through quantum-mechanical processes.
+%The expectation of these processes can be experimentally measured through parton distribution functions(PDFs).
+The momentum configuration of the partons can affect the overall shape of the proton.
+When, by chance, one parton monopolizes more than its share of momentum, the color fields of the other partons are shadowed, giving the appearance of a smaller-than-average proton.\TCR{Citation needed}
+Dijets have the unique experimental ability to measure the fraction of the momentum extracted from a projectile proton in a high-energy nuclear collision.
+In addition, by colliding protons with a very large target ion (Pb) the size of the projectile can be studied by measuring quantities proportional to the size of the hole left in the projectile.
+Two such quantities, bulk particle production and forward neutron production, are studied as a function of the momentum fraction extracted from the proton.
+The novel measurement presented in this thesis allows detailed comparisons with theoretical models that attempt to capture this effect and provides crucial input for the heavy-ion community, which uses proton--Pb collisions as a control case for Pb--Pb collisions.
+
+Because dijets originate from $2\rightarrow 2$ scattering processes, conservation of momentum requires each jet in the pair to have a similar energy.
+The observable \XJ\ represents the ratio of the lower-momentum jet to the higher-momentum jet and is called the dijet balance.
+The distribution of \XJ\ is known to be modified by the presence of final--state effects, i.e. the presence of a QGP medium surrounding the dijet. \TCR{citation needed}
+The stochastic manner in which jet-medium interactions occur produces dijets that are less balanced on average.
+New light-ion data (\OxO\ and \NexNe) provide a laboratory smaller than previous heavy-ion systems (\PbxPb\ or \AuxAu).
+Additionally, unlike asymmetric systems (\pxPb\ or \dxAu), light ions have a sizeable transverse overlap.
+Results presented in this thesis take a well established observable and apply it to a new collision system.
+For the first time, a rigorous statistical analysis is presented establishing that the dijet balance is significantly modified in light-ion collisions with respect to \pxp.
+They also help inform models that constrain how jets lose energy to the QGP.
+
+The thesis is organized as follows.
+First, the relevant theoretical background of QCD, nuclear structure, jets, and heavy-ion physics is established in~\ref{ch:background}.
+\ref{ch:exp} discusses the LHC accelerator complex and the ATLAS experiment as well as details some technical work done by the author of this thesis.
+In~\ref{ch:pPb}, the analysis of Cold QCD proton-size fluctuations in \pxPb\ collisions is presented and the results are discussed.
+Then, the observation of jet energy loss in light-ion collisions via a dijet-balance measurement is reported in~\ref{ch:xj}.
+Finally, the key results of this thesis and their implications for the field are summarized in~\ref{ch:summary}.

@@ -1,3 +1,49 @@
-\subsection{ATLAS jet reconstruction}
+\subsection{ATLAS Jet Reconstruction}
+\label{sec:JetReco}
 
-Placeholder text for this section.
+When studying HI collisions with the ATLAS detector, jets are reconstructed using the \antikt\ jet clustering algorithm \cite{Cacciari:2008gp} with calorimeter towers as constituents. This algorithm uses collections of four-vectors corresponding to a set of tracks of charged particles in the inner tracking system (aka ``track jets''), massless calorimeter towers with size $\Delta \eta \times \Delta \phi = 0.1 \times 0.1$ (aka ``heavy ion jets''), or sets of simulated stable particles at the generator level (aka ``truth jets''). The measurements presented in this thesis make use of heavy ion jets reconstructed using the \antikt\ algorithm with R~=~0.4, called \texttt{AntiKt4HIJets}.
+%The algorithm is first run in four-momentum recombination mode on $\Delta \eta \times \Delta \phi$ = 0.1 $\times$ 0.1 calorimeter towers
+
+A detailed review of the performance of jet reconstruction in heavy ion collisions can be found in~\cite{ATLAS-CONF-2015-016}. This note will only discuss the main features of the heavy ion jet reconstruction and their implications on the dijet balance measurement.
+
+\subsubsection{Underlying Event Subtraction}
+To reconstruct jets in HI collisions, a background arising from the underlying event (UE) must be subtracted from each tower to avoid significant rates of fake jets~\cite{PhysRevC.86.024908} and to avoid distortion of the jet energy scale. The energy registered in each cell can be decomposed into contributions from a jet and from the UE as
+\begin{equation}
+    \frac{d^2E_{\TN{T}}^{\TN{total}}}{d\eta d\phi}=\frac{d^2E_{\TN{T}}^{\TN{jet}}}{d\eta d\phi}+\frac{d^2E_{\TN{T}}^{\TN{UE}}}{d\eta d\phi}
+\end{equation}
+Only the first contribution should be used to reconstruct jets. Therefore, $\frac{d^2E_{\TN{T}}^{\TN{UE}}}{d\eta d\phi}$ must be estimated and subtracted.
+The UE subtraction procedure makes use of the UE average transverse energy density, $\rho (\eta,\phi)$.
+The $\phi$ dependence in $\rho$ arises from global azimuthal correlations in the particle production, usually referred to as flow, that arises from the hydrodynamic response of the medium to the geometry of the initial collision \cite{HION-2016-06}. One can describe the UE contribution to the transverse energy of the calorimeter towers by using the amplitudes ($\nu_n$) and the phases ($\Psi_n$) of the Fourier components of the azimuthal angle distributions:
+\begin{equation}
+    \rho (\eta,\phi) = \frac{1}{2\pi}\frac{\langle d E_T \rangle}{d\eta}\bigl ( 1+ 2\sum^{N}_{n=2}\nu_n \cos ( n(\phi-\Psi_n) ) \bigr )
+\end{equation}
+where $\phi$ and $n$ represent the azimuthal angle of the tower and the order of the flow harmonic, respectively. Although $\nu_2$ dominates, the third and the fourth harmonics are used to further improve the $\rho$ evaluation. N = 4 was used to reconstruct Run 2 \PbxPb\ data, while for \pxPb\ and \pxp\ data used for the analysis presented in this note, no anisotropic component was allowed in the fit, \textit{i.e.} N = 0.  This choice was made due to the relatively low multiplicity characterizing \pxPb\ and \pxp\ collisions compared to \PbxPb.
+%Additional information on the subtraction of elliptic flow during the HI jet reconstruction used for ATLAS Run 2 data can be found in \cite{Rinn:2711618, Rybar:2688696, Longo:2860813} and in the references therein.
+
+The average transverse energy density is estimated using an iterative procedure that excludes regions populated by jets.
+%A detailed description of this procedure can be found in \cite{Rinn:2711618}.
+Please note that, for both \pxp\ reference, \pxPb\, and light ion data, the HIP reconstruction mode~\cite{hip-ref}, where the HI jet reconstruction is deployed accounting for low underlying event conditions, is applied. HIP mode does not include any correction for azimuthal anisotropy of the UE.
+
+A first estimate of the UE average transverse energy density, $\rho(\eta)$, is evaluated in 0.1 intervals of $\eta$ excluding ($\eta,\phi$) regions of the calorimeter populated by ``seed'' jets. During this first step, the seeds are defined as a set of R = 0.2 HI jets and R = 0.4 track jets. To be considered as a seed, an R = 0.2 jet has to pass the discriminant cut on the value of maximal-over-mean tower energy, e.g. max/mean > 4. This cut enhances purity of the selected jet candidates against UE correlations. The background is then subtracted from the jet calorimeter towers to compute the subtracted jet kinematics. At this stage, $\rho$ and $\nu_n$ are recalculated by excluding ($\eta,\phi$) region of the calorimeter containing a jet seed.
+%{\color {red} This section on UE subtraction must be optimized and finished }.
+
+\subsubsection{Jet Calibration}
+\label{sec:jet_calibration}
+This section describes the general features of the HI jet calibration strategy.  Since the two measurments reported in this thesis were taken nine years apart, they use slightly different calibration strategies\footnote{Differences in the calibration strategies between the two measurments will be reported on a per measurment level}.
+
+Individual calorimeter cells are themselves calibrated to the EM scale, but there is a variety of factors (\textit{e.g.} passive material in the detector, gaps between cells, signal losses, etc. \cite{PERF-2011-03}) that allow only for a partial measurement of the energy deposited by a single jet in the detector. To compensate for these experimental effects, the energy scale of reconstructed jets needs to be calibrated to the truth energy scale.
+The calibration sequence for HI jets is presented in \cite{Krivos:2706256}.
+Here we briefly review the main steps of this procedure.
+After the UE subtraction, three different types of calibrations are applied, namely:
+\begin{enumerate}
+    \item origin correction to account for the position of the primary vertex in each event.
+    \item EtaJES MC-based calibration, to recover the truth energy scale in MC.
+    \item In-situ $\gamma$+jet, Z+jet and $\eta$-intercalibration, to account for differences between MC and data.
+\end{enumerate}
+
+A small pseudorapidity correction is also applied to the jet reconstructed \ETA, to counteract the implicit assumption that the $z$-vertex\footnote{Position of the vertex associated to the jet along the beam axis.} = 0 made during the reconstruction of the data. For this reason, this procedure is called ``origin correction''.
+
+The EtaJES calibration is the larger between the two and is derived from \pythia\ simulated dijet events. The simulations are carried out using the MC conditions and the energy characteristic of the data taking. The scope of this calibration, common to both data and MC, is to correct from the EM scale to the truth hadronic scale. The per-jet energy correction factor is computed using a numerical inversion procedure~\cite{Kosek:1742072, Ouellette:2655891}, see~\cite{Cukierman:2016dkb} for a review of the procedure's math. A typical jet energy scale correction, $E_{\TN{T}}^{\TN{true}}/E_{\TN{T}}^{\TN{reco}}$, ranges from $\sim$ 1.2 to 2.0.
+
+The second calibration component is only applied to data to account for discrepancies between MC and data. The in-situ and \ETA-intercalibrations implement residual corrections to the jet energy scale based on the \PT\,balance in vector boson ($\gamma$, Z$^0$) - jet events (the \textit{in-situ} correction) and dijet events where mid-rapity jets are used to calibrate the forward rapidity jets (the \ETA-intercalibration).
+Calibration factors are derived in bins of \PT\ and \ETA\ and are applied as a correction to the jet \PT. 
