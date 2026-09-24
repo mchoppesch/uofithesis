@@ -1,3 +1,169 @@
 \subsection{Nuclear Structure}
+\subsubsection{Parton Distribution Functions}
+The PDF of a given hadron parameterizes the number density of a given type of parton at a given Bjorken-x.
+All the possible partons are the 6 flavors of quarks and the one gluon, so for a given hadron there are 13 different parton distributions (counting anti-quarks).
+For heavy flavor quarks ($c$, $b$, $t$), since their masses are well above $\Lambda_{\mathrm{QCD}}$ their PDFs can be directly computed using pQCD.
+For the light flavor quarks and gluon, the PDFs themselves must be determined from experimental data.
+
+From DIS data it is possible to obtain structure functions which at leading order (LO) are senestive to the quark content of the hadron across a wide range of $x$ and $Q^2$.
+At LO, the structure functions are related to the quark PDFs according to Equation~\ref{eq:dis_to_pdf}~\cite{DISref}.
+\begin{equation}
+    \label{eq:dis_to_pdf}
+    F_2(x, Q^2) = \frac{1}{2} \sum_{q} e^2_q \left[xf_q(x,Q^2) +xf_{\bar{q}}(x,Q^2)\right]
+\end{equation}
+Where $e_q$ is the fractional charge of a given quark flavor.
+The PDFs also have several sum rules that offer additional constraints to any fit~\cite{factorthrm}.
+For illistrative purposes all the following sum rules will apply to protons.
+\begin{equation}
+    \label{eq:mom_charge_sum_rule}
+    \sum_{i}\int_{0}^{1} x f_i(x,Q^2) dx = 1,  \qquad \sum_{i}\int_{0}^{1} e_q f_i(x,Q^2) dx = 1
+\end{equation}
+Equation~\ref{eq:mom_charge_sum_rule} displays the sum rule conserving the total proton momentum (left) and the sum rule conserving the total proton charge (+1) (right).
+\begin{equation}
+    \label{eq:flavor_sum_rule}
+    \int_{0}^{1} (f_u-f_{\bar{u}} ) dx = 2,  \;  \int_{0}^{1} (f_d-f_{\bar{d}} ) dx = 1,  \;\int_{0}^{1} (f_{\ge s}-f_{\ge\bar{s}} ) dx = 0, \;
+\end{equation}
+Equation~\ref{eq:flavor_sum_rule} shows the sum rules conserving flavor for a proton with two $u$ valance quarks, one $d$ valance quark, and no strange or heavier valance quarks.
+Under all of these constraints, dedicated PDF fitting groups will use fits of the form given in Equation~\ref{eq:pdf_fit}~\cite{pdg}.
+\begin{equation}
+    \label{eq:pdf_fit}
+    f_i = x^a \left(\cdots\right)\left(1-x\right)^b
+\end{equation}
+In total the PDF fitting groups typically have approximately 14-32 free parameters in their fits.
+The fits are optimized to have the minimum $\chi^2$ with repect to the input data, and the errors are determined using the Hessian method~\cite{pdg}.
+For the light flavor quarks and gluon, while pQCD \textit{cannot} directly compute PDFs it \textit{can} describe how they should evolve with $Q^2$ through the Dokshitzer–Gribov–Lipatov–Altarelli–Parisi (DGLAP) evolution equations~\cite{DGLAP}.
+The DGLAP equations evolve a prediction for a PDF at a scale $\mu_0$ to a different scale $\mu$.
+PDF fitting groups generally start their PDFs at a $\mu_0^2  \approx 1-4 $ \GeV and evolve them from there.
+The evolution of the parton distribution functions with the factorization scale is illustrated in Figure~\ref{fig:herapdf_scales} for two representative values of $Q^2$~\cite{HERAF2}, PDF fits extracted using data from Figure~\ref{fig:proton_structure_function_f2} among others.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={Parton distribution functions at a factorization scale of 10 GeV squared.}
+        ]{chapters/background/sections/nuclear_structure/figures/herapdf.pdf}
+        \caption{$Q^2 = 10~\GeV^2$}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={Parton distribution functions at a factorization scale of 10 TeV squared.}
+        ]{chapters/background/sections/nuclear_structure/figures/herapdfhiq2.pdf}
+        \caption{$Q^2 = 10~\TeV^2$}
+    \end{subfigure}
+    \caption{Proton PDFs at two factorization scales, showing the scale evolution predicted by the HERAPDF analysis. Figure from H1 and ZEUS Collaborations, arXiv:1506.06042v3~\cite{HERAF2}.}
+    \label{fig:herapdf_scales}
+\end{figure}
+
+Similarly to DGLAP evolution, the Balitsky-Fadin-Kuraev-Lipatov (BFKL) equations~\cite{BFKL1, BFKL2}
+
+In general, many different processes and experiments contribute to global PDF analyes and the neutral current DIS example outlined above is just an illistrative example.
+The broad kinematic reach of the data used in global PDF analyses is shown in the left panel of Figure~\ref{fig:pdg_pdf_context}~\cite{pdg} which includes data from fixed target experiments, $e^-p$ collisions at HERA, and $pp$ ($p\bar{p}$) at the LHC (Tevatron).
+
+The right panel of Figure~\ref{fig:pdg_pdf_context} displays another example of a PDF fit.
+Note that the valance and sea quarks are seperate in the fit.
+The valance quarks tend to have a significant fraction of the partons momentum as they are peaked at $x=0.2$ while the contribution from sea-quarks and gluons rises at low-$x$.
+In particualr this low-$x$ region is very interesting because of the behavior of the gluon PDF, which rises immesnly due to soft gluon radiation.
+This rise at low-$x$ is more prominent at high $Q^2$ where the more granular probe can distingush more and more soft gluon.
+By unitarity constrains, this gluon splitting cannot conntinue forever at lower $x$.
+At some $x$ scale, the gluon number density must turn down due to recombintion of these soft gluons in a phenomenon called \textit{gluon saturation}~\cite{gluonsat}.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={Kinematic domains in Bjorken x and Q squared probed by fixed-target and collider experiments, including final states accessible at the LHC.}
+        ]{chapters/background/sections/nuclear_structure/figures/kinematic_reach.pdf}
+        \caption{Kinematic reach of fixed-target and collider experiments.}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={NNLO MSHT20 global-analysis parton distribution functions at a scale of 10 squared GeV squared.}
+        ]{chapters/background/sections/nuclear_structure/figures/nnlopdf.pdf}
+        \caption{NNLO MSHT20 PDFs at $Q^2=10^2~\GeV^2$.}
+    \end{subfigure}
+    \caption{Examples of the experimental kinematic coverage and global PDF results. The right panel shows the parton distribution functions obtained from the NNLO MSHT20 global analysis at $Q^2=10^2~\GeV^2$. Figure from the Reference~\cite{pdg}.}
+    \label{fig:pdg_pdf_context}
+\end{figure}
+
+\paragraph{Nuclear PDFs}
+The partonic content of protons and neutrons (nucleons) is modified when they are bound into nuclei. This modification is typically quantified through a nuclear modification factor, which compares the parton distribution function in a nucleus with that in a free nucleon. The nuclear modification factor is defined as
+\begin{equation}
+    \label{eq:nuclear_modification_factor}
+    R_i^A(x,Q^2) = \frac{f_i^A(x,Q^2)}{f_i(x,Q^2)},
+\end{equation}
+where $f_i^A$ is the PDF per nucleon in a nucleus with mass number $A$, and $f_i$ is the corresponding PDF in a free nucleon.  Values of $R_i^A$ below or above unity indicate suppression or enhancement, respectively, relative to the free-nucleon reference~\cite{nPDF}.
+Figure~\ref{fig:npdf_modification} shows an illistration of the general shape of a nuclear modification factor, which can be decomposed into four main regions.
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.85\linewidth,
+        alt={Illitration of the EPPS16 $R_i^A(x,Q^2)$ fit function.}
+    ]{chapters/background/sections/nuclear_structure/figures/nPDFmod.pdf}
+    \caption{Illitration of the EPPS16 $R_i^A(x,Q^2)$ fit function. Figure taken from Reference~\cite{nPDF}.}
+    \label{fig:npdf_modification}
+\end{figure}
+
+\begin{enumerate}
+    \item \textbf{Shadowing:} Low-$x$ behavior where the density of very soft partons is decreased in the nuclear enviroment due to a crowding effect by surrounding nucleons~\cite{shadowing}.
+    \item \textbf{Anti-shadowing:} At more moderate-$x$ the there is an enchanent of partons directly because the density at low-$x$ is reduced by shadowing, the partons migrate to higher-$x$ resulting in the anti-shadowing region~\cite{shadowing}.
+    \item \textbf{EMC effect:} Measured by the European Muon Collaberation~\cite{EMCdiscovery} this modification is not yet fully understood, but is belived to be caused by short range correlations between nucleon pairs~\cite{EMCmech}.
+    \item \textbf{Fermi motion:} The quantum mechanical bonds that hold the nucleus together impart a Fermi Mometum onto the individual nucleons which causes this enchanent~\cite{nPDFFermi}.
+\end{enumerate}
+
+In general, nPDFs are less well-determiend than their free proton counerparts expecially in nuclear species for which there is sparse experimental data.
+
+\FloatBarrier
+\subsubsection{Generalized Parton Distributions and Color Transperency}
+
+We have discussed already how PDFs encode the partonic content of hadrons as a function of the total \textit{longitudinal} momentum fraction of the hadron.
+Further properties, such as the spatial distribution of partons can also be of intrest.
+
+Electromagnetic Form Factors (FFs) describe the effective charge ($F_1(Q^2)$) and magnetic moments ($F_2(Q^2)$)\footnote{While confusing because of the similar notation, these Electromagnetic FF are different from the Structure Functions introdced earlier.} of a hadron as a function of the momentum transfer $Q^2$.
+For a proton, these factors are eqivelent to Mott Scattering in the $Q^2\rightarrow0$ limit, where $F_1(0)=1$ and $F_2(0)=\kappa_p$\footnote{$\kappa_p$ is the anamolyous magnetic moment of the proton.}~\cite{EMFF}.
+As $t$ increases, the FFs decrease as the scattering resolves further details of the charge and magnetic moments within the proton.
+
+Next, we consider an elastic scatting of a virtual photon off of a proton.
+Working in the light-front formalism, the mometum-transfer ($Q^2$) lies in the tranverse plane of the collision, so $Q^2 = -q^2_\perp$.
+In this setting a charge density can be extracted for the proton using the $F_1(Q^2)$ form factor through a Fourier Transform, from momentum to position space, as shown in Equation~\ref{eq:proton_density_FF}~\cite{Brodsky:CT}.
+\begin{equation}
+    \label{eq:proton_density_FF}
+    \rho^p (b_\perp) = \int \frac{d^2q_\perp}{(2\pi)^2} \exp{\left(-ib_\perp\cdot q_\perp\right)} F(q^2)
+\end{equation}
+
+Deeply Virtual Compton Scattering (DVCS), is a type of Deep ($Q^2\gg M^2$) Exclusive Scattering (DES) is the electroproduction of a photon or meson by scattering off of a nucleon.
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.85\linewidth,
+        alt={Handbag diagram of deeply virtual Compton scattering, showing a virtual photon scattering from a quark and a real photon produced from the nucleon.}
+    ]{chapters/background/sections/nuclear_structure/figures/dvcshandbag.pdf}
+    \caption{Handbag representation of deeply virtual Compton scattering, in which a virtual photon scatters from a parton in a nucleon and a real photon is produced. The process is described by generalized parton distributions~\cite{GPD:DVCS}.}
+    \label{fig:dvcshandbag}
+\end{figure}
+As shown in Figure~\ref{fig:dvcshandbag}, this process has a factorized structure described by Generalized Parton Distributions (GPDs).
+GPDs are supremply powerful tools since they can simultanously access both the longitudinal momentum distributions and the transverse spatial distributions of partons within a hadron, unifying FFs and PDFs into one overarching theoretical framework.
+There are four GPDs for each quark and gluon, corrusponding to the four independent helivity-spin combinations of the quark-nucleon system.
+This discussion will focus on the GPD corrusponding to an average over quark helicites and an unflipped nucleon spin, written as $H(x,\xi,t)$~\cite{GPD:Main}.
+The three kinematic variables that parameterize GPDs are: $x$ the average longitudinal momentum fraciton of the struck quark (i.e. Bjorken-x)\footnote{In the language of GPDs $x$ can be negative.  A negative $x$ corrusponds to an anti-quark with momentum fraction $|x|$.}, $x+\xi\; (x-\xi)$ is the longitudinal momentum fraction of the struck quark before (after) the scattering, $t$ is the squared four-momentum transfer given to the nucleon~\cite{GPD:DVCS}.
+The quark PDFs and FFs can both be derived from the GPDs through the relations given in Equation~\ref{eq:GPD_rules}
+\begin{equation}
+    \label{eq:GPD_rules}
+    H^q(x,0,0) =
+    \begin{cases}
+        f_q(x) & x > 0 \\
+        -f_q(-x)  & x < 0
+    \end{cases}
+    \qquad \int_{-1}^{1} dx H^q(x,\xi,t) = F_1^q(t)
+\end{equation}
+Generalized Parton Distribtions (GPDs) are a richer source of nucleon structure information than PDFs or FFs.
+
 \subsubsection{Accelerator considerations for nuclear species}
 Placeholder text for this section.

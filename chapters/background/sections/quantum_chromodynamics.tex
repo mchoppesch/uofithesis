@@ -23,6 +23,7 @@ Gell-Mann successfully described the observed spectrum of hadrons using differen
 This quark model was highly successful, but it predicted fermions that appeared to violate the spin-statistics theorem, such as the $\Delta^{++}$ baryon, which contains three $u$ quarks with parallel spins~\cite{psqft}.
 This problem was resolved by introducing an additional quantum number called color charge, consisting of three color degrees of freedom, conventionally denoted $r$, $g$, and $b$.
 QCD describes the observed hadron spectrum in terms of colorless bound states. Mesons are colorless because they consist of a color--anticolor pair, while baryons are colorless because they contain all three colors or all three anticolors.
+\FloatBarrier
 
 \subsubsection{QCD Lagrangian}
 QCD is a gauge theory based on a local $SU(3)$ color charge symmetry.
@@ -53,6 +54,7 @@ $\Psi_f$ is the quark field of flavor $f$, $m_f$ is its mass, $T^a$ is a generat
 \end{equation}
 
 where $f^{abc}$ are the structure constants of $SU(3)$. The first term in Equation~\ref{eq:qcd_lagrangian} describes the gluon kinetic term and gluon self-interactions, while the second term describes quark propagation, quark--gluon interactions, and the quark mass term. The index $f$ runs over the active quark flavors, and the index $a$ runs over the eight generators of $SU(3)$. The eight gluon fields transform according to the adjoint, or octet, representation of the color group.
+\FloatBarrier
 
 \subsubsection{\texorpdfstring{$\alpha_s$}{a_s}, asymptotic freedom, and perturbative QCD}
 
@@ -73,16 +75,17 @@ As a result, $\alpha_s$ depends on the momentum-transfer scale of the QCD intera
         width=0.7\linewidth,
         alt={The strong coupling decreases as the momentum-transfer scale increases, illustrating asymptotic freedom.}
     ]{chapters/background/sections/quantum_chromodynamics/figures/asymfree.pdf}
-    \caption{The running of the strong coupling $\alpha_s$ as a function of the momentum-transfer scale, illustrating asymptotic freedom. Taken from Reference~\cite{ptac097}}
+    \caption{The running of the strong coupling $\alpha_s$ as a function of the momentum-transfer scale, illustrating asymptotic freedom. Taken from Reference~\cite{pdg}}
     \label{fig:asymptotic_freedom}
 \end{figure}
 
-Here, $n_f$ is the number of quark flavors active at the scale $Q$, and $\Lambda_{\mathrm{QCD}}$ is the characteristic energy scale of QCD, approximately $200$~\MeV, depending on the reonomalization scale ($\mu_R$). For momentum transfers well above $\Lambda_{\mathrm{QCD}}$, $\alpha_s$ is small and the QCD coupling becomes weak.
+Here, $n_f$ is the number of quark flavors active at the scale $Q$, and $\Lambda_{\mathrm{QCD}}$ is the characteristic energy scale of QCD, approximately $200$~\MeV, depending on the renormalization scale ($\mu_R$). For momentum transfers well above $\Lambda_{\mathrm{QCD}}$, $\alpha_s$ is small and the QCD coupling becomes weak.
 This phenomenon is known as \textit{asymptotic freedom} and is shown in Figure~\ref{fig:asymptotic_freedom}.
 In the asymptotically free regime, QCD calculations become directly accessible through perturbation theory, where observables can be estimated as a series in $\alpha_s$.
 Perturbative QCD (pQCD) allows for highly precise predictions of many observables measured at high-energy particle colliders.
 Conversely, for collisions outside the perturbative regime, corresponding to low momentum transfer, calculating observables becomes much more difficult.
 Sophisticated theoretical approaches such as lattice QCD can perform these calculations, but they are computationally expensive.
+\FloatBarrier
 
 \subsubsection{Confinement and Hadronization}
 The observed hadron spectrum consists of colorless (color singlet) QCD bound states.
@@ -111,7 +114,7 @@ At some point, the energy of the gluon flux becomes large enough to produce new 
 The original highly energetic quarks lose some energy in this breaking process because energy is required to produce the new strings.
 This string lengthening and binary breaking process will repeat itself until all the $q\bar{q}$ pairs are formed into colorless hadrons.
 The result is two streams of highly collimated hadrons, one in the direction of the original high-energy quark and the other in the direction of the high-energy antiquark.
-The formation of these hadron streams, which is what experimentalists detect, is called \textit{hadronization} and is illustrated in Figure~\ref{fig:qcd_hadronization}~\cite{thomsonqft}.
+The formation of these hadron streams, which are what experimentalists detect, is called \textit{hadronization} and is illustrated in Figure~\ref{fig:qcd_hadronization}~\cite{thomsonqft}.
 
 \begin{figure}[ht]
     \centering
@@ -122,16 +125,17 @@ The formation of these hadron streams, which is what experimentalists detect, is
     \caption{Schematic illustration of hadronization through the breaking of a color flux tube into quark--antiquark pairs and collimated streams of hadrons. Taken from Reference~\cite{thomsonqft}.}
     \label{fig:qcd_hadronization}
 \end{figure}
+\FloatBarrier
 
 \subsubsection{The Parton Model and Deep-Inelastic Scattering}
 
 The parton model provides a description of the internal structure of hadrons by imagining the hadron as a box of free point-like quarks and gluons, collectively called partons~\cite{feynmanphotonhadron}.
-Since the hadron has momentum $p$ the partons each have momentum $\xi_i p $ where $\sum_{\mathrm{partons}} \xi_i = 1$.
+Since the hadron has momentum $p$, each parton has momentum $\xi_i p$, where $\sum_{\mathrm{partons}} \xi_i = 1$.
 The partons themselves are imagined to be practically free of interactions, which requires that the hadron have a large momentum.
 The fast-moving nature of the hadron ensures that, in the laboratory frame, the internal dynamics between partons occur over a relatively long timescale.
 When an experiment collides with the hadron, the internal structure is effectively frozen over the timescale of the collision.
 
-The parton model was introduced by Feynman~\cite{feynmanphotonhadron}, but did not find acceptance until later experimental developments.
+The parton model was introduced by Feynman~\cite{feynmanphotonhadron}, but did not gain acceptance until later experimental developments.
 High-energy lepton-nucleon scattering played a fundamental role in determining the internal configuration of nucleons.
 Taking $e^{-}+p \rightarrow e^{-\prime} + X$ scattering as an example, it is illustrative to define some kinematics using the diagram shown in Figure~\ref{fig:deep_inelastic_scattering}.
 
@@ -141,7 +145,7 @@ Taking $e^{-}+p \rightarrow e^{-\prime} + X$ scattering as an example, it is ill
         width=0.5\linewidth,
         alt={Diagram of deep-inelastic lepton-nucleon scattering, showing an incoming lepton scattering from a parton inside the nucleon and producing a scattered lepton and hadronic final state.}
     ]{chapters/background/sections/quantum_chromodynamics/figures/dis.pdf}
-    \caption{Schematic diagram of deep-inelastic $e^{-}+p$ scattering, where the electron has initial four-momentum $k$ and the proton has mass $M$ and four-momentum $P$. Taken from Reference~\cite{ptac097}.}
+    \caption{Schematic diagram of deep-inelastic $e^{-}+p$ scattering, where the electron has initial four-momentum $k$ and the proton has mass $M$ and four-momentum $P$. Taken from Reference~\cite{pdg}.}
     \label{fig:deep_inelastic_scattering}
 \end{figure}
 
@@ -152,7 +156,7 @@ Taking $e^{-}+p \rightarrow e^{-\prime} + X$ scattering as an example, it is ill
 
 Here, $q$ is the four-momentum transferred by the exchanged virtual photon, $Q^2$ is the squared momentum-transfer scale, $x$ is the Bjorken scaling variable, $y$ is the fractional energy loss of the electron, and $W^2$ is the invariant mass squared of the hadronic final state.
 The Bjorken scaling variable, typically called Bjorken-$x$, has the physical interpretation of the partonic momentum fraction ($\xi_i$) carried by the struck parton in the proton.
-The above process is called deep ($Q^2\gg M^2$) inelastic ($W^2\gg M^2$) scattering (DIS)~\cite{ptac097}.
+The above process is called deep ($Q^2\gg M^2$) inelastic ($W^2\gg M^2$) scattering (DIS)~\cite{pdg}.
 
 Experimentally, one can measure the scattering angle ($\theta$) and the initial ($E_e$) and final ($E_e^{\prime}$) energies of the electron, which can be mapped onto the above kinematic variables using the following expressions.
 \begin{equation}
@@ -171,20 +175,55 @@ For unpolarized electromagnetic DIS in the one-photon-exchange approximation, th
 where $\alpha$ is the electromagnetic fine-structure constant.
 $F_1$ and $F_2$ are \textit{structure functions} that encode information about the internal charge configuration of the hadron.
 Bjorken predicted that, in the high-energy limit, the structure functions only depend on Bjorken-$x$ and not on $Q^2$ (i.e. $F(x,Q^2)\rightarrow F(x)$)~\cite{Bjorken:1969}
-This is consistent with the parton model: if the internal structure of the proton is described by point-like partons, scattering at different momentum scales does not resolve any additional structure.
-Confirmation that DIS involves lepton scattering from quarks inside the hadron was provided by the observation of the Callan--Gross relation~\cite{CallanGross}, $F_2(x) = 2x F_1(x)$, at the Stanford Linear Accelerator Center (SLAC)~\cite{SLACFcn}.\footnote{Gluons cannot directly interact with the virtual photon in DIS.}
+This is consistent with the parton model: if the internal structure of the proton is described by point-like partons, scattering at different (sufficiently large) momentum scales does not resolve any additional structure.
+Further confirmation that DIS involves lepton scattering from quarks inside the hadron was provided by the observation of the Callan--Gross relation~\cite{CallanGross}, $F_2(x) = 2x F_1(x)$, at the Stanford Linear Accelerator Center (SLAC)~\cite{SLACFcn}.\footnote{Gluons cannot directly interact with the virtual photon in DIS, but they can through fluctuations into a $q\bar{q}$ dipole which we call a `resolved' photon.}
 This relation is a prediction for electron scattering from spin-$1/2$ constituents, whereas $F_1(x) = 0$ would indicate scattering from spin-0 constituents.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.70\linewidth,
+        alt={The proton structure function F2 measured in electromagnetic scattering of electrons, positrons, and muons on protons, plotted as a function of Q squared in bins of fixed Bjorken x.}
+    ]{chapters/background/sections/quantum_chromodynamics/figures/F2.pdf}
+    \caption{The proton structure function $F_2^p$ measured in electromagnetic scattering of electrons, positrons, and muons on protons. The data are plotted as a function of $Q^2$ in bins of fixed $x$, with $F_2^p$ multiplied by $2^{i_x}$ for plotting, where $i_x$ indexes the $x$ bins. Only data with $W^2 > 3.5~\GeV^2$ are included. Some points are offset slightly in $Q^2$ for clarity. Taken from the Review of Particle Physics~\cite{pdg}.}
+    \label{fig:proton_structure_function_f2}
+\end{figure}
+
+As the range of $x$ and $Q^2$ accessible to experiments increased, the Bjorken-scaling argument held over a wide range of $x$ values ($0.03\le x \le 0.4$), as shown by DIS measurements of $F_2(x)$ in Figure~\ref{fig:proton_structure_function_f2} taken from Hadron Electron Ring Accelerator~\cite{HERAF2} (HERA) data and other fixed target experiments.
+However, the independence of $F_2(x)$ from $Q^2$ breaks down outside this range of $x$, necessitating a description of the structure function as $F_2(x,Q^2)$.
+This is because the simple parton model underlying the Bjorken-scaling argument does not account for interactions among partons within the hadron.
+In DIS, the photon can probe constituents with a spatial resolution of $O(1/Q)$. At relatively low $Q^2$, this resolution reveals only the rough structure of a hadron, such as the three so-called \textit{valence} quarks ($uud$) in a proton, shown in the left panel of Figure~\ref{fig:proton_structure}.
+However, when the proton is probed at higher $Q^2$, a more complicated substructure is revealed, including so-called \textit{sea quarks} and gluons that fluctuate in and out of existence within the proton, as shown in the right panel of Figure~\ref{fig:proton_structure}.
+These sea partons were always present, but at the lower energies of DIS, the probe was not powerful enough to resolve them separately from the valence quarks.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[
+        width=0.85\linewidth,
+        alt={Two-panel illustration of proton structure: the left panel shows a simple proton model with valence quarks held together by gluons, while the right panel shows a more complex model containing valence quarks, sea quarks, and gluons.}
+    ]{chapters/background/sections/quantum_chromodynamics/figures/proton_structure.pdf}
+    \caption{Schematic illustration of proton structure. The simple model on the left contains valence quarks held together by gluons, while the more complete model on the right also includes sea quarks and gluons. Illustration provided by A. Tate and inspired by Y. Kulinich}
+    \label{fig:proton_structure}
+\end{figure}
+
+This increased resolution has a feed-down effect on the structure function of the proton.
+At high $Q^2$, a very high-$x$ parton at low $Q^2$ can be resolved as a medium-high-$x$ parton and an additional soft parton, decreasing $F_2$ at high $x$ and increasing $F_2$ at low $x$, exactly the behavior observed by the DIS experiments in Figure~\ref{fig:proton_structure_function_f2}.
+The fact that Bjorken-scaling is held at moderate-$x$ comes from a detailed balance of these two competing effects.
+DIS provides direct evidence that the substructure of the proton, and of all other hadrons, consists of interacting point-like partons.
+
+\FloatBarrier
 
 \subsubsection{Factorization}
 
-While the matrix element for a given QCD process may be able to be calculated to some order in $\alpha_s$ an observable will have to undergo long distances and will hadronize before it can be observed experimentally.
-Additially, for collision systems with hadrons the internal partonic configuration of the reactents must be considered
-Therefore, any measurment with hadrons in the inital- or final-state is sensative to low-energy (non-perterbative) QCD interactions.
-The running coupling of $\alpha_s$ in QCD can be exploited in order to derive predictions for lepton-hadron and hadron-hadron large momentum transfer cross sections.
-This is done by \textit{factorization} theorems, which systematically seperate (factorize) long-distance from short-distance behavior.
-
-This is set by the factorization scale, $\mu_F$, which partitions the calculation into the perterbative hard-scattering ($Q>\mu_F$) and the non-perterbative long range interactions ($Q<\mu_F$).
-Schematically, this separation is represented in Figure~\ref{fig:qcd_factorization}.
+While the matrix element for a given QCD process may be calculable to some order in $\alpha_s$, an observable involving hadrons is also affected by long-distance interactions before it can be observed experimentally.
+Additionally, for collision systems involving hadrons, the internal partonic configuration of the reactants must be considered.
+Therefore, any measurement involving hadrons in the initial or final state is sensitive to low-energy (nonperturbative) QCD interactions.
+The running coupling of $\alpha_s$ in QCD can be exploited to derive predictions for lepton-hadron and hadron-hadron cross sections at large momentum transfer.
+This is done using \textit{factorization} theorems, which systematically separate (factorize) long-distance from short-distance behavior~\cite{factorthrm}.
+The factorization theorem requires $Q^2\gg M^2$, and corrections are of $O\left(M^2/Q^2\right)$.
+Additionally a factorization scale, $\mu_F$, which denotes at what level collinear radiation is considered to be part of the perturbative hard-scattering ($Q>\mu_F$) versus which part gets absorbed into the nonperturbative long-range interactions ($Q<\mu_F$).
+Typically, the factorization scale ($\mu_F$) is roughly the scale of the probe ($Q$).
+Schematically, this separation is represented in Figure~\ref{fig:qcd_factorization}, which depicts a \pxp\ collision containing a hard scattering.
 
 \begin{figure}[ht]
     \centering
@@ -196,17 +235,24 @@ Schematically, this separation is represented in Figure~\ref{fig:qcd_factorizati
     \label{fig:qcd_factorization}
 \end{figure}
 
-For example, the factorized cross section for producing a dijet system in a proton--proton collision can be written schematically as
+Mathematically, the factorized cross section can be written schematically for inclusive hadron production as
 
 \begin{equation}
-    \label{eq:pp_dijet_factorization}
-    \mathrm{d}\sigma_{pp\rightarrow JJ}
-    \approx \sum_{i,j,k,l}\int\mathrm{d}x_1\int\mathrm{d}x_2\int\mathrm{d}z_3\int\mathrm{d}z_4\,
-    f_i\left(x_1,\mu_F^2\right)f_j\left(x_2,\mu_F^2\right)
-    \otimes \mathrm{d}\hat{\sigma}_{ij\rightarrow kl}
-    \otimes D_{k\rightarrow J}\left(z_3,\mu_F^2\right)D_{l\rightarrow J}\left(z_4,\mu_F^2\right).
+    \label{eq:pp_factorization}
+    \begin{aligned}
+        \mathrm{d}\sigma_{pp\rightarrow h+X}
+        &\approx \sum_{1234}\int\mathrm{d}x_1\mathrm{d}x_2\mathrm{d}z_3\,
+        f_i\left(x_1,\mu_F^2\right)f_j\left(x_2,\mu_F^2\right) \\
+        &\quad\otimes \mathrm{d}\hat{\sigma}_{ij\rightarrow kl}\left(x_1,x_2, \alpha_s \left(\mu_R\right),Q^2 \right) \\
+        &\quad\otimes D_{k\rightarrow g}\left(z_{3,i},\mu_F^2\right)
+    \end{aligned}
 \end{equation}
 
-Here, $f_i$ and $f_j$ are the initial-state parton distribution functions, $\mathrm{d}\hat{\sigma}_{ij\rightarrow kl}$ is the perturbatively calculable hard-scattering cross section, and $D_{k\rightarrow J}$ and $D_{l\rightarrow J}$ describe the fragmentation of the outgoing partons into the observed jets. The momentum fractions $x_1$ and $x_2$ describe the initial-state partons, while $z_3$ and $z_4$ describe the momentum fractions carried by the observed jets.
-
-\subsection{Parton Distribution Functions}
+The left-hand side of Figure~\ref{fig:qcd_factorization} and the top line of Equation~\ref{eq:pp_factorization} represent individual partons being extracted from a proton to participate in the scattering.
+The partons are drawn from the proton according to a number-density function known as a \textit{parton distribution function} (PDF), $f_i\left(x_1,\mu_F^2\right)$, which describes the average number of partons (quarks or gluons) that can be found at a given momentum fraction ($x$).
+The box in the middle of Figure~\ref{fig:qcd_factorization} and the hard-scattering term in Equation~\ref{eq:pp_factorization} express the hard scattering itself, which is directly calculable to some order in $\alpha_s \left(\mu_R\right)$ using pQCD.
+The right-hand side of Figure~\ref{fig:qcd_factorization} illustrates how the products of the hard scattering hadronize into a final-state hadron measured in a detector.
+This step is parameterized by so-called \textit{fragmentation functions}, which are number-density functions representing the expected number of final-state hadrons carrying a fraction of the outgoing parton's momentum ($z$).
+Equation~\ref{eq:pp_factorization} integrates from $0\rightarrow 1$ over the momentum fractions $x$ extracted from the colliding hadrons and over the momentum fraction $z$ of the final observed hadron.
+Both the PDFs and fragmentation functions capture nonperturbative QCD physics and are obtained from fits to experimental data.
+The factorization theorem requires a separation of scales between the hard and soft parts of the collision and is essential for making precise QCD predictions.
