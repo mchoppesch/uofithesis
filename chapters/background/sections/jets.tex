@@ -1,12 +1,61 @@
 \subsection{Jets}
-\subsubsection{Jets}
+Precise tests of QCD are challenging because the hard-scattered partons hadronize and fragment into many different hadrons.
+To accurately test pQCD predictions each final-state hadron would have to be associated with a present quark in the hard scattering, which is challenging experimentally.
+Luckily, for sufficiently hard processes the hard-scattered partons are sufficiently boosted in the lab frame, which means that the characteristic emissions and splittings of hadronization will happen at relatively small angles.
+The consequence of this boost is that the final-state hadrons tend to form highly collimated sprays of particles known as \textit{jets}.
+At leading order, jet production in $l^+l^-$ annihilation and in hard parton--parton scattering produces two outgoing partons.
+In the transverse plane, momentum conservation makes these partons approximately back-to-back in azimuth.
+The resulting jets are observed in back-to-back pairs called \textit{dijets}.
+Jets were first observed at SLAC in $e^+e^-$ collisions~\cite{Jet:SLAC}.
+Since jets are a very complicated multi-object observable, they must be defined precisely both theoretically and experimentally~\cite{Jet:QCD}.
+
+\paragraph{Requirements for Jets}
+In order to be calculable to next-to-leading order (NLO) and beyond, jets must be both infrared and collinear (IRC) safe~\cite{pdg}.
+The infrared condition requires that a parton in the shower emitting a very soft ($z\to0$) parton should not change the observable.
+The collinear condition requires that the splitting of one parton into two collinear partons ($\theta \to 0$) should not change the observable.
+IRC safety ensures that divergences from the infrared and collinear contributions can cancel and give finite predictions.
+Beyond being IRC safe, the physics community also defined some proposed standard requirements for jets at the Snowmass conference in 1990~\cite{Jet:Snowmass}.
+These are as follows:
+\begin{enumerate}
+    \item Simple to implement in experimental analyses
+    \item Simple to compute theoretically
+    \item Well defined at any order of perturbation theory
+    \item Yield finite cross sections at all orders of perterbation theory
+    \item Yield a cross section mostly insensitive to hadronization effects
+\end{enumerate}
+As the field of jet physics has matured, the community has converged on a set of standard practices for defining and measuring jets.
+
+\paragraph{Jet Kinematics} Like any physics object, the kinematics of a jet can be described by a four-vector.
+The most commonly used set of variables to describe a jet is $\left(m,p_{\mathrm{T}},y,\phi\right)$, where $m$ is the jet mass, $p_{\mathrm{T}}$ is the transverse momentum, $y$ is the rapidity, and $\phi$ is the azimuthal angle around the beam axis.
+The jet variables can be obtained from the energy-momentum four-vector $\left(E,p_x,p_y,p_z\right)$ through Equation~\ref{eq:jet_kinematic_mapping}\footnote{Here, we assume that the beam is oriented along the $z$ axis.}
+\begin{equation}
+    \label{eq:jet_kinematic_mapping}
+    m = \sqrt{E^2-p^2}, \;\;
+    p_{\mathrm{T}} = \sqrt{p_x^2+p_y^2}, \;\;
+    y = \frac{1}{2}\ln\left(\frac{E+p_z}{E-p_z}\right), \;\;
+    \phi = \operatorname{atan2}\left(p_y,p_x\right),
+\end{equation}
+For relativistic ($E \approx p$) jets, the rapidity can be approximated by the pseudorapidity ($\eta = -\ln{\tan{\left(\theta/2\right)}}$).
+Here, $\theta$ represents the polar angle with respect to the beamline.
+Working with $\phi$ and $\eta$ is convenient because they have a straightforward mapping onto a detector apparatus used for an experiment.
+Values of $|\eta|$ close to zero are typically referred to as ``mid-rapidity,'' while large values of $|\eta|$ are referred to as ``forward.''
+Figure~\ref{fig:atlas_dijet_event_display} shows an example of a dijet event recorded by the ATLAS detector, with the kinematics labeled.
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.9\linewidth,
+        alt={ATLAS proton-proton dijet event display showing two prominent jets and their associated detector activity.}
+    ]{chapters/background/sections/jets/figures/ATLASEDppDijetLabeled.pdf}
+    \caption{Example of a \pxp\ dijet event recorded by the ATLAS detector. The two leading jets are visible as prominent, approximately back-to-back deposits of energy in the detector. Event display provided by the ATLAS experiment~\cite{ATLAS:UNSG-2021-48}. The labeling on the diagram is courtesy of Y. Kulinich.}
+    \label{fig:atlas_dijet_event_display}
+\end{figure}
+\subsubsection{Jet Clustering Algorithms}
 Placeholder text for this section.
 
-\subsubsection{Jets in p+A collisions}
-Placeholder text for this section.
+\subsubsection{Jet constituents}
+\paragraph{Calorimeter Jets}
+\paragraph{Particle Flow Jets}
+\paragraph{Track Jets}
 
-\subsubsection{Theoretical predictions}
-Placeholder text for this section.
-
-\subsubsection{Measurements from other collaborations}
+\subsubsection{Factorization of Jet Obervables}
 Placeholder text for this section.
