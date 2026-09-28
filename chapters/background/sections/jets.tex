@@ -1,13 +1,13 @@
 \subsection{Jets}
 Precise tests of QCD are challenging because the hard-scattered partons hadronize and fragment into many different hadrons.
-To accurately test pQCD predictions each final-state hadron would have to be associated with a present quark in the hard scattering, which is challenging experimentally.
-Luckily, for sufficiently hard processes the hard-scattered partons are sufficiently boosted in the lab frame, which means that the characteristic emissions and splittings of hadronization will happen at relatively small angles.
+To accurately test pQCD predictions, each final-state hadron would have to be associated with a parent parton from the hard scattering, which is challenging experimentally.
+Fortunately, in sufficiently hard processes, the hard-scattered partons are sufficiently boosted in the laboratory frame that the characteristic emissions and splittings during hadronization occur at relatively small angles.
 The consequence of this boost is that the final-state hadrons tend to form highly collimated sprays of particles known as \textit{jets}.
 At leading order, jet production in $l^+l^-$ annihilation and in hard parton--parton scattering produces two outgoing partons.
 In the transverse plane, momentum conservation makes these partons approximately back-to-back in azimuth.
 The resulting jets are observed in back-to-back pairs called \textit{dijets}.
 Jets were first observed at SLAC in $e^+e^-$ collisions~\cite{Jet:SLAC}.
-Since jets are a very complicated multi-object observable, they must be defined precisely both theoretically and experimentally~\cite{Jet:QCD}.
+Since jets are complex multi-object observables, they must be defined precisely, both theoretically and experimentally~\cite{Jet:QCD}.
 
 \paragraph{Requirements for Jets}
 In order to be calculable to next-to-leading order (NLO) and beyond, jets must be both infrared and collinear (IRC) safe~\cite{pdg}.
@@ -20,7 +20,7 @@ These are as follows:
     \item Simple to implement in experimental analyses
     \item Simple to compute theoretically
     \item Well defined at any order of perturbation theory
-    \item Yield finite cross sections at all orders of perterbation theory
+    \item Yield finite cross sections at all orders of perturbation theory
     \item Yield a cross section mostly insensitive to hadronization effects
 \end{enumerate}
 As the field of jet physics has matured, the community has converged on a set of standard practices for defining and measuring jets.
@@ -33,12 +33,12 @@ The jet variables can be obtained from the energy-momentum four-vector $\left(E,
     m = \sqrt{E^2-p^2}, \;\;
     p_{\mathrm{T}} = \sqrt{p_x^2+p_y^2}, \;\;
     y = \frac{1}{2}\ln\left(\frac{E+p_z}{E-p_z}\right), \;\;
-    \phi = \operatorname{atan2}\left(p_y,p_x\right),
+    \phi = \operatorname{atan2}\left(p_y,p_x\right)
 \end{equation}
 For relativistic ($E \approx p$) jets, the rapidity can be approximated by the pseudorapidity ($\eta = -\ln{\tan{\left(\theta/2\right)}}$).
 Here, $\theta$ represents the polar angle with respect to the beamline.
-Working with $\phi$ and $\eta$ is convenient because they have a straightforward mapping onto a detector apparatus used for an experiment.
-Values of $|\eta|$ close to zero are typically referred to as ``mid-rapidity,'' while large values of $|\eta|$ are referred to as ``forward.''
+Working with $\phi$ and $\eta$ is convenient because they map straightforwardly onto a detector apparatus that measures angles relative to an interaction point.
+Values of $|\eta|$ close to zero are typically referred to as ``mid-rapidity'', while large values of $|\eta|$ are referred to as ``forward''.
 Figure~\ref{fig:atlas_dijet_event_display} shows an example of a dijet event recorded by the ATLAS detector, with the kinematics labeled.
 \begin{figure}[H]
     \centering
@@ -46,16 +46,75 @@ Figure~\ref{fig:atlas_dijet_event_display} shows an example of a dijet event rec
         width=0.9\linewidth,
         alt={ATLAS proton-proton dijet event display showing two prominent jets and their associated detector activity.}
     ]{chapters/background/sections/jets/figures/ATLASEDppDijetLabeled.pdf}
-    \caption{Example of a \pxp\ dijet event recorded by the ATLAS detector. The two leading jets are visible as prominent, approximately back-to-back deposits of energy in the detector. Event display provided by the ATLAS experiment~\cite{ATLAS:UNSG-2021-48}. The labeling on the diagram is courtesy of Y. Kulinich.}
+    \caption{Example of a \pxp\ dijet event recorded by the ATLAS detector. The two leading jets are visible as prominent, approximately back-to-back deposits of energy in the detector. Event display provided by the ATLAS experiment~\cite{UNSG-2021-48}. The labeling on the diagram is courtesy of Y. Kulinich.}
     \label{fig:atlas_dijet_event_display}
 \end{figure}
 \subsubsection{Jet Clustering Algorithms}
-Placeholder text for this section.
+A jet is a complex final-state object, and the question of exactly how these sprays of hadrons are grouped into a single jet requires a precise answer.
+First, let us define the spray of hadrons more generally as \textit{jet constituents}, since an experiment may not always be able to measure each hadron directly and may instead rely on experimental proxies, which are discussed later.
+Jet clustering algorithms determine how constituents are grouped into jets and can generally be divided into two main classes: cone ``top-down'' algorithms and sequential recombination ``bottom-up'' algorithms~\cite{Jet:AlgoReview}.
+These algorithms use information about the angular positions ($\eta-\phi$) and momenta (\PT) of constituents to form jets.
+The distance between constituents, expressed in units of angular distance, $\Delta R_{ij}^2 = \left(\eta_i - \eta_j \right)^2+\left(\phi_i - \phi_j \right)^2$, is also highly relevant.
+Algorithms also rely on \textit{recombination schemes}, which dictate how constituent kinematics are combined to form the jet kinematics.
+The most common and simplest recombination scheme is the ``$E$-scheme'', which sums the four-vectors of the constituents.
+
+Cone algorithms are typically iterative: a jet captures all constituents within a radius $R$ of a seed constituent.
+The constituent momenta are combined to determine a net direction, toward which the seed is moved.
+This process is repeated until the jet direction stabilizes.
+One drawback of cone algorithms is that they tended to have problems with IRC safety. The ``midpoint algorithm'' was developed as a patch for cone algorithms and saw widespread use during Run II of the Tevatron~\cite{Jet:AlgoReview}.
+A solution to the IRC-safety problem is a \textit{seedless cone} algorithm, which avoids seeds and iterations and instead finds all stable cones. The \texttt{SISCone} procedure provides a computationally efficient implementation of this approach~\cite{Jet:SISCone}.
+
+Sequential recombination jet algorithms do away with the top-down approach of assigning particles to a cone of radius $R$ and instead follow simple pairwise rules for combining constituents.
+These algorithms define the following quantities:
+\begin{equation}
+    \label{eq:seq_jet_clust}
+    d_{ij} = \min\left(\PTE{}_{i}^{2t},\PTE{}_{j}^{2t}\right)\frac{\Delta R^2_{ij}}{R^2}
+    \qquad d_{iB} = \PTE{}_{i}^{2t}
+\end{equation}
+Here, $t$ is a parameter that specifies the algorithm variant, and $R$ is a radius parameter.
+The algorithms are defined as follows:
+\begin{enumerate}
+    \item Find all $d_{ij}$ and $d_{iB}$ values for the constituents in the event.
+    \item Order the $d_{ij}$ and $d_{iB}$ values and find the smallest.
+    \item If the minimum is a $d_{ij}$, recombine $i$ and $j$ into a single new constituent and return to step one.
+    \item If the minimum is a $d_{iB}$, declare constituent $i$ to be a jet, remove it from the list, and return to step one.
+    \item Stop when no constituents remain in the list.
+\end{enumerate}
+
+The procedure continues until all constituents have been assigned to final-state jets.
+Because a very soft, isolated constituent can be classified as a jet in this framework, a minimum transverse momentum is typically specified for jets of interest.
+The \kt\ algorithm corresponds to $t=1$ and clusters soft constituents first~\cite{Jet:KT}.
+The \texttt{Cambridge/Aachen} algorithm corresponds to $t=0$ and clusters constituents in an energy-independent way, using only their angular proximity~\cite{Jet:CA}.
+Both the \kt\ and \texttt{Cambridge/Aachen} algorithms cluster constituents in a way that can lead to non-conical jet shapes in $\eta-\phi$ space.
+Finally, the \antikt\ algorithm corresponds to $t=-1$ and clusters the hardest constituents first~\cite{Jet:antiKT}.
+This makes the jets grow outward from hard ``seeds'', reminiscent of cone algorithms but without the IRC-safety concerns.
+The \antikt\ algorithm with $R=0.4$ and $E$-scheme recombination is the standard for jet physics at the LHC, including the two measurments presented in this thesis\footnote{The choice of \antikt\ with $E$-scheme recombination is heavily favored in the field, however, many interesting results have come from varying the $R=0.4$ choice. }.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[
+        width=0.95\linewidth,
+        alt={A parton-level event with many random soft ghosts clustered by four jet algorithms.}
+    ]{chapters/background/sections/jets/figures/jetalgocomp.pdf}
+    \caption{~\cite{Jet:AlgoReview}.}
+    \label{fig:jet_algorithm_comparison}
+\end{figure}
+Figure~\ref{fig:jet_algorithm_comparison} displays an example of different jet clustering algorithms each applied to the same event.
+The \texttt{FastJet} package includes a publicly avalible, highly optimized version of jet clustering algoritms~\cite{Jet:FastJet}.
 
 \subsubsection{Jet constituents}
-\paragraph{Calorimeter Jets}
-\paragraph{Particle Flow Jets}
-\paragraph{Track Jets}
 
-\subsubsection{Factorization of Jet Obervables}
+As previously mentioned, jets are reconstructed using underlying objects called jet constituents.
+From a theortical perpective jets are simply clusters of hadrons produced in the collision, each with an exact four-momentum that can be calculated and input into the \texttt{FastJet} package.
+From an experimental perspective, the picture is much more complicated. 
+Below we will discuss several types of jets measured by experiments and their positives and negatives.
+\paragraph{Calorimeter Jets}
+Calorimeter jets are reconstructed from energy deposits measured in the calorimeter, commonly grouped into topological clusters or towers and represented by four-vectors. They provide sensitivity to both charged and neutral particles, although the measured jet energy must be calibrated to account for detector response and energy losses~\cite{JETM-2022-06}.
+\paragraph{Track Jets}
+Track jets are reconstructed by clustering charged-particle tracks measured in the inner tracking detector. Their directions and momenta are measured with high precision, but they do not include neutral particles and are limited by the tracking detector's geometric acceptance and track-reconstruction thresholds.
+\paragraph{Particle Flow Jets}
+Particle-flow jets are built from particle-flow objects that combine tracking and calorimeter information to estimate the momenta of individual particles. Using tracks for charged particles and calorimeter clusters for neutral particles helps avoid double-counting charged-particle energy deposits while retaining sensitivity to both charged and neutral components.
+
+\subsubsection{Factorization of Jet Observables}
 Placeholder text for this section.
+

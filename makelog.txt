@@ -1,0 +1,3857 @@
+latexmk -lualatex thesis.tex
+Rc files read (in order):
+  ./.latexmkrc
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+Latexmk: Getting log file 'thesis.log'
+Latexmk: Examining 'thesis.log'
+Latexmk: Using biber to make bibliography file(s).
+Latexmk: Bibliography file(s) from .bcf file:
+  bib/ATLAS-useful.bib
+  bib/ATLAS.bib
+  bib/CMS.bib
+  bib/ConfNotes.bib
+  bib/PubNotes.bib
+  bib/mydocument.bib
+Sources for biber
+  bib/ATLAS-useful.bib
+  bib/ATLAS.bib
+  bib/CMS.bib
+  bib/ConfNotes.bib
+  bib/PubNotes.bib
+  bib/mydocument.bib
+  thesis.bcf
+Latexmk: applying rule 'biber thesis'...
+Rule 'biber thesis':  Reasons for rerun
+Category 'other':
+  Rerun of 'biber thesis' forced or previously required:
+    Reason or flag: 'Initial set up of rule'
+
+------------
+Run number 1 of rule 'biber thesis'
+------------
+------------
+Running 'biber  "thesis.bcf"'
+------------
+INFO - This is Biber 2.21
+INFO - Logfile is 'thesis.blg'
+ERROR - thesis.bcf is malformed, last biblatex run probably failed. Deleted thesis.bbl
+INFO - ERRORS: 1
+Biber error: [54] Utils.pm:479> ERROR - thesis.bcf is malformed, last biblatex run probably failed. Deleted thesis.bbl
+Latexmk: Error return from 'biber thesis'
+I will add to its source list, anything cached from analysis of bcf file.
+Latexmk: biber found malformed bcf file 'thesis.bcf'.
+  I'll delete any bbl file 'thesis.bbl', and
+  rename the bcf file to 'thesis.bcf-SAVE-ERROR'
+Latexmk: Some rule(s) failed, but user file(s) changed so keep trying
+ Reasons for rerun
+Category 'changed_user':
+  thesis.tex
+Category 'rules_to_apply':
+  lualatex
+
+Latexmk: applying rule 'lualatex'...
+Rule 'lualatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'lualatex' forced or previously required:
+    Reason or flag: 'Changed user file'
+
+------------
+Run number 1 of rule 'lualatex'
+------------
+------------
+Running 'lualatex -shell-escape -interaction=nonstopmode  -recorder  "thesis.tex"'
+------------
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026) 
+ system commands enabled.
+(./thesis.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/documentmetadata-suppor
+t.ltx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-testphase.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-base.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment.ltx)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/l3backend
+-testphase-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-lat
+est.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-mc-code-lua.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-nam
+es.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new
+-or-2.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-footnotes.ltx
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-blo
+ck.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-kernel-change
+s.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftex/glyphtounicode.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/glyphtounicode-cmex.tex
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-con
+text.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-sec
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-toc
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-min
+ipage.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new
+-or-1.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-gra
+phic.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-flo
+at.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-bib
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tex
+t.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-mar
+ginpar.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tit
+le.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tab
+le.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-mat
+h.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-math.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-mathpkg.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-mathintent.lt
+x))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-fir
+staid.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tik
+z.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/verbatim-mo-latex-lab-test
+phase.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-firstaid.sty) (./uofithesis.cls
+Document Class: uofithesis 2026/04/21 v1.7 University of Illinois Graduate Coll
+ege Dissertation/Thesis Class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size12.clo))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/luababel.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/luababel.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.t
+ex) (/usr/local/texlive/2026/texmf-dist/tex/generic/babel-english/english.ldf))
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/sectsty/sectsty.sty
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontsetup/fontsetup.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/oberdiek/iflang.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.
+sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-amsmath.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.st
+y)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math-table.t
+ex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-unicode-math.
+ltx) (/usr/local/texlive/2026/texmf-dist/tex/latex/fontsetup/fspdefault.tex
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCM10-Book.fo
+ntspec)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCMSans10-Boo
+k.fontspec)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCMMono10-Boo
+k.fontspec)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/luatex.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.d
+ef
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/xcolor-pa
+tches-tmp-ltx.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex))) (./thesis.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgfutil-common-lists.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibrar
+yluamath.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-luatex.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.contourlua.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.cfg))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/hgeneric-
+testphase.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/hyperref-
+colorschemes.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-dm.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-compat.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/standard.bbx)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty))
+(./thesisbiblatex.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-footmisc.ltx)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/placeins/placeins.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/mhchem/mhchem.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/chemgreek/chemgreek.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/chemfig/chemfig.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/chemfig/chemfig.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/simplekv/simplekv.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml.sty
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml-patches-kernel.s
+ty)
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml-patches-amsmath.
+sty))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.colorbrewer.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorb
+rewer.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+
+Package biblatex Warning: Patching footnotes failed.
+(biblatex)                Footnote detection will not work.
+
+(./thesis.aux)
+Runaway argument?
+{\contentsline {figure}{\numberline {15}{\ignorespaces Detector geome\ETC.
+! File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.106 \begin{document}
+                      
+
+Info: mathml file thesis-mathml does not exist
+Info: reading mathml file thesis-luamml-mathml
+(./thesis-luamml-mathml.html)
+Runaway argument?
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi mathva
+! File ended while scanning use of \__math_AF_html_reader_verb:w.
+<inserted text> 
+                \par 
+l.106 \begin{document}
+                      
+! Extra }, or forgotten \endgroup.
+\hbox_set:Nn ...group_begin: #2\color_group_end: }
+                                                  
+l.106 \begin{document}
+                      
+Info: Activating mathml support
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+! Use of \@@mptopdf@@newabove doesn't match its definition.
+l.136     \@@mptopdf@@newabove \csname n
+                                        ewcount\endcsname \scratchcounter
+! Extra \endcsname.
+l.136 ...opdf@@newabove \csname newcount\endcsname
+                                                   \scratchcounter
+! Undefined control sequence.
+l.136 ...csname newcount\endcsname \scratchcounter
+                                                  
+! Use of \@@mptopdf@@newabove doesn't match its definition.
+l.137     \@@mptopdf@@newabove \csname n
+                                        ewdimen\endcsname \scratchdimen
+! Extra \endcsname.
+l.137 ...opdf@@newabove \csname newdimen\endcsname
+                                                   \scratchdimen
+! Undefined control sequence.
+l.137 ... \csname newdimen\endcsname \scratchdimen
+                                                  
+! Use of \installMPSkeywordN doesn't match its definition.
+l.633 \installMPSkeywordN \PSmoveto
+                                   
+! Use of \gMPa doesn't match its definition.
+l.634   {\edef\lastMPmoveX{\gMPa1
+                                 }%
+! Use of \gMPa doesn't match its definition.
+l.635    \edef\lastMPmoveY{\gMPa2
+                                 }%
+! Use of \installMPSkeywordN doesn't match its definition.
+l.637 \installMPSkeywordN \PSnewpath
+                                    
+! Use of \installMPSkeywordN doesn't match its definition.
+l.639 \installMPSkeywordN \PSgsave
+                                  
+! Use of \PDFcode doesn't match its definition.
+l.640   {\PDFcode{
+                  q}%
+! Extra }, or forgotten \endgroup.
+l.641    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.642 \installMPSkeywordN \PSgrestore
+                                     
+! Use of \PDFcode doesn't match its definition.
+l.643   {\PDFcode{
+                  Q}%
+! Extra }, or forgotten \endgroup.
+l.644    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.645 \installMPSkeywordN \PSdtransform
+                                         % == setlinewidth
+! Use of \installMPSkeywordN doesn't match its definition.
+l.652 \installMPSkeywordN \PSsetlinewidth
+                                         
+! Use of \installMPSkeywordN doesn't match its definition.
+l.655 \installMPSkeywordN \PSpop
+                                
+! Use of \installMPSkeywordN doesn't match its definition.
+l.658 \installMPSkeywordN \PSconcat
+                                   
+! Undefined control sequence.
+l.659   {\cleanupMPconcat
+                         
+! Use of \PDFcode doesn't match its definition.
+l.660    \PDFcode{
+                  \gMPa1 \gMPa2 \gMPa3 \gMPa4 \gMPa5 \gMPa6 cm}%
+! Use of \gMPa doesn't match its definition.
+l.660    \PDFcode{\gMPa1
+                         \gMPa2 \gMPa3 \gMPa4 \gMPa5 \gMPa6 cm}%
+! Use of \gMPa doesn't match its definition.
+l.660    \PDFcode{\gMPa1 \gMPa2
+                                \gMPa3 \gMPa4 \gMPa5 \gMPa6 cm}%
+! Use of \gMPa doesn't match its definition.
+l.660    \PDFcode{\gMPa1 \gMPa2 \gMPa3
+                                       \gMPa4 \gMPa5 \gMPa6 cm}%
+! Use of \gMPa doesn't match its definition.
+l.660    \PDFcode{\gMPa1 \gMPa2 \gMPa3 \gMPa4
+                                              \gMPa5 \gMPa6 cm}%
+! Use of \gMPa doesn't match its definition.
+l.660 ...DFcode{\gMPa1 \gMPa2 \gMPa3 \gMPa4 \gMPa5
+                                                   \gMPa6 cm}%
+! Use of \gMPa doesn't match its definition.
+l.660 ...\gMPa1 \gMPa2 \gMPa3 \gMPa4 \gMPa5 \gMPa6
+                                                   cm}%
+! Extra }, or forgotten \endgroup.
+l.661    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.662 \installMPSkeywordN \PSsetrgbcolor
+                                        
+! Undefined control sequence.
+l.663   {\handleMPrgbcolor
+                          
+! Use of \installMPSkeywordN doesn't match its definition.
+l.665 \installMPSkeywordN \PSsetcmykcolor
+                                         
+! Undefined control sequence.
+l.666   {\handleMPcmykcolor
+                           
+! Use of \installMPSkeywordN doesn't match its definition.
+l.668 \installMPSkeywordN \PSsetgray
+                                    
+! Undefined control sequence.
+l.669   {\handleMPgraycolor
+                           
+! Use of \installMPSkeywordN doesn't match its definition.
+l.671 \installMPSkeywordN \PStranslate
+                                      
+! Use of \PDFcode doesn't match its definition.
+l.672   {\PDFcode{
+                  1 0 0 1 \gMPa1 \gMPa2 cm}%
+! Use of \gMPa doesn't match its definition.
+l.672   {\PDFcode{1 0 0 1 \gMPa1
+                                 \gMPa2 cm}%
+! Use of \gMPa doesn't match its definition.
+l.672   {\PDFcode{1 0 0 1 \gMPa1 \gMPa2
+                                        cm}%
+! Extra }, or forgotten \endgroup.
+l.673    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.674 \installMPSkeywordN \PSsetdash
+                                    
+! Undefined control sequence.
+l.675   {\handleMPsetdash
+                         
+! Use of \installMPSkeywordN doesn't match its definition.
+l.677 \installMPSkeywordN \PSsetlinejoin
+                                        
+! Use of \PDFcode doesn't match its definition.
+l.678   {\PDFcode{
+                  \gMPa1 j}%
+! Use of \gMPa doesn't match its definition.
+l.678   {\PDFcode{\gMPa1
+                         j}%
+! Extra }, or forgotten \endgroup.
+l.679    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.680 \installMPSkeywordN \PSsetmiterlimit
+                                          
+! Use of \PDFcode doesn't match its definition.
+l.681   {\PDFcode{
+                  \gMPa1 M}%
+! Use of \gMPa doesn't match its definition.
+l.681   {\PDFcode{\gMPa1
+                         M}%
+! Extra }, or forgotten \endgroup.
+l.682    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.683 \installMPSkeywordN \PSfshow
+                                  
+! Undefined control sequence.
+l.685    \handleMPfshow
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.687 \installMPSkeywordN \PSsetlinecap
+                                       
+! Use of \PDFcode doesn't match its definition.
+l.688   {\PDFcode{
+                  \gMPa1 J}%
+! Use of \gMPa doesn't match its definition.
+l.688   {\PDFcode{\gMPa1
+                         J}%
+! Extra }, or forgotten \endgroup.
+l.689    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.690 \installMPSkeywordN \PSrlineto
+                                    
+! Undefined control sequence.
+l.691   {\flushMPmoveto
+                       
+! Use of \PDFcode doesn't match its definition.
+l.692    \PDFcode{
+                  \!MP\lastMPmoveX\space\!MP\lastMPmoveY\space l S}%
+! Undefined control sequence.
+l.692    \PDFcode{\!MP
+                      \lastMPmoveX\space\!MP\lastMPmoveY\space l S}%
+! Undefined control sequence.
+l.692    \PDFcode{\!MP\lastMPmoveX
+                                  \space\!MP\lastMPmoveY\space l S}%
+! Undefined control sequence.
+l.692    \PDFcode{\!MP\lastMPmoveX\space\!MP
+                                            \lastMPmoveY\space l S}%
+! Undefined control sequence.
+l.692 ...de{\!MP\lastMPmoveX\space\!MP\lastMPmoveY
+                                                  \space l S}%
+! Undefined control sequence.
+l.693    \resetMPmoveto
+                       
+! Extra }, or forgotten \endgroup.
+l.694    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.695 \installMPSkeywordN \PSscale
+                                  
+! Use of \PDFcode doesn't match its definition.
+l.696   {\PDFcode{
+                  \gMPa1 0 0 \gMPa2 0 0 cm}%
+! Use of \gMPa doesn't match its definition.
+l.696   {\PDFcode{\gMPa1
+                         0 0 \gMPa2 0 0 cm}%
+! Use of \gMPa doesn't match its definition.
+l.696   {\PDFcode{\gMPa1 0 0 \gMPa2
+                                    0 0 cm}%
+! Extra }, or forgotten \endgroup.
+l.697    \resetMPstack}
+                       
+! Use of \installMPSkeywordN doesn't match its definition.
+l.698 \installMPSkeywordN \PSspecial
+                                    
+! Undefined control sequence.
+l.699   {\handleMPspecialcommand
+                                
+! Use of \installMPSshortcutN doesn't match its definition.
+l.702 \installMPSshortcutN {
+                            n}  \PSnewpath
+! Extra }, or forgotten \endgroup.
+l.702 \installMPSshortcutN {n}
+                                \PSnewpath
+! Use of \installMPSshortcutN doesn't match its definition.
+l.703 \installMPSshortcutN {
+                            p}  \PSclosepath
+! Extra }, or forgotten \endgroup.
+l.703 \installMPSshortcutN {p}
+                                \PSclosepath
+! Use of \installMPSshortcutN doesn't match its definition.
+l.704 \installMPSshortcutN {
+                            l}  \PSlineto
+! Extra }, or forgotten \endgroup.
+l.704 \installMPSshortcutN {l}
+                                \PSlineto
+! Use of \installMPSshortcutN doesn't match its definition.
+l.705 \installMPSshortcutN {
+                            r}  \PSrlineto
+! Extra }, or forgotten \endgroup.
+l.705 \installMPSshortcutN {r}
+                                \PSrlineto
+! Use of \installMPSshortcutN doesn't match its definition.
+l.706 \installMPSshortcutN {
+                            m}  \PSmoveto
+! Extra }, or forgotten \endgroup.
+l.706 \installMPSshortcutN {m}
+                                \PSmoveto
+! Use of \installMPSshortcutN doesn't match its definition.
+l.707 \installMPSshortcutN {
+                            c}  \PScurveto
+! Extra }, or forgotten \endgroup.
+l.707 \installMPSshortcutN {c}
+                                \PScurveto
+! Use of \installMPSshortcutN doesn't match its definition.
+l.708 \installMPSshortcutN {
+                            C}  \PSsetcmykcolor
+! Extra }, or forgotten \endgroup.
+l.708 \installMPSshortcutN {C}
+                                \PSsetcmykcolor
+! Use of \installMPSshortcutN doesn't match its definition.
+l.709 \installMPSshortcutN {
+                            G}  \PSsetgray
+! Extra }, or forgotten \endgroup.
+l.709 \installMPSshortcutN {G}
+                                \PSsetgray
+! Use of \installMPSshortcutN doesn't match its definition.
+l.710 \installMPSshortcutN {
+                            R}  \PSsetrgbcolor
+! Extra }, or forgotten \endgroup.
+l.710 \installMPSshortcutN {R}
+                                \PSsetrgbcolor
+! Use of \installMPSshortcutN doesn't match its definition.
+l.711 \installMPSshortcutN {
+                            lj} \PSsetlinejoin
+! Extra }, or forgotten \endgroup.
+l.711 \installMPSshortcutN {lj}
+                                \PSsetlinejoin
+! Use of \installMPSshortcutN doesn't match its definition.
+l.712 \installMPSshortcutN {
+                            ml} \PSsetmiterlimit
+! Extra }, or forgotten \endgroup.
+l.712 \installMPSshortcutN {ml}
+                                \PSsetmiterlimit
+! Use of \installMPSshortcutN doesn't match its definition.
+l.713 \installMPSshortcutN {
+                            lc} \PSsetlinecap
+! Extra }, or forgotten \endgroup.
+l.713 \installMPSshortcutN {lc}
+                                \PSsetlinecap
+! Use of \installMPSshortcutN doesn't match its definition.
+l.714 \installMPSshortcutN {
+                            sd} \PSsetdash
+(That makes 100 errors; please try again.)
+ 33094 words of node memory still in use:
+   6 hlist, 1 vlist, 2 rule, 2 dir, 837 glue, 4 kern, 3373 glyph, 1153 attribut
+e, 70 glue_spec, 388 attribute_list, 1 temp, 3 write, 1 pdf_colorstack nodes
+   avail lists: 1:1,2:1,3:3,4:3,5:3,6:1,9:4,10:2
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on thesis.log.
+Latexmk: Getting log file 'thesis.log'
+Latexmk: Examining 'thesis.fls'
+Latexmk: Examining 'thesis.log'
+Latexmk: Some rule(s) failed, but user file(s) changed so keep trying
+ Reasons for rerun
+Category 'changed_user':
+  thesis-luamml-mathml.html
+Category 'rules_to_apply':
+  lualatex
+
+Latexmk: applying rule 'lualatex'...
+Rule 'lualatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'lualatex' forced or previously required:
+    Reason or flag: 'Changed user file'
+
+------------
+Run number 2 of rule 'lualatex'
+------------
+------------
+Running 'lualatex -shell-escape -interaction=nonstopmode  -recorder  "thesis.tex"'
+------------
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026) 
+ system commands enabled.
+(./thesis.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/documentmetadata-suppor
+t.ltx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-testphase.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-base.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment.ltx)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/l3backend
+-testphase-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-lat
+est.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-mc-code-lua.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-nam
+es.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new
+-or-2.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-footnotes.ltx
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-blo
+ck.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-kernel-change
+s.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftex/glyphtounicode.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/glyphtounicode-cmex.tex
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-con
+text.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-sec
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-toc
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-min
+ipage.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new
+-or-1.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-gra
+phic.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-flo
+at.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-bib
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tex
+t.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-mar
+ginpar.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tit
+le.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tab
+le.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-mat
+h.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-math.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-mathpkg.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-mathintent.lt
+x))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-fir
+staid.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tik
+z.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/verbatim-mo-latex-lab-test
+phase.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-firstaid.sty) (./uofithesis.cls
+Document Class: uofithesis 2026/04/21 v1.7 University of Illinois Graduate Coll
+ege Dissertation/Thesis Class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size12.clo))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/luababel.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/luababel.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.t
+ex) (/usr/local/texlive/2026/texmf-dist/tex/generic/babel-english/english.ldf))
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/sectsty/sectsty.sty
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontsetup/fontsetup.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/oberdiek/iflang.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.
+sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-amsmath.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.st
+y)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math-table.t
+ex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-unicode-math.
+ltx) (/usr/local/texlive/2026/texmf-dist/tex/latex/fontsetup/fspdefault.tex
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCM10-Book.fo
+ntspec)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCMSans10-Boo
+k.fontspec)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCMMono10-Boo
+k.fontspec)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/luatex.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.d
+ef
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/xcolor-pa
+tches-tmp-ltx.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex))) (./thesis.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgfutil-common-lists.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibrar
+yluamath.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-luatex.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.contourlua.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.cfg))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/hgeneric-
+testphase.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/hyperref-
+colorschemes.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-dm.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-compat.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/standard.bbx)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty))
+(./thesisbiblatex.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-footmisc.ltx)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/placeins/placeins.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/mhchem/mhchem.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/chemgreek/chemgreek.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/chemfig/chemfig.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/chemfig/chemfig.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/simplekv/simplekv.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml.sty
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml-patches-kernel.s
+ty)
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml-patches-amsmath.
+sty))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.colorbrewer.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorb
+rewer.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+
+Package biblatex Warning: Patching footnotes failed.
+(biblatex)                Footnote detection will not work.
+
+No file thesis.aux.
+
+Info: mathml file thesis-mathml does not exist
+Info: reading mathml file thesis-luamml-mathml
+(./thesis-luamml-mathml.html)
+Info: Activating mathml support
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx)
+No file thesis.bbl.
+
+Package tagpdf Info: luamml has been enabled and will create an MathML file.
+
+[1{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4] [5]
+No file thesis.toc.
+(./frontmatter/list_of_abbreviations.tex [6])
+(./frontmatter/list_of_symbols.tex [7]) [8]
+(./chapters/introduction/chapter.tex [1] [2]
+
+LaTeX Warning: Reference `ch:background' on page 3 undefined on input line 47.
+
+
+LaTeX Warning: Reference `ch:exp' on page 3 undefined on input line 48.
+
+
+LaTeX Warning: Reference `ch:pPb' on page 3 undefined on input line 49.
+
+
+LaTeX Warning: Reference `ch:xj' on page 3 undefined on input line 50.
+
+
+LaTeX Warning: Reference `ch:summary' on page 3 undefined on input line 51.
+
+) (./chapters/background/chapter.tex [3]
+(./chapters/background/sections/quantum_chromodynamics.tex
+
+LaTeX Warning: Citation 'gellmann' on page 4 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'psqft' on page 4 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'thomsonqft' on page 4 undefined on input line 30.
+
+
+LaTeX Warning: Reference `eq:qcd_lagrangian' on page 4 undefined on input line 
+34.
+
+
+LaTeX Warning: Citation 'peskinqcd' on page 4 undefined on input line 34.
+
+[4]
+
+LaTeX Warning: Reference `eq:qcd_lagrangian' on page 5 undefined on input line 
+56.
+
+
+LaTeX Warning: Reference `eq:qcd_lagrangian' on page 5 undefined on input line 
+61.
+
+
+LaTeX Warning: Reference `eq:alpha_s' on page 5 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'psqft' on page 5 undefined on input line 64.
+
+[5]
+Floatstructure:558
+
+LaTeX Warning: Citation 'pdg' on page 6 undefined on input line 78.
+
+
+LaTeX Warning: Citation 'pdg' on page 6 undefined on input line 78.
+
+
+LaTeX Warning: Reference `fig:asymptotic_freedom' on page 6 undefined on input 
+line 83.
+
+[6<./chapters/background/sections/quantum_chromodynamics/figures/asymfree.pdf>]
+
+LaTeX Warning: Reference `fig:qcd_confinement' on page 7 undefined on input lin
+e 96.
+
+Floatstructure:619
+
+LaTeX Warning: Citation 'thomsonqft' on page 7 undefined on input line 104.
+
+
+LaTeX Warning: Citation 'thomsonqft' on page 7 undefined on input line 104.
+
+
+LaTeX Warning: Citation 'thomsonqft' on page 7 undefined on input line 109.
+
+
+LaTeX Warning: Reference `fig:qcd_hadronization' on page 7 undefined on input l
+ine 117.
+
+
+LaTeX Warning: Citation 'thomsonqft' on page 7 undefined on input line 117.
+
+[7<./chapters/background/sections/quantum_chromodynamics/figures/confinement.pd
+f>]
+Floatstructure:676
+
+LaTeX Warning: Citation 'thomsonqft' on page 8 undefined on input line 125.
+
+
+LaTeX Warning: Citation 'thomsonqft' on page 8 undefined on input line 125.
+
+
+LaTeX Warning: Citation 'feynmanphotonhadron' on page 8 undefined on input line
+ 132.
+
+[8<./chapters/background/sections/quantum_chromodynamics/figures/hadronization.
+pdf>]
+
+LaTeX Warning: Citation 'feynmanphotonhadron' on page 9 undefined on input line
+ 138.
+
+
+LaTeX Warning: Reference `fig:deep_inelastic_scattering' on page 9 undefined on
+ input line 140.
+
+Floatstructure:724
+
+LaTeX Warning: Citation 'pdg' on page 9 undefined on input line 148.
+
+
+LaTeX Warning: Citation 'pdg' on page 9 undefined on input line 148.
+
+
+LaTeX Warning: Citation 'pdg' on page 9 undefined on input line 159.
+
+[9<./chapters/background/sections/quantum_chromodynamics/figures/dis.pdf>]
+
+LaTeX Warning: Citation 'Bjorken:1969' on page 10 undefined on input line 177.
+
+
+LaTeX Warning: Citation 'CallanGross' on page 10 undefined on input line 179.
+
+
+LaTeX Warning: Citation 'SLACFcn' on page 10 undefined on input line 179.
+
+
+LaTeX Warning: Citation 'pdg' on page 10 undefined on input line 188.
+
+
+LaTeX Warning: Citation 'pdg' on page 10 undefined on input line 188.
+
+[10]
+
+LaTeX Warning: Reference `fig:proton_structure_function_f2' on page 11 undefine
+d on input line 192.
+
+
+LaTeX Warning: Citation 'HERAF2' on page 11 undefined on input line 192.
+
+
+LaTeX Warning: Reference `fig:proton_structure' on page 11 undefined on input l
+ine 195.
+
+
+LaTeX Warning: Reference `fig:proton_structure' on page 11 undefined on input l
+ine 196.
+
+[11<./chapters/background/sections/quantum_chromodynamics/figures/F2.pdf>]
+Floatstructure:1251
+
+LaTeX Warning: Reference `fig:proton_structure_function_f2' on page 12 undefine
+d on input line 210.
+
+
+LaTeX Warning: Citation 'factorthrm' on page 12 undefined on input line 222.
+
+
+LaTeX Warning: Reference `fig:qcd_factorization' on page 12 undefined on input 
+line 226.
+
+[12<./chapters/background/sections/quantum_chromodynamics/figures/proton_struct
+ure.pdf>]
+Floatstructure:1364
+
+LaTeX Warning: Reference `fig:qcd_factorization' on page 13 undefined on input 
+line 251.
+
+
+LaTeX Warning: Reference `eq:pp_factorization' on page 13 undefined on input li
+ne 251.
+
+
+LaTeX Warning: Reference `fig:qcd_factorization' on page 13 undefined on input 
+line 253.
+
+
+LaTeX Warning: Reference `eq:pp_factorization' on page 13 undefined on input li
+ne 253.
+
+
+LaTeX Warning: Reference `fig:qcd_factorization' on page 13 undefined on input 
+line 254.
+
+
+LaTeX Warning: Reference `eq:pp_factorization' on page 13 undefined on input li
+ne 256.
+
+) [13] (./chapters/background/sections/nuclear_structure.tex
+
+LaTeX Warning: Reference `sec:factorization' on page 14 undefined on input line
+ 3.
+
+[14<./chapters/background/sections/quantum_chromodynamics/figures/factor.pdf>]
+
+LaTeX Warning: Reference `eq:dis_to_pdf' on page 15 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'DISref' on page 15 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'factorthrm' on page 15 undefined on input line 15.
+
+
+LaTeX Warning: Reference `eq:mom_charge_sum_rule' on page 15 undefined on input
+ line 21.
+
+
+LaTeX Warning: Reference `eq:flavor_sum_rule' on page 15 undefined on input lin
+e 26.
+
+
+LaTeX Warning: Reference `eq:pdf_fit' on page 15 undefined on input line 27.
+
+
+LaTeX Warning: Citation 'pdg' on page 15 undefined on input line 27.
+
+[15]
+
+LaTeX Warning: Citation 'pdg' on page 16 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'DGLAP' on page 16 undefined on input line 34.
+
+
+LaTeX Warning: Reference `fig:herapdf_scales' on page 16 undefined on input lin
+e 37.
+
+
+LaTeX Warning: Citation 'HERAF2' on page 16 undefined on input line 37.
+
+
+LaTeX Warning: Reference `fig:proton_structure_function_f2' on page 16 undefine
+d on input line 37.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 40
+(tagpdf)                struct 1840, text --> struct 1882, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 40
+(tagpdf)                struct 1882, text-unit --> struct 1883, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 40
+(tagpdf)                struct 1882, text-unit --> struct 1884, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 42
+(tagpdf)                struct 1884, Div --> struct 1885, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 42
+(tagpdf)                struct 1885, text-unit --> struct 1886, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 46
+(tagpdf)                struct 1884, Div --> struct 1888, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 46
+(tagpdf)                struct 1888, text-unit --> struct 1889, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 46
+(tagpdf)                struct 1888, text-unit --> struct 1890, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 46
+(tagpdf)                struct 1890, Div --> struct 1891, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 46
+(tagpdf)                struct 1891, text-unit --> struct 1892, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 46
+(tagpdf)                struct 1888, text-unit --> struct 1907, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 47
+(tagpdf)                struct 1882, text-unit --> struct 1908, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 49
+(tagpdf)                struct 1882, text-unit --> struct 1909, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 51
+(tagpdf)                struct 1909, Div --> struct 1910, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 51
+(tagpdf)                struct 1910, text-unit --> struct 1911, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 55
+(tagpdf)                struct 1909, Div --> struct 1913, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 55
+(tagpdf)                struct 1913, text-unit --> struct 1914, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 55
+(tagpdf)                struct 1913, text-unit --> struct 1915, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 55
+(tagpdf)                struct 1915, Div --> struct 1916, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 55
+(tagpdf)                struct 1916, text-unit --> struct 1917, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 55
+(tagpdf)                struct 1913, text-unit --> struct 1932, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 56
+(tagpdf)                struct 1882, text-unit --> struct 1933, text
+
+
+LaTeX Warning: Citation 'HERAF2' on page 16 undefined on input line 57.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Caption'.
+(tagpdf)                Relation is not allowed! on line 57
+(tagpdf)                struct 1840, text --> struct 1934, Caption
+
+
+LaTeX Warning: Citation 'HERAF2' on page 16 undefined on input line 57.
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 57--57
+[]\TU/NewCM10-Book.otf(0)/m/n/12 Fig-ure 8: Pro-ton PDFs at two fac-tor-iza-tio
+n scales, show-ing the scale evo-lu-tion
+
+LaTeX Warning: Citation 'BFKL1' on page 16 undefined on input line 61.
+
+
+LaTeX Warning: Citation 'BFKL2' on page 16 undefined on input line 61.
+
+[16<./chapters/background/sections/nuclear_structure/figures/herapdf.pdf><./cha
+pters/background/sections/nuclear_structure/figures/herapdfhiq2.pdf>]
+
+LaTeX Warning: Reference `fig:pdg_pdf_context' on page 17 undefined on input li
+ne 64.
+
+
+LaTeX Warning: Citation 'pdg' on page 17 undefined on input line 64.
+
+
+LaTeX Warning: Reference `fig:pdg_pdf_context' on page 17 undefined on input li
+ne 66.
+
+
+LaTeX Warning: Citation 'gluonsat' on page 17 undefined on input line 72.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 75
+(tagpdf)                struct 1961, text --> struct 1989, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 75
+(tagpdf)                struct 1989, text-unit --> struct 1990, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 75
+(tagpdf)                struct 1989, text-unit --> struct 1991, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 77
+(tagpdf)                struct 1991, Div --> struct 1992, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 77
+(tagpdf)                struct 1992, text-unit --> struct 1993, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 81
+(tagpdf)                struct 1991, Div --> struct 1995, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 81
+(tagpdf)                struct 1995, text-unit --> struct 1996, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 81
+(tagpdf)                struct 1995, text-unit --> struct 1997, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 81
+(tagpdf)                struct 1997, Div --> struct 1998, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 81
+(tagpdf)                struct 1998, text-unit --> struct 1999, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 81
+(tagpdf)                struct 1995, text-unit --> struct 2000, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 82
+(tagpdf)                struct 1989, text-unit --> struct 2001, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 84
+(tagpdf)                struct 1989, text-unit --> struct 2002, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 86
+(tagpdf)                struct 2002, Div --> struct 2003, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 86
+(tagpdf)                struct 2003, text-unit --> struct 2004, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 90
+(tagpdf)                struct 2002, Div --> struct 2006, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 90
+(tagpdf)                struct 2006, text-unit --> struct 2007, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 90
+(tagpdf)                struct 2006, text-unit --> struct 2008, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 90
+(tagpdf)                struct 2008, Div --> struct 2009, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 90
+(tagpdf)                struct 2009, text-unit --> struct 2010, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 90
+(tagpdf)                struct 2006, text-unit --> struct 2027, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 91
+(tagpdf)                struct 1989, text-unit --> struct 2028, text
+
+
+LaTeX Warning: Citation 'pdg' on page 17 undefined on input line 92.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Caption'.
+(tagpdf)                Relation is not allowed! on line 92
+(tagpdf)                struct 1961, text --> struct 2029, Caption
+
+
+LaTeX Warning: Citation 'pdg' on page 17 undefined on input line 92.
+
+[17]
+
+LaTeX Warning: Citation 'nPDF' on page 18 undefined on input line 102.
+
+
+LaTeX Warning: Reference `fig:npdf_modification' on page 18 undefined on input 
+line 103.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 106
+(tagpdf)                struct 2099, text --> struct 2120, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 106
+(tagpdf)                struct 2120, text-unit --> struct 2121, text
+
+
+LaTeX Warning: Citation 'nPDF' on page 18 undefined on input line 110.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Caption'.
+(tagpdf)                Relation is not allowed! on line 110
+(tagpdf)                struct 2099, text --> struct 2123, Caption
+
+
+LaTeX Warning: Citation 'nPDF' on page 18 undefined on input line 110.
+
+[18<./chapters/background/sections/nuclear_structure/figures/kinematic_reach.pd
+f><./chapters/background/sections/nuclear_structure/figures/nnlopdf.pdf>]
+
+LaTeX Warning: Citation 'shadowing' on page 19 undefined on input line 115.
+
+
+LaTeX Warning: Citation 'shadowing' on page 19 undefined on input line 116.
+
+
+LaTeX Warning: Citation 'EMCdiscovery' on page 19 undefined on input line 117.
+
+
+LaTeX Warning: Citation 'EMCmech' on page 19 undefined on input line 117.
+
+
+LaTeX Warning: Citation 'nPDFFermi' on page 19 undefined on input line 118.
+
+
+LaTeX Warning: Reference `sec:factorization' on page 19 undefined on input line
+ 126.
+
+
+LaTeX Warning: Citation 'pdg' on page 19 undefined on input line 130.
+
+[19<./chapters/background/sections/nuclear_structure/figures/nPDFmod.pdf>]
+
+LaTeX Warning: Citation 'EMFF' on page 20 undefined on input line 138.
+
+
+LaTeX Warning: Reference `eq:proton_density_FF' on page 20 undefined on input l
+ine 143.
+
+
+LaTeX Warning: Citation 'Brodsky:CT' on page 20 undefined on input line 143.
+
+[20]
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 152
+(tagpdf)                struct 2374, text --> struct 2384, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 152
+(tagpdf)                struct 2384, text-unit --> struct 2385, text
+
+
+LaTeX Warning: Citation 'GPD:DVCS' on page 21 undefined on input line 156.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Caption'.
+(tagpdf)                Relation is not allowed! on line 156
+(tagpdf)                struct 2374, text --> struct 2387, Caption
+
+
+LaTeX Warning: Citation 'GPD:DVCS' on page 21 undefined on input line 156.
+
+
+LaTeX Warning: Reference `fig:dvcshandbag' on page 21 undefined on input line 1
+59.
+
+
+LaTeX Warning: Citation 'GPD:Main' on page 21 undefined on input line 162.
+
+
+LaTeX Warning: Citation 'GPD:DVCS' on page 21 undefined on input line 163.
+
+
+LaTeX Warning: Reference `eq:GPD_rules' on page 21 undefined on input line 164.
+
+
+
+LaTeX Warning: Citation 'GPD:Main' on page 21 undefined on input line 164.
+
+
+LaTeX Warning: Citation 'Brodsky:CT' on page 21 undefined on input line 164.
+
+[21<./chapters/background/sections/nuclear_structure/figures/dvcshandbag.pdf>]
+
+LaTeX Warning: Citation 'GPD:DVCS' on page 22 undefined on input line 174.
+
+
+LaTeX Warning: Citation 'Brodsky:CT' on page 22 undefined on input line 177.
+
+
+LaTeX Warning: Citation 'New:CT' on page 22 undefined on input line 178.
+
+
+LaTeX Warning: Citation 'QED:CT' on page 22 undefined on input line 179.
+
+
+LaTeX Warning: Reference `eq:proton_density_FF' on page 22 undefined on input l
+ine 184.
+
+
+LaTeX Warning: Reference `eq:b_dep_PDF' on page 22 undefined on input line 184.
+
+
+[22]
+
+LaTeX Warning: Reference `eq:aT_xdep' on page 23 undefined on input line 189.
+
+
+LaTeX Warning: Citation 'Brodsky:CT' on page 23 undefined on input line 189.
+
+
+LaTeX Warning: Reference `fig:ct_transverse_size' on page 23 undefined on input
+ line 196.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 198
+(tagpdf)                struct 2715, text --> struct 2782, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 198
+(tagpdf)                struct 2782, text-unit --> struct 2783, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 199
+(tagpdf)                struct 2782, text-unit --> struct 2784, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 201
+(tagpdf)                struct 2784, Div --> struct 2785, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 201
+(tagpdf)                struct 2785, text-unit --> struct 2786, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 205
+(tagpdf)                struct 2784, Div --> struct 2788, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 205
+(tagpdf)                struct 2788, text-unit --> struct 2789, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 205
+(tagpdf)                struct 2788, text-unit --> struct 2790, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 205
+(tagpdf)                struct 2790, Div --> struct 2791, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 205
+(tagpdf)                struct 2791, text-unit --> struct 2792, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 205
+(tagpdf)                struct 2788, text-unit --> struct 2793, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 206
+(tagpdf)                struct 2782, text-unit --> struct 2794, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 208
+(tagpdf)                struct 2782, text-unit --> struct 2795, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 210
+(tagpdf)                struct 2795, Div --> struct 2796, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 210
+(tagpdf)                struct 2796, text-unit --> struct 2797, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 214
+(tagpdf)                struct 2795, Div --> struct 2799, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 214
+(tagpdf)                struct 2799, text-unit --> struct 2800, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Div'.
+(tagpdf)                Relation is not allowed! on line 214
+(tagpdf)                struct 2799, text-unit --> struct 2801, Div
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 214
+(tagpdf)                struct 2801, Div --> struct 2802, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 214
+(tagpdf)                struct 2802, text-unit --> struct 2803, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 214
+(tagpdf)                struct 2799, text-unit --> struct 2804, text
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 215
+(tagpdf)                struct 2782, text-unit --> struct 2805, text
+
+
+LaTeX Warning: Citation 'Brodsky:CT' on page 23 undefined on input line 216.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Caption'.
+(tagpdf)                Relation is not allowed! on line 216
+(tagpdf)                struct 2715, text --> struct 2806, Caption
+
+
+LaTeX Warning: Citation 'Brodsky:CT' on page 23 undefined on input line 216.
+
+[23]
+
+LaTeX Warning: Citation 'CF1' on page 24 undefined on input line 220.
+
+
+LaTeX Warning: Citation 'CF2' on page 24 undefined on input line 220.
+
+
+LaTeX Warning: Citation 'CF3' on page 24 undefined on input line 220.
+
+
+LaTeX Warning: Reference `fig:color_fluctuation_pA' on page 24 undefined on inp
+ut line 223.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 226
+(tagpdf)                struct 2829, text --> struct 2833, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 226
+(tagpdf)                struct 2833, text-unit --> struct 2834, text
+
+
+LaTeX Warning: Citation 'CF3' on page 24 undefined on input line 230.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Caption'.
+(tagpdf)                Relation is not allowed! on line 230
+(tagpdf)                struct 2829, text --> struct 2836, Caption
+
+
+LaTeX Warning: Citation 'CF3' on page 24 undefined on input line 230.
+
+) [24<./chapters/background/sections/nuclear_structure/figures/CT1D.pdf><./chap
+ters/background/sections/nuclear_structure/figures/CT2D.pdf>]
+(./chapters/background/sections/jets.tex
+
+LaTeX Warning: Citation 'Jet:SLAC' on page 25 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'Jet:QCD' on page 25 undefined on input line 10.
+
+
+LaTeX Warning: Citation 'pdg' on page 25 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Jet:Snowmass' on page 25 undefined on input line 17.
+
+[25<./chapters/background/sections/nuclear_structure/figures/pACT.pdf>]
+
+LaTeX Warning: Reference `eq:jet_kinematic_mapping' on page 26 undefined on inp
+ut line 30.
+
+
+LaTeX Warning: Reference `fig:atlas_dijet_event_display' on page 26 undefined o
+n input line 42.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line 45
+(tagpdf)                struct 3043, text --> struct 3084, text-unit
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:P'.
+(tagpdf)                Relation is not allowed! on line 45
+(tagpdf)                struct 3084, text-unit --> struct 3085, text
+
+
+LaTeX Warning: Citation 'UNSG-2021-48' on page 26 undefined on input line 49.
+
+
+Package tagpdf Warning: Parent-Child 'pdf2:P' --> 'pdf2:Caption'.
+(tagpdf)                Relation is not allowed! on line 49
+(tagpdf)                struct 3043, text --> struct 3087, Caption
+
+
+LaTeX Warning: Citation 'UNSG-2021-48' on page 26 undefined on input line 49.
+
+[26] [27<./chapters/background/sections/jets/figures/ATLASEDppDijetLabeled.pdf>
+]) (./chapters/background/sections/collision_systems.tex)
+(./chapters/background/sections/quark_gluon_plasma.tex))
+(./chapters/the_lhc_and_atlas/chapter.tex [28] [29]
+(./chapters/the_lhc_and_atlas/sections/the_lhc.tex
+
+LaTeX Warning: Reference `tab:lhc_nuclear_runs' on page 30 undefined on input l
+ine 3.
+
+Floatstructure:3191
+[30]) (./chapters/the_lhc_and_atlas/sections/atlas_detector.tex)
+(./chapters/the_lhc_and_atlas/sections/zdc_detector.tex [31] [32]
+
+LaTeX Warning: Citation 'Adriani:2135330' on page 33 undefined on input line 18
+.
+
+
+LaTeX Warning: Reference `fig:lhcf_v_zdc_acceptance' on page 33 undefined on in
+put line 18.
+
+
+LaTeX Warning: Citation 'Adriani:2135330' on page 33 undefined on input line 18
+.
+
+
+LaTeX Warning: Reference `fig:lhcf_v_zdc_acceptance' on page 33 undefined on in
+put line 18.
+
+Floatstructure:3684
+
+LaTeX Warning: Citation 'Cekmecelioglu:2867369' on page 33 undefined on input l
+ine 34.
+
+
+LaTeX Warning: Citation 'Jenni:1009649' on page 33 undefined on input line 34.
+
+
+LaTeX Warning: Citation 'Cekmecelioglu:2867369' on page 33 undefined on input l
+ine 34.
+
+
+LaTeX Warning: Citation 'Jenni:1009649' on page 33 undefined on input line 34.
+
+[33] [34<./chapters/geometry_estimators_pPb/figures/dataset_and_event_selection
+/lhcfAcceptence.png><./chapters/geometry_estimators_pPb/figures/dataset_and_eve
+nt_selection/zdcAcceptence.png>]
+
+LaTeX Warning: Citation 'ATL-COM-PHYS-2019-1454' on page 35 undefined on input 
+line 47.
+
+Floatstructure:3754
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'chapters/the_lhc_and_atlas/figures/zdc_detector/T0plot
+1.pdf'
+(tagpdf)                instead.
+
+
+LaTeX Warning: Citation 'ATL-COM-PHYS-2019-1454' on page 35 undefined on input 
+line 56.
+
+
+LaTeX Warning: Citation 'ATL-COM-PHYS-2019-1454' on page 35 undefined on input 
+line 56.
+
+[35]
+
+LaTeX Warning: Reference `fig:pulse' on page 36 undefined on input line 60.
+
+
+LaTeX Warning: Reference `eqn:fermiexp' on page 36 undefined on input line 60.
+
+[36<./chapters/the_lhc_and_atlas/figures/zdc_detector/T0plot1.pdf>] [37]
+
+LaTeX Warning: Reference `1nmean' on page 38 undefined on input line 81.
+
+
+LaTeX Warning: Reference `1nvar' on page 38 undefined on input line 81.
+
+
+LaTeX Warning: Reference `LagrangeMult' on page 38 undefined on input line 95.
+
+
+LaTeX Warning: Reference `LagrangeMatrix' on page 38 undefined on input line 12
+5.
+
+
+LaTeX Warning: Reference `LagrangeMatrix' on page 38 undefined on input line 12
+6.
+
+[38]
+
+LaTeX Warning: Reference `fig:pPb_gains_time_evo' on page 39 undefined on input
+ line 128.
+
+
+LaTeX Warning: Reference `fig:pPb_gains_time_evo' on page 39 undefined on input
+ line 128.
+
+Floatstructure:4546
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'chapters/the_lhc_and_atlas/figures/zdc_detector/GainPl
+otALLRUNS_pPb.pdf'
+(tagpdf)                instead.
+
+[39]
+
+LaTeX Warning: Reference `fig:zdc_fit_bkgd' on page 40 undefined on input line 
+136.
+
+
+LaTeX Warning: Citation 'HION-2024-11' on page 40 undefined on input line 139.
+
+Floatstructure:4555
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'chapters/the_lhc_and_atlas/figures/zdc_detector/Run313
+100v16BKGD.pdf'
+(tagpdf)                instead.
+
+
+LaTeX Warning: Citation 'HION-2024-11' on page 40 undefined on input line 143.
+
+
+LaTeX Warning: Citation 'HION-2024-11' on page 40 undefined on input line 143.
+
+) [40<./chapters/the_lhc_and_atlas/figures/zdc_detector/GainPlotALLRUNS_pPb.pdf
+>] (./chapters/the_lhc_and_atlas/sections/atlas_jet_reconstruction.tex
+
+LaTeX Warning: Citation 'Cacciari:2008gp' on page 41 undefined on input line 4.
+
+
+
+LaTeX Warning: Citation 'ATLAS-CONF-2015-016' on page 41 undefined on input lin
+e 7.
+
+
+LaTeX Warning: Citation 'PhysRevC.86.024908' on page 41 undefined on input line
+ 10.
+
+[41<./chapters/the_lhc_and_atlas/figures/zdc_detector/Run313100v16BKGD.pdf>]
+
+LaTeX Warning: Citation 'HION-2016-06' on page 42 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'hip-ref' on page 42 undefined on input line 25.
+
+[42]
+
+LaTeX Warning: Citation 'PERF-2011-03' on page 43 undefined on input line 34.
+
+
+LaTeX Warning: Citation 'Krivos:2706256' on page 43 undefined on input line 35.
+
+
+[43]
+
+LaTeX Warning: Citation 'Kosek:1742072' on page 44 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'Ouellette:2655891' on page 44 undefined on input line 
+46.
+
+
+LaTeX Warning: Citation 'Cukierman:2016dkb' on page 44 undefined on input line 
+46.
+
+)) (./chapters/geometry_estimators_pPb/chapter.tex [44]
+
+LaTeX Warning: Citation 'HION-2023-05' on page 45 undefined on input line 11.
+
+(./chapters/geometry_estimators_pPb/sections/observable.tex [45])
+(./chapters/geometry_estimators_pPb/sections/data_sets.tex
+
+LaTeX Warning: Reference `sec:missing_zdc_mod' on page 46 undefined on input li
+ne 4.
+
+
+LaTeX Warning: Reference `tab:datasets' on page 46 undefined on input line 6.
+
+Floatstructure:5196
+
+Overfull \hbox (29.70773pt too wide) in paragraph at lines 10--40
+ [][] 
+[46]
+
+LaTeX Warning: Reference `tab:trigger_overview_pPb' on page 47 undefined on inp
+ut line 46.
+
+
+LaTeX Warning: Reference `sec:event_sel1' on page 47 undefined on input line 47
+.
+
+
+LaTeX Warning: Citation 'Bierlich:2022pfr' on page 47 undefined on input line 5
+1.
+
+
+LaTeX Warning: Citation 'Ball:2012cx' on page 47 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'Agostinelli:2002hh' on page 47 undefined on input line
+ 53.
+
+[47]
+
+LaTeX Warning: Reference `tab:pPbMC' on page 48 undefined on input line 55.
+
+
+LaTeX Warning: Reference `tab:pPbMCFF' on page 48 undefined on input line 55.
+
+Floatstructure:5330
+Floatstructure:5501
+[48])
+(./chapters/geometry_estimators_pPb/sections/event_selection_and_jet_reconstruc
+tion.tex
+
+LaTeX Warning: Citation 'Hill:2301540' on page 49 undefined on input line 11.
+
+
+LaTeX Warning: Reference `fig:result_corr_mb_ppb' on page 49 undefined on input
+ line 12.
+
+Floatstructure:5705
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'chapters/geometry_estimators_pPb/figures/dataset_and_e
+vent_selection/ZdcFCal_bin_log_HLT_mb_sptrk_L1MBTS_1.pdf'
+(tagpdf)                instead.
+
+
+Package tagpdf Warning: Alternative text for graphic is missing.
+(tagpdf)                Using
+(tagpdf)                'chapters/geometry_estimators_pPb/figures/dataset_and_e
+vent_selection/ZdcFCal_bin_lin_HLT_mb_sptrk_L1MBTS_1.pdf'
+(tagpdf)                instead.
+
+[49]
+
+LaTeX Warning: Citation 'ATLAS-TDR-02' on page 50 undefined on input line 32.
+
+[50<./chapters/geometry_estimators_pPb/figures/dataset_and_event_selection/ZdcF
+Cal_bin_log_HLT_mb_sptrk_L1MBTS_1.pdf><./chapters/geometry_estimators_pPb/figur
+es/dataset_and_event_selection/ZdcFCal_bin_lin_HLT_mb_sptrk_L1MBTS_1.pdf>]
+
+LaTeX Warning: Citation 'Hill:2301540' on page 51 undefined on input line 35.
+
+
+LaTeX Warning: Reference `sec:JetReco' on page 51 undefined on input line 40.
+
+
+LaTeX Warning: Reference `sec:jet_calibration' on page 51 undefined on input li
+ne 42.
+
+
+LaTeX Warning: Citation 'Ouellette:2655891' on page 51 undefined on input line 
+42.
+
+[51]
+
+LaTeX Warning: Reference `tab:trigger_overview_pPb' on page 52 undefined on inp
+ut line 52.
+
+
+LaTeX Warning: Citation 'Lendermann:2009ah' on page 52 undefined on input line 
+54.
+
+[52]
+Floatstructure:6125
+
+Overfull \hbox (65.16916pt too wide) in paragraph at lines 79--113
+ [][] 
+) (./chapters/geometry_estimators_pPb/sections/analysis.tex [53] [54])
+(./chapters/geometry_estimators_pPb/sections/uncertainties.tex [55])
+(./chapters/geometry_estimators_pPb/sections/results.tex [56]))
+(./chapters/centrality_dependent_dijet_imbalance/chapter.tex [57]
+(./chapters/centrality_dependent_dijet_imbalance/sections/observable.tex)
+(./chapters/centrality_dependent_dijet_imbalance/sections/data_sets.tex)
+(./chapters/centrality_dependent_dijet_imbalance/sections/event_selection_and_j
+et_reconstruction.tex
+
+LaTeX Warning: Reference `sec:JetReco' on page 58 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'BanerjeeAQP' on page 58 undefined on input line 10.
+
+[58]) (./chapters/centrality_dependent_dijet_imbalance/sections/analysis.tex)
+(./chapters/centrality_dependent_dijet_imbalance/sections/uncertainties.tex)
+(./chapters/centrality_dependent_dijet_imbalance/sections/results.tex))
+(./chapters/summary_and_conclusions/chapter.tex [59])
+
+LaTeX Warning: Empty bibliography on input line 150.
+
+[60]<<latex-list-css.html>><<latex-align-css.html>> (./thesis.aux
+! Text line contains an invalid character.
+l.4 ^^@
+     ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@
+      ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@
+       ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@
+        ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@
+         ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@
+          ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@
+           ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@
+            ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+             ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+              ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+               ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                   ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                    ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                     ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                      ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                       ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                        ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                         ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                          ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                           ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                            ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+
+                             ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@
+                              ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@
+                               ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@
+                                ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@
+                                 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@
+                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@
+                                   ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@
+                                    ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@.
+..
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@
+                                     ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                      ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                       ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                        ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                         ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                          ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                           ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                            ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                             ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                              ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                               ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+(That makes 100 errors; please try again.)
+ 1560 words of node memory still in use:
+   6 hlist, 1 vlist, 2 rule, 1 dir, 18 glue, 4 kern, 2 glyph, 361 attribute, 71
+ glue_spec, 83 attribute_list, 1 if_stack, 1 write nodes
+   avail lists: 1:4,2:9908,3:1773,4:67,5:390,6:43,7:7107,8:60,9:818,10:26,11:49
+1
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on thesis.log.
+Latexmk: fls file doesn't appear to have been made.
+Latexmk: Getting log file 'thesis.log'
+Latexmk: Examining 'thesis.log'
+Latexmk: Using biber to make bibliography file(s).
+Latexmk: Incomplete (and hence corrupt) bcf file 'thesis.bcf'
+Latexmk: Bibliography file(s) from .bcf file:
+  bib/ATLAS-useful.bib
+  bib/ATLAS.bib
+  bib/CMS.bib
+  bib/ConfNotes.bib
+  bib/PubNotes.bib
+  bib/mydocument.bib
+Sources for biber
+  bib/ATLAS-useful.bib
+  bib/ATLAS.bib
+  bib/CMS.bib
+  bib/ConfNotes.bib
+  bib/PubNotes.bib
+  bib/mydocument.bib
+  thesis.bcf
+Latexmk: ========== Incomplete .bcf file 'thesis.bcf'.
+  I'll rename the file to 'thesis.bcf-SAVE-ERROR'.
+  I'll rename the bbl file to 'thesis.bbl-SAVE-ERROR',
+  in case the incomplete bcf file was a result of error in
+  'lualatex' caused by an error in the bbl file.
+Latexmk: Some rule(s) failed, but user file(s) changed so keep trying
+ Reasons for rerun
+Category 'changed_user':
+  thesis-luamml-mathml.html
+Category 'rules_to_apply':
+  lualatex
+
+Latexmk: applying rule 'lualatex'...
+Rule 'lualatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'lualatex' forced or previously required:
+    Reason or flag: 'Changed user file'
+
+------------
+Run number 3 of rule 'lualatex'
+------------
+------------
+Running 'lualatex -shell-escape -interaction=nonstopmode  -recorder  "thesis.tex"'
+------------
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026) 
+ system commands enabled.
+(./thesis.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/documentmetadata-suppor
+t.ltx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-testphase.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-base.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment.ltx)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/l3backend
+-testphase-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-lat
+est.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-luatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/tagpdf-mc-code-lua.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-nam
+es.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new
+-or-2.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-footnotes.ltx
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-blo
+ck.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-kernel-change
+s.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftex/glyphtounicode.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/glyphtounicode-cmex.tex
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-con
+text.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-sec
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-toc
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-min
+ipage.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-new
+-or-1.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-gra
+phic.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-flo
+at.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-bib
+.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tex
+t.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-mar
+ginpar.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tit
+le.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tab
+le.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-mat
+h.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-math.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-mathpkg.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-mathintent.lt
+x))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-fir
+staid.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-testphase-tik
+z.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tagpdf/verbatim-mo-latex-lab-test
+phase.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-firstaid.sty) (./uofithesis.cls
+Document Class: uofithesis 2026/04/21 v1.7 University of Illinois Graduate Coll
+ege Dissertation/Thesis Class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size12.clo))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/luababel.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/luababel.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.t
+ex) (/usr/local/texlive/2026/texmf-dist/tex/generic/babel-english/english.ldf))
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/sectsty/sectsty.sty
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontsetup/fontsetup.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/oberdiek/iflang.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.
+sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-amsmath.ltx)
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.st
+y)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math-table.t
+ex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-unicode-math.
+ltx) (/usr/local/texlive/2026/texmf-dist/tex/latex/fontsetup/fspdefault.tex
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCM10-Book.fo
+ntspec)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCMSans10-Boo
+k.fontspec)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newcomputermodern/NewCMMono10-Boo
+k.fontspec)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/luatex.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.d
+ef
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/xcolor-pa
+tches-tmp-ltx.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex))) (./thesis.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgfutil-common-lists.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibrar
+yluamath.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-luatex.def)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.contourlua.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.cfg))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/hgeneric-
+testphase.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/pdfmanagement-testphase/hyperref-
+colorschemes.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-dm.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-compat.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/standard.bbx)))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.cfg)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty))
+(./thesisbiblatex.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latex-lab/latex-lab-footmisc.ltx)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/placeins/placeins.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/mhchem/mhchem.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/chemgreek/chemgreek.sty))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/chemfig/chemfig.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/chemfig/chemfig.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/simplekv/simplekv.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex)))
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml.sty
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml-patches-kernel.s
+ty)
+(/usr/local/texlive/2026/texmf-dist/tex/lualatex/luamml/luamml-patches-amsmath.
+sty))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.colorbrewer.code.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorb
+rewer.code.tex))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+
+Package biblatex Warning: Patching footnotes failed.
+(biblatex)                Footnote detection will not work.
+
+(./thesis.aux
+! Text line contains an invalid character.
+l.4 ^^@
+     ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@
+      ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@
+       ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@
+        ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@
+         ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@
+          ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@
+           ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@
+            ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+             ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+              ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+               ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                   ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                    ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                     ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                      ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                       ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                        ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                         ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                          ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                           ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                            ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+
+                             ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@
+                              ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@
+                               ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@
+                                ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@
+                                 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@
+                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@
+                                   ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@
+                                    ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@.
+..
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@
+                                     ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                      ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                       ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                        ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                         ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                          ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                           ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                            ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                             ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                              ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                               ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+! Text line contains an invalid character.
+l.4 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^@
+^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@...
+(That makes 100 errors; please try again.)
+ 604 words of node memory still in use:
+   6 hlist, 1 vlist, 2 rule, 1 dir, 4 kern, 2 glyph, 15 attribute, 72 glue_spec
+, 9 attribute_list, 2 write, 1 pdf_colorstack nodes
+   avail lists: 2:33,3:3,4:2,7:2,9:3
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on thesis.log.
+Latexmk: Getting log file 'thesis.log'
+Latexmk: Examining 'thesis.fls'
+Latexmk: Examining 'thesis.log'
+Latexmk: Errors, so I did not complete making targets
+Collected error summary (may duplicate other messages):
+  lualatex: Command for 'lualatex' gave return code 1
+      Refer to 'thesis.log' and/or above output for details
+
+Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+make: *** [all] Error 12

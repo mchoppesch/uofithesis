@@ -14,5 +14,6 @@
 *.blg
 *.run.xml
 _minted/
+.make-build/
 
 !thesis.pdf
