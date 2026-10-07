@@ -4,6 +4,7 @@
 *.fls
 *.log
 *.pdf
+!**/figures/**/*.pdf
 *.synctex.gz
 *.ps
 *.dvi
