@@ -2,4 +2,4 @@
 $pdf_mode = 4; 
 $lualatex = 'lualatex -shell-escape -interaction=nonstopmode %O %S';
 $biber = 'env TMPDIR=/tmp biber %O %S';
-$clean_ext = 'aux bbl bcf blg fls log nav out run.xml snm synctex.gz toc';
+$clean_ext = 'aux bbl bcf blg fls html log nav out run.xml snm synctex.gz toc';

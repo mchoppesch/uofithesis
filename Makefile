@@ -15,7 +15,9 @@ all:
 
 clean:
 	$(LATEXMK) -c -outdir="$(BUILD_DIR)" $(THESIS)
+	rm -f "$(BUILD_DIR)/$(basename $(THESIS))-luamml-mathml.html"
 
 distclean:
 	$(LATEXMK) -C -outdir="$(BUILD_DIR)" $(THESIS)
+	rm -f "$(BUILD_DIR)/$(basename $(THESIS))-luamml-mathml.html"
 	rm -f "$(PDF)"

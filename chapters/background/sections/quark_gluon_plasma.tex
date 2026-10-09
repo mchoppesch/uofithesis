@@ -34,7 +34,7 @@ At low baryon density, the crossover between the hadronic phase and the QGP is a
 The nature of this transition is related to the nonzero quark masses.
 As the phase diagram moves towards higher $\mu$, lattice calculations indicate that the transition may become a first-order phase transition~\cite{QGP:Lattice2}.
 At very high baryon density, exotic states such as a color superconductor are postulated to exist, but this portion of the phase diagram is less well studied~\cite{QGP:superconductor}.
-Heavy ion collisions at higher and higher energies probe the region of the QGP diagram at low-$\mu$ and high-$T$, because the ratio of baryon number to entropy scales inversely with collision energy.
+Heavy-ion collisions at increasingly higher energies probe the region of the QGP diagram at low-$\mu$ and high-$T$, because the ratio of baryon number to entropy scales inversely with collision energy.
 
 \subsubsection{Timeline of an ion collision}
 \begin{figure}[H]
@@ -112,7 +112,7 @@ Compare that with more peripheral selections (higher $b$), where the fireball wi
     \label{fig:qgp_flow}
 \end{figure}
 
-The zeroth-order flow coefficient, called radial flow, is not included in the forier decomposition of Equation~\ref{eq:flow_fourier} because it a represnts the collective isotropic expansion and does not vary with $\phi$.
+The zeroth-order flow coefficient, called radial flow, is not included in the Fourier decomposition of Equation~\ref{eq:flow_fourier} because it represents the collective isotropic expansion and does not vary with $\phi$.
 The bulk viscosity of the QGP counteracts this radial acceleration; therefore, measurements of $v_0$ can help constrain this quantity~\cite{QGP:Review3}.
 The left side of Figure~\ref{fig:qgp_flow} shows the isotropic expansion of the (orange) medium leading to radial flow.
 The ATLAS experiment recently measured radial flow directly~\cite{HION-2024-06} in collisions with very small $b$, i.e., very central collisions.
@@ -143,8 +143,58 @@ These observables are interpreted together with models of the initial conditions
 
 \subsubsection{Jet quenching and hard probes of the QGP}
 
-Jets are produced in the very early times of the heavy ion collision and as such they ``see'' the full lifecycle of the QGP. 
+A signature of QGP formation is the interaction of the medium with hard (high-$Q^2$) partons, modifying the momentum and direction of the experimentally observed jets.
+\textit{Jet quenching} describes how jets interact and lose energy to the QGP medium through a redistribution of energy inside a jet cone to outside the cone.
+Jets are produced very early in a heavy-ion collision and, as such, ``see'' the full lifecycle of the QGP.
+The pre-equalibrium phase has been shown to contribute to energy loss, but the dominant effect comes from the QGP medium~\cite{QGP:preQuench}.
 
+Energetic partons lose energy to the medium via both elastic and inelastic collisions with the medium.
+Elastic $2\to 2$ collisions with the medium are referred to as collisional energy loss.
+Parton splittings and gluon radiation, both present in the vacuum, become more prevalent inside the QGP due to multiple scatterings with the medium constituents.
+This mechanism is called radiative energy loss, and it also includes inelastic medium collisions~\cite{QGP:JetQuenching}.
+The two types of quenching processes are pictured in Figure~\ref{fig:qgp_jet_energy_loss}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.8\linewidth,
+        alt={Diagram showing collisional and radiative energy loss of an energetic parton traversing the quark-gluon plasma.}
+    ]{chapters/background/sections/quark_gluon_plasma/figures/quenchingdiagram.pdf}
+    \caption{Schematic illustration of collisional (left) and radiative (right) energy loss of an energetic parton in the QGP. Taken from Ref.~\cite{QGP:JetQuenching}.}
+    \label{fig:qgp_jet_energy_loss}
+\end{figure}
+
+The strength of jet quenching can be described by $\hat{q}$, known as the \textit{jet transport coefficient}.
+\begin{equation}
+    \hat{q} = \frac{d\langle \Delta p_{\mathrm{T}}^2 \rangle}{dL}
+\end{equation}
+The jet transport coefficient describes the average squared transverse momentum lost by the jet to the medium per unit length.
+Reference~\cite{QGP:Qhat} shows that $\hat{q} / T^3$ can be related to $\eta / s$ in both a strongly and weakly coupled QGP and argues that $\hat{q} / T^3$ is a better measure of the in-medium QCD coupling strength.
+The left panel of Figure~\ref{fig:qgp_qhat_and_length_dependence} shows that $\hat{q} / T^3$ increases as $T$ decreases, according to a Bayesian analysis by JETSCAPE~\cite{QGP:JetscapeQhat}.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={Temperature dependence of the jet transport coefficient divided by the cube of the temperature, inferred from a Bayesian analysis of jet and hadron measurements.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/qhatjetscape.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={Mean transverse momentum squared lost by quark and gluon jets versus path length, comparing collisional energy loss with combined collisional and radiative energy loss.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/lengthdependenceEloss.pdf}
+    \end{subfigure}
+    \caption{Left: Temperature dependence of $\hat{q}/T^3$ extracted through Bayesian analysis using jet and hadron measurements. Taken from Ref.~\cite{QGP:JetscapeQhat}. Right: Path-length dependence of the mean transverse momentum squared lost by quark and gluon jets through collisional energy loss alone and through collisional plus radiative energy loss. Taken from Ref.~\cite{QGP:Ldep}.}
+    \label{fig:qgp_qhat_and_length_dependence}
+\end{figure}
+
+The right panel shows the dependence of jet quenching on the path length traversed through the medium~\cite{QGP:Ldep}.
+Collisional energy loss grows linearly with path length, while radiative effects grow quadratically.
+Additionally, gluon jets are quenched more than quark jets are because they have a larger color charge and therefore interact more strongly with the medium.
 
 {\color{red}
     \begin{itemize}

@@ -106,7 +106,7 @@ The \texttt{FastJet} package includes a publicly avalible, highly optimized vers
 
 As previously mentioned, jets are reconstructed using underlying objects called jet constituents.
 From a theortical perpective jets are simply clusters of hadrons produced in the collision, each with an exact four-momentum that can be calculated and input into the \texttt{FastJet} package.
-From an experimental perspective, the picture is much more complicated. 
+From an experimental perspective, the picture is much more complicated.
 Below we will discuss several types of jets measured by experiments and their positives and negatives.
 \paragraph{Calorimeter Jets}
 Calorimeter jets are reconstructed from energy deposits measured in the calorimeter, commonly grouped into topological clusters or towers and represented by four-vectors. They provide sensitivity to both charged and neutral particles, although the measured jet energy must be calibrated to account for detector response and energy losses~\cite{JETM-2022-06}.
@@ -116,5 +116,14 @@ Track jets are reconstructed by clustering charged-particle tracks measured in t
 Particle-flow jets are built from particle-flow objects that combine tracking and calorimeter information to estimate the momenta of individual particles. Using tracks for charged particles and calorimeter clusters for neutral particles helps avoid double-counting charged-particle energy deposits while retaining sensitivity to both charged and neutral components.
 
 \subsubsection{Factorization of Jet Observables}
-Placeholder text for this section.
-
+Similar to Equation jets observables can also be factorized into nonperturbative and perterbative parts.
+\begin{equation}
+    \label{eq:jet_factorization}
+    \begin{aligned}
+        \mathrm{d}\sigma_{pp\rightarrow jj}
+        &\approx \sum_{1234}\int\mathrm{d}x_1\mathrm{d}x_2\mathrm{d}z_3\,\mathrm{d}z_4\,
+        f_i\left(x_1,\mu_F^2\right)f_j\left(x_2,\mu_F^2\right) \\
+        &\quad\otimes \mathrm{d}\hat{\sigma}_{ij\rightarrow kl}\left(x_1,x_2, \alpha_s \left(\mu_R\right),Q^2 \right) \\
+        &\quad\otimes D_{k\rightarrow g}\left(z_{3,i},\mu_F^2\right)
+    \end{aligned}
+\end{equation}
