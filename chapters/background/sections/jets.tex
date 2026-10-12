@@ -116,14 +116,20 @@ Track jets are reconstructed by clustering charged-particle tracks measured in t
 Particle-flow jets are built from particle-flow objects that combine tracking and calorimeter information to estimate the momenta of individual particles. Using tracks for charged particles and calorimeter clusters for neutral particles helps avoid double-counting charged-particle energy deposits while retaining sensitivity to both charged and neutral components.
 
 \subsubsection{Factorization of Jet Observables}
-Similar to Equation jets observables can also be factorized into nonperturbative and perterbative parts.
+Similar to Equation~\ref{eq:pp_factorization} jets observables can also be factorized into nonperturbative and perterbative parts~\cite{factorthrm}.
+Here the PDF and hard scattering element stay the same.
+In the ideal case where the jet, captures all of the fragmented hadrons from the parton leaving the hard scattering, the factorization is complete.
+However, real jets do not always capture the product of the scattering as it is possible for a realivly hard radiaion to push some jet energy outside of the perscribed cone.
+%Additionally, background from Multiparton interactions (MPI) in \pxp\ collisions can introduce background enegrgy into the jet cone.
+To account for these real-world effects, perturbativly calculable semi-inclusive jet functions $\left(J_i \left(z,R,\mu_R\right)\right)$ take the place of fragmentation functions in Equation~\ref{eq:pp_factorization} to account for effects on the jets~\cite{Jet:FF}.
+It parameterizes the likleihood for a jet with a certain clustering algoirthm with radius $R$ to be produced in the final-state carrying a fraction of the energetic partons momentum $z$.
 \begin{equation}
     \label{eq:jet_factorization}
     \begin{aligned}
         \mathrm{d}\sigma_{pp\rightarrow jj}
-        &\approx \sum_{1234}\int\mathrm{d}x_1\mathrm{d}x_2\mathrm{d}z_3\,\mathrm{d}z_4\,
-        f_i\left(x_1,\mu_F^2\right)f_j\left(x_2,\mu_F^2\right) \\
-        &\quad\otimes \mathrm{d}\hat{\sigma}_{ij\rightarrow kl}\left(x_1,x_2, \alpha_s \left(\mu_R\right),Q^2 \right) \\
-        &\quad\otimes D_{k\rightarrow g}\left(z_{3,i},\mu_F^2\right)
+        &\approx \sum_{ijkl}\int\mathrm{d}x_i\mathrm{d}x_j\mathrm{d}z_k\,\mathrm{d}z_l\,
+        f_i\left(x_i,\mu_F^2\right)f_j\left(x_j,\mu_F^2\right) \\
+        &\quad\otimes \mathrm{d}\hat{\sigma}_{ij\rightarrow kl}\left(x_i,x_j, \alpha_s \left(\mu_R\right),Q^2 \right) \\
+        &\quad\otimes J_{k}\left(z_{k},R,\mu_R^2\right) \otimes J_{l}\left(z_{l},R,\mu_R^2\right)
     \end{aligned}
 \end{equation}

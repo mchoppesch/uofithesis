@@ -192,19 +192,107 @@ The left panel of Figure~\ref{fig:qgp_qhat_and_length_dependence} shows that $\h
     \label{fig:qgp_qhat_and_length_dependence}
 \end{figure}
 
-The right panel shows the dependence of jet quenching on the path length traversed through the medium~\cite{QGP:Ldep}.
+The right panel shows the dependence of average jet quenching effects on the path length traversed through the medium~\cite{QGP:Ldep}.
 Collisional energy loss grows linearly with path length, while radiative effects grow quadratically.
 Additionally, gluon jets are quenched more than quark jets are because they have a larger color charge and therefore interact more strongly with the medium.
+Additinally, a simple path length dependence of jet quenching is complicated by jet-by-jet fluctuations in the energy loss~\cite{QGP:JetQuenchFluct}
 
-{\color{red}
-    \begin{itemize}
-        \item Explain how hard scatterings produce high-momentum partons that traverse the QGP and lose energy through medium-induced radiation and interactions.
-        \item Introduce nuclear modification factors and reconstructed-jet observables as measures of suppression and energy redistribution.
-        \item Describe dijet and photon/Z--jet momentum imbalance as tools for relating energy loss to the initial parton kinematics.
-        \item Discuss dependence on parton energy, path length, and medium density, and the role of the transport coefficient $\hat{q}$.
-        \item Explain how proton--nucleus and other reference measurements help distinguish QGP effects from initial-state and cold-nuclear-matter effects.
-    \end{itemize}
-}
+The jet-medium effects described above can be written as a factorized formula where the ``hot'' jet quenching effects are written as Equation~\ref{eq:AA_pseudofactorization}.
+\begin{equation}
+    \label{eq:AA_pseudofactorization}
+    \begin{aligned}
+        \mathrm{d}\sigma_{AB\rightarrow h+X}
+        &\approx \sum_{ijkk'l}\int\mathrm{d}x_i\mathrm{d}x_j\mathrm{d}z_k\,
+        f_i^A\left(x_i,\mu_F^2\right)f_j^B\left(x_j,\mu_F^2\right) \\
+        &\quad\otimes \mathrm{d}\hat{\sigma}_{ij\rightarrow kl}\left(x_i,x_j, \alpha_s \left(\mu_R\right),Q^2 \right) \\
+        &\quad\otimes P_{k\rightarrow k'}\left(z_{k},\mu_F^2\right) \\
+        &\quad\otimes D_{k'\rightarrow h}\left(z_{k'},\mu_F^2\right)
+    \end{aligned}
+\end{equation}
+The interatctions between the hard parton $k$ and the QGP are parameterized by $P_{k\rightarrow k'}\left(z_{k}\right)$.
+Note also that the PDFs in Equation~\ref{eq:pp_factorization} have been replaced by nPDFs for the relevent nuclear species.
+The ``so-called'' medium-modified FF is given by $\Sigma_{k'} P_{k\rightarrow k'}\left(z_{k}\right)\otimes D_{k'\rightarrow h}\left(z_{k'}\right)$.
+While this above formula is widley used in phenomological studies of the QGP, no formal proof of this type of factorization is currenlty avalible~\cite{QGP:JetQuenching}.
+
+Jet quenching is studied experimentally by measuring hadron or jet observables in \AxA\ collisions.
+One such observable is the nuclear modification factor, \Raa, which describes how the production of hadrons or jets is modified relative to an expectation of \NCOLL\ scaling.
+Note that the calculation of an \Raa\ requieres that the reference \pxp\ data be taken under similar conditions and with a simular $\sqrt{s}$ as the ion data.
+\begin{equation}
+    \label{eq:RAA}
+    R_{AA} =
+    \frac{\displaystyle \frac{1}{A^2}
+    \frac{\mathrm{d}^2\sigma_{AA}^{h/j}}{\mathrm{d}p_{\mathrm{T}}\,\mathrm{d}y}}
+    {\displaystyle \frac{\mathrm{d}^2\sigma_{pp}^{h/j}}
+    {\mathrm{d}p_{\mathrm{T}}\,\mathrm{d}y}}
+    \quad \quad
+    R_{AA}|_{\mathrm{cent}} =
+    \frac{\displaystyle
+        \frac{1}{N_{\mathrm{evt}}\langle T_{AA}\rangle}
+        \frac{ \mathrm{d}^2N_{AA}^{h/j}}
+    {\mathrm{d}p_{\mathrm{T}}\,\mathrm{d}y} \bigg |_{\mathrm{cent}}}
+    {\displaystyle \frac{\mathrm{d}^2\sigma_{pp}^{h/j}}
+    {\mathrm{d}p_{\mathrm{T}}\,\mathrm{d}y}}
+\end{equation}
+\Raa\ is typically reported as a function of \PT\ and/or rapidity.
+By varying \PT\ one is sensative to the quenching dependence on the $Q^2$.
+By varying rapidity one is sensative to the flavor of the initiating parton, since gluon jets loose more energy to the medium.
+The left side of Equation~\ref{eq:RAA} represents a centrality intergrated \Raa.
+The prefactor of $A^2$ accounts for the number of nucleons in the colliding ion species.
+Note that this formula for \Raa\ is not sensetive to any glauber model uncertainties.
+The right side of Equation~\ref{eq:RAA} shows a centrality differential \Raa.
+Studying jet quneching observables differential in centrality is important because the energy loss is expected to be propotional to path length in the medium~\cite{QGP:JetQuenching}, and centrality provides a systematic way for varying the medium size.
+Here, $N_{\mathrm{evt}}^C$ is the number minimum bias \AxA\ events in a given centrality interval, and $\langle T_{AA}\rangle_C$ is the average nuclear thickness function in that interval obtained by a glauber calculation~\cite{Glauber}.
+The nuclear thickeness function satisfies $\langle T_{AA}\rangle_{\mathrm{cent}}=\langle N_{\mathrm{coll}}\rangle_{\mathrm{cent}}/\sigma_{pp}^{\mathrm{inel}}$.  Sometimes the numerator of the right side of Equation~\ref{eq:RAA} is called the parton-flux normalized yield since the Glauber factors normalize the overlapping flux of the two ions to that of a \pxp\ collision.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={ATLAS charged-hadron nuclear modification factor in the 0--5 percent most central Pb+Pb collisions.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/ATLAS_hadron_RAA_0_5.png}
+        \caption{Charged hadrons, 0--5\% centrality. ATLAS Fig.~20~\cite{HION-2018-17}.}
+        \label{fig:atlas_hadron_raa}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={ATLAS inclusive-jet nuclear modification factor in Pb+Pb collisions.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/ATLAS_jet_RAA.png}
+        \caption{Inclusive jets. ATLAS Fig.~4(a)~\cite{HION-2017-10}.}
+        \label{fig:atlas_jet_raa}
+    \end{subfigure}
+    \caption{ATLAS measurements of the nuclear modification factor for charged hadrons and inclusive jets in Pb+Pb collisions.}
+    \label{fig:atlas_hadron_jet_raa}
+\end{figure}
+Figure~\ref{fig:atlas_hadron_raa} displays the charged hadron \Raa\ in \PbxPb\ presented by the LHC experiments, which show good agreement across different measured rapidities.
+The measurment shows a strong supression of the charged hadron \Raa\ for a broad range of \PT\ indicative of strong partonic energy loss in the 0--5\% centrality interval considered.
+At low-to-intermediate \PT, the charged-hadron \Raa\ exhibits a broad local maximum around $2$--$3$~\GeV, before decreasing to stronger suppression at higher \PT.
+Figure~\ref{fig:atlas_jet_raa} reports the jet \Raa\ differential in \PT\ and for various centrality selections.
+The magnitude of \Raa\ increases with increasing \PT.
+Additinally, a systematic depdendence of the supression is seen as a function of centrality, where the yeilds of jets produced in the most cenrtal events are observed to be the most supressed.
+This centrality scaling directly shows the connection between a larger QGP and stronger jet quenching.
+
+Dijet observables are directly sensitive to asymmetric quenching experienced by the two jets. This asymmetry can result from different path lengths through the medium or from jet-by-jet fluctuations in energy loss.
+Figure~\ref{fig:dijet_asymmetric_path} illustrates how the placement of the hard scattering in a collision can induce different path lengths for each jet to travel through the QGP.
+An observable used to charecterize the quneching of the two jets in the dijet system is the dijet momentum balance, shown in Equation~\ref{eq:xJ}.
+\begin{equation}
+    \XJ = \frac{\PTTWO}{\PTONE},
+    \label{eq:xJ}
+\end{equation}
+Here $\PTONE$ and $\PTTWO$ are the transverse momenta of the leading and sub-leading jets, respectively, that are required to be nearly back-to-back in azimuth.
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.65\linewidth,
+        alt={Schematic dijet event in which the two jets traverse different path lengths through the quark-gluon plasma.}
+    ]{chapters/background/sections/quark_gluon_plasma/figures/baileyDijetCartoon.pdf}
+    \caption{Schematic illustration of a dijet event in which the two jets traverse different path lengths through the QGP, resulting in asymmetric energy loss. Cartoon adapted from Reference~\cite{HI:Cartoons} by V. Bailey.}
+    \label{fig:dijet_asymmetric_path}
+\end{figure}
 
 \subsubsection{QGP in small systems}
 \label{sec:qgp_small}
