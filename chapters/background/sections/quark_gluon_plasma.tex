@@ -214,7 +214,7 @@ Note also that the PDFs in Equation~\ref{eq:pp_factorization} have been replaced
 The ``so-called'' medium-modified FF is given by $\Sigma_{k'} P_{k\rightarrow k'}\left(z_{k}\right)\otimes D_{k'\rightarrow h}\left(z_{k'}\right)$.
 While this above formula is widley used in phenomological studies of the QGP, no formal proof of this type of factorization is currenlty avalible~\cite{QGP:JetQuenching}.
 
-Jet quenching is studied experimentally by measuring hadron or jet observables in \AxA\ collisions.
+\paragraph{Jet \texorpdfstring{\Raa}{Raa}} Jet quenching is studied experimentally by measuring hadron or jet observables in \AxA\ collisions.
 One such observable is the nuclear modification factor, \Raa, which describes how the production of hadrons or jets is modified relative to an expectation of \NCOLL\ scaling.
 Note that the calculation of an \Raa\ requieres that the reference \pxp\ data be taken under similar conditions and with a simular $\sqrt{s}$ as the ion data.
 \begin{equation}
@@ -276,8 +276,8 @@ The magnitude of \Raa\ increases with increasing \PT.
 Additinally, a systematic depdendence of the supression is seen as a function of centrality, where the yeilds of jets produced in the most cenrtal events are observed to be the most supressed.
 This centrality scaling directly shows the connection between a larger QGP and stronger jet quenching.
 
-Dijet observables are directly sensitive to asymmetric quenching experienced by the two jets. This asymmetry can result from different path lengths through the medium or from jet-by-jet fluctuations in energy loss.
-Figure~\ref{fig:dijet_asymmetric_path} illustrates how the placement of the hard scattering in a collision can induce different path lengths for each jet to travel through the QGP.
+\paragraph{Dijet balance} Dijet observables are directly sensitive to asymmetric quenching experienced by the two jets. This asymmetry can result from different path lengths through the medium or from jet-by-jet fluctuations in energy loss.
+The left panel of figure~\ref{fig:dijet_asymmetric_path} illustrates how the placement of the hard scattering in a collision can induce different path lengths for each jet to travel through the QGP.
 An observable used to charecterize the quneching of the two jets in the dijet system is the dijet momentum balance, shown in Equation~\ref{eq:xJ}.
 \begin{equation}
     \XJ = \frac{\PTTWO}{\PTONE},
@@ -286,13 +286,125 @@ An observable used to charecterize the quneching of the two jets in the dijet sy
 Here $\PTONE$ and $\PTTWO$ are the transverse momenta of the leading and sub-leading jets, respectively, that are required to be nearly back-to-back in azimuth.
 \begin{figure}[H]
     \centering
-    \includegraphics[
-        width=0.65\linewidth,
-        alt={Schematic dijet event in which the two jets traverse different path lengths through the quark-gluon plasma.}
-    ]{chapters/background/sections/quark_gluon_plasma/figures/baileyDijetCartoon.pdf}
-    \caption{Schematic illustration of a dijet event in which the two jets traverse different path lengths through the QGP, resulting in asymmetric energy loss. Cartoon adapted from Reference~\cite{HI:Cartoons} by V. Bailey.}
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={Schematic dijet event in which the two jets traverse different path lengths through the quark-gluon plasma.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/baileyDijetCartoon.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.35\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            trim=630bp 0bp 490bp 0bp,
+            clip,
+            alt={ATLAS event display of a highly asymmetric dijet event, showing detector tracks and calorimeter towers.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/HION201002-eventdisplay.png}
+    \end{subfigure}
+    \caption{(left) Schematic illustration of asymmetric dijet energy loss due to different path lengths through the QGP, adapted from Reference~\cite{HI:Cartoons} by V. Bailey. (right) ATLAS event display of a highly asymmetric dijet event~\cite{HION-2010-02}.}
     \label{fig:dijet_asymmetric_path}
 \end{figure}
+
+Historically, the first measurment of fully reconstructed jets in heavy ion collisions was the dijet balance\footnote{Technically the objservable measured was the dijet asymmetry, $A_J = \frac{|E_{\mathrm{T,1}}-E_{\mathrm{T,2}}|}{E_{\mathrm{T,1}}+E_{\mathrm{T,2}}}$, which probes the same physics as \XJ} measured by ATLAS~\cite{HION-2010-02}.
+The right panel of Figure~\ref{fig:dijet_asymmetric_path} shows an map of calorimeter energy deposits in $\eta-\phi$ used in the analysis.
+The event displayed is charecteriztic of a highly asymmetric dijet event, with one clear large jet sgnature at $(\eta, \phi ) = 0,\pi$ but no recoiling jet that should be around $(\eta, \phi ) = 0,0$.
+This measurment revealed that the dijet balance was modified to favor more asymmetric momentum configurations in \PbxPb\ collisions with respect to \pxp, and a stronger effect was found for more central collisions.
+This discovery led to an immidiate response from theorists trying to incorperate the highly modified dijet balance into models~\cite{QGP:Dijet2010Theory1,QGP:Dijet2010Theory2} as shown in the left panel of Figure~\ref{fig:dijet_balance_measurements}.
+The \PbxPb\ data agree much better with the predictions from the \textsc{PYTHIA}+medium as opposded to plain \textsc{PYTHIA}, evidence of medium indiced jet quneching.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.32\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            trim=0bp 0bp 0bp 0bp,
+            clip,
+            alt={ATLAS dijet asymmetry distributions with PYTHIA and PYTHIA plus medium theory comparisons.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/HION201002-aj.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            trim=0bp 0bp 0bp 0bp,
+            clip,
+            alt={ATLAS xJ distributions in pp and in 0--10 percent and 40--60 percent Pb+Pb collisions at 5.02 TeV.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/HION201828-xj.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            trim=0bp 0bp 0bp 0bp,
+            clip,
+            alt={ATLAS comparison of xJ distributions in 0--10 percent Pb+Pb collisions at 2.76 and 5.02 TeV.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/fig_xjcomp_2.76_5.02.png}
+    \end{subfigure}
+    \caption{(left) ATLAS dijet asymmetry distributions in 0--10\% and 10--20\% Pb+Pb collisions, compared with PYTHIA and PYTHIA plus medium calculations~\cite{HION-2010-02,QGP:Dijet2010Theory2}. (middle) The \XJ\ distributions in pp and in 0--10\% and 40--60\% Pb+Pb collisions at $\sqrt{s_{NN}}=5.02$~\TeV~\cite{HION-2018-28}. (right) Comparison of the \XJ\ distributions in 0--10\% Pb+Pb collisions at $\sqrt{s_{NN}}=2.76$ and 5.02~\TeV~\cite{HION-2012-11,HION-2018-28}.}
+    \label{fig:dijet_balance_measurements}
+\end{figure}
+
+Later ATLAS measurments~\cite{HION-2012-11,HION-2019-02,HION-2018-28} at 2.76 and 5.02 \TeV\ included corrections for detector effects and jet energy resolution.
+%, as well as expoloring \XJ\ dependence on the jet radius~\cite{HION-2024-03}.
+The middle panel of Figure~\ref{fig:dijet_balance_measurements} reports the fully corrected \XJ\ distribution for a central (0--10\%), peripheral (40--60\%), and \pxp\ selection.
+The \pxp\ measurment agrees well with a \pythia\ prediction (not pictured) and both the central and periphiral are greatly modified with resprect to the \pxp.
+Similar to Reference~\cite{HION-2010-02}, the \PbxPb\ distributions favor dijets with a lower average \XJ\ (more imbalanced dijets) in a centrality dependent way.
+Figure~\ref{fig:dijet_balance_measurements}'s right panel compares the measured dijet asymmetry in subsequent \XJ\ measurements at 5.02 and 2.76~\TeV\ and shows little dependence on \SNN.
+
+All the \XJ\ distributions discussed so far have been ``area-normalized'', that is to say that they are divided by the total number of events such that the integral under the distribution is equal to unity.
+All physics drawn from these plots must account for the fact that the shifting distributions in \PbxPb\ relative to \pxp\ are a relative enhancment/suppression.
+This lack of imformation about absolute dijet yields was addressed by ATLAS in Reference~\cite{HION-2018-28} with the interoduction of absolutly normalized \XJ\ yeilds which introduce a Glauber model dependence on \TAA\footnote{Technically any centrality differentiated measurment has a Glauber model defendence, but for wide centrlaity bins such as those typically used in jet measurments any uncertainty is usually negligible and is hence neglected}.
+The right panel of Figure~\ref{fig:xj_absolute_yields} shows absolute \XJ\ yields, for many different centraltites.
+The striking feature of this plot is that the supression of balanced dijets relative to \pxp\ scales with centrality, with more central events more supressed.
+The picture at low-\XJ\ is less clear, and is dependent on the \PTONE\ selection considered.
+To directly study the differences between \PbxPb\ and \pxp\ data the \Jaa\ observable is defined in Reference~\cite{HION-2024-03} as the ratio between the absolutely normalized centrality differentiated \XJ\ distributions in \PbxPb\ relative to \pxp.
+The \Jaa\ is plotted for different centrality selections in the middle panel of Figure~\ref{fig:xj_absolute_yields}.
+The interpretation is similar to the previous plot, but, the experimental precision is increased by canceling correlated sources of uncertainty between the \PbxPb\ and \pxp\ measurements.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.32\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            trim=0bp 0bp 0bp 0bp,
+            clip,
+            alt={ATLAS absolutely normalized xJ yields in proton-proton and Pb+Pb collisions.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/HION201828-xjabs.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            trim=0bp 0bp 0bp 0bp,
+            clip,
+            alt={ATLAS JAA ratio of Pb+Pb to proton-proton absolute xJ yields for multiple centrality intervals.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/HION202403-jaa.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            trim=0bp 0bp 0bp 0bp,
+            clip,
+            alt={ATLAS absolute xJ yields compared for different jet radii.}
+        ]{chapters/background/sections/quark_gluon_plasma/figures/HION202403-xjabsrad.pdf}
+    \end{subfigure}
+
+    \caption{(left) Absolutely normalized \XJ\ yields in \PbxPb\ and \pxp\ collisions~\cite{HION-2018-28}. (middle) \Jaa, the ratio of the \PbxPb\ absolute yields to the \pxp\ yields, for different centrality intervals~\cite{HION-2024-03}. (right) Radius dependence of the absolute \XJ\ yields~\cite{HION-2024-03}.}
+    \label{fig:xj_absolute_yields}
+\end{figure}
+
+The right panel of Figure~\ref{fig:xj_absolute_yields} shows the sensetivaty of the absolutly normalized \XJ\ distribution to the choice of jet radius, still using \antikt\ clustering algorithm.
+Since jets are quenched by energy within the jet cone being redistibuted outside of it via collisinal and radiative interactinons with the medium, widening the jet cone captures more of these components and as such increases the yield of balanced dijets.
+
+
 
 \subsubsection{QGP in small systems}
 \label{sec:qgp_small}
