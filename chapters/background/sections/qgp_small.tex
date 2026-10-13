@@ -1,0 +1,78 @@
+\subsection{Searching for QGP in small systems}
+\label{sec:qgp_small}
+
+The umbrella term ``small systems'' covers many different collision scenarios, each with its own advantages and challenges.
+Generally, \pxp, \pxA, \AxAlight, and peripheral \AxA\ collisions can all be considered small systems.
+Here, \AxAlight\ refers to light-ion collisions with mass number $A\lesssim 30$.
+Light-ion data have only recently become available at RHIC (2026) and the LHC (2025).
+
+Evidence for QGP formation includes partonic energy loss and collective flow.
+As the system size decreases from that of central \AxA\ collisions, these experimental signatures are expected to weaken as the fireball, if formed, becomes progressively smaller.
+
+\subsubsection{Collectivity in small systems}
+
+Flow-like signatures have been observed in \pxp~\cite{HION-2015-09}, \pxPb~\cite{HION-2012-13}, \pxAu, \dxAu, and \HexAu~\cite{PHENIX:SmallFlow}, \OxO, \NexNe~\cite{HION-2025-02}, and peripheral \PbxPb~\cite{HION-2016-06}.
+\TCR{Discuss the OSU model and add plots of flow observables.}
+Collectivity has also been studied in systems even ``smaller'' than those listed above, such as electron--positron annihilation measured by the ALEPH detector at LEP~\cite{Belle:collective}.
+The collectivity signal in $e^{+}e^{-}$ collisions was not significant and could be explained by \textsc{Pythia}6.
+
+\subsubsection{Jet quenching in \texorpdfstring{\pxp}{pp} collisions}
+
+Jet energy loss is not observed in \pxp\ collisions, as demonstrated by the success of pQCD calculations in describing \pxp\ data.
+For example, measurements of the balance between an electroweak boson ($\gamma$ or $Z$) and a recoiling jet show that, on average, the boson and jet momenta agree with NLO predictions~\cite{STDM-2011-27}.
+Since the electroweak boson does not interact strongly with the medium, any partonic energy loss would affect only the jet.
+Therefore, jet quenching in \pxp\ collisions would produce a net momentum imbalance that would disagree with pQCD predictions.
+Figure~\ref{fig:qgp_small_observables}(a) shows that the photon--jet momentum balance in \pxp\ collisions is consistent with pQCD predictions, while the corresponding \PbxPb\ data exhibit an imbalance~\cite{HION-2018-06}.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={ATLAS photon--jet momentum balance in proton--proton and lead--lead collisions compared with pQCD predictions.}
+        ]{chapters/background/sections/qgp_small/figures/HION201608-xjgamma.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={ALICE charged-hadron nuclear modification factor versus centrality, with a model describing peripheral suppression without jet quenching.}
+        ]{chapters/background/sections/qgp_small/figures/2018-May-29-ppp_raa_fitconst.pdf}
+    \end{subfigure}
+    \caption{Measurements relevant to jet quenching in small and peripheral collision systems. In \pxp\ collisions, photon--jet momentum balance agrees with pQCD predictions, whereas the very peripheral charged-hadron suppression can be described by a model without jet quenching~\cite{HION-2018-06,ALICE:periphBias}.}
+    \label{fig:qgp_small_observables}
+\end{figure}
+\subsubsection{Jet quenching in peripheral \texorpdfstring{\AxA}{AA} collisions}
+
+Jet-quenching observables in peripheral \AxA\ collisions show suppression relative to \pxp\ collisions; however, interpreting this suppression is challenging.
+Glauber modeling of peripheral collisions is associated with larger uncertainties because, at large impact parameters, the $N_{\mathrm{elem}}$ dependence is dominated by multiplicity fluctuations rather than geometry.
+Additionally, events containing a hard process are correlated with higher soft underlying-event activity~\cite{CentBias:periphBias}.
+This effect is small at large \NPART, where it is largely washed out, but its relative impact increases as \NPART\ decreases.
+In the right panel of Figure~\ref{fig:atlas_hadron_jet_raa}, the jet \Raa\ is approximately $0.8$ at a \PT\ of 50 \GeV, but substantial uncertainties in \TAA\ (about 10\%) complicate its interpretation.
+For very peripheral collisions (greater than 80\% centrality), the right panel of Figure~\ref{fig:qgp_small_observables} shows that the apparent suppression of charged-hadron \Raa\ in \PbxPb\ collisions can be described by a \pythia\ toy model with a HIJING Glauber initial state and no jet quenching~\cite{ALICE:periphBias,CentBias:periphBias}.
+Beyond \Raa, correlation measurements (such as dijets and $\gamma$+jet pairs) have been shown to be more robust against centrality biases~\cite{CentBias:OO}.
+Figure~\ref{fig:xj_absolute_yields} shows that the yield of balanced dijets is slightly suppressed relative to \pxp\ in the 60--80\% centrality interval, although the significance of this deviation has not been evaluated~\cite{HION-2018-28}.
+The most peripheral \Jaa\ measurement reported is for the 40--60\% centrality interval, where the ratio is clearly different from unity~\cite{HION-2024-03}.
+The effects of nPDFs and centrality biases on these measurements have not been rigorously evaluated, so definitive conclusions about the presence of jet quenching remain elusive.
+
+\subsubsection{Jet quenching in \texorpdfstring{\pxA}{pA} collisions}
+
+Studies of \pxPb\ collisions have found no unambiguous evidence of jet quenching.
+
+\TCR{Motivate the first measurement.}
+\subsubsection{Jet quenching in peripheral \texorpdfstring{\AxAlight}{AAlight} collisions}
+
+\TCR{Motivate the second measurement.}
+
+{\color{red}
+    \begin{itemize}
+        \item Define small collision systems, such as proton--proton, proton--nucleus and light-ion collisions, and explain why QGP formation there was initially unexpected.
+        \item Summarize collective signatures in small systems, including long-range correlations and flow-like patterns, and compare them with heavy-ion results.
+        \item Discuss possible origins of these signatures, including hydrodynamic response, initial-state correlations, and the role of event activity.
+        \item Review jet-quenching observables in pp and pPb collisions.
+        \item Discuss how centrality-differential jet-quenching measurements in proton--nucleus collisions can be biased by projectile-configuration effects, as mentioned earlier, and motivate the first measurement in this thesis.
+        \item Review jet-quenching observables in light-ion collisions.
+        \item Motivate a measurement of dijet asymmetry in light-ion collisions as a method for searching for jet quenching.
+    \end{itemize}
+}
