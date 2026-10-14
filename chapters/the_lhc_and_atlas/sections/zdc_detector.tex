@@ -42,13 +42,13 @@ Due to the asymmetric nature of the \pxPb\ collisions system in each period only
 
 In 2019, J. Nagle performed \TCR{ ref needed} the calibration of the 5.02 \TeV\ data, but concluded that the contamination from pileup in the high-\avmu\ \pxPb\ data made a calibration unfeasible.
 
-The author of this thesis undertook the calibratrion of the high high-\avmu\ \pxPb\ data in 2023 after substatial improvemnts had been made to the ZDC reconstruction in order to mitigate the previously untennable issues.
+The author of this dissertation undertook the calibratrion of the high high-\avmu\ \pxPb\ data in 2023 after substatial improvemnts had been made to the ZDC reconstruction in order to mitigate the previously untennable issues.
 
 The first improvement made to the ZDC reconstruction comes from \cite{ATL-COM-PHYS-2019-1454}.  This note documents updates to the signal processing created mainly for the 2018 \PbxPb\ data, but that are useful for the 2016 \pxPb\ data as well.  These updates includes significant improvements to the reconstructions ability to fit pulses in the presence of out of time (OOT) pile up, both preceding and after the event in question.  Large OOT pileup pulses would saturate the high gain ADC, leading to the pulse being analyzed with the low gain ADC which has a roughly 10x worse resolution.  By excluding a few samples from the beginning or (end) of these pulses and looking at the high gain ADC values, the reconstruction will yield a reasonable fit for the current event. This is especially important given that the relatively high \avmu\ in the 2016 8.16 \TeV\ \pxPb\ has more events affected by out of time pileup.
 
 The second significant improvement made to the ZDC reconstruction was the `two-pass' analysis method.  This method first uses a relatively high second derivative threshold to search for pulses in a ZDC event.  This high threshold helps to suppress noise from small background and pileup pulses.  However, if at least one module has a pulse that passes this threshold, all the modules on said ZDC arm are reanalyzed with a lower second derivative threshold. This `repass' recovers finer pulses that were too small to be `seen' on the first pass.
 
-The third significant improvemnt\footnote{This improvment was done by the author of the thesis, while the first two were done by Pengqi Yin of Columbia University}, involves the studies on the pulse timing.
+The third significant improvemnt\footnote{This improvment was done by the author of the dissertation, while the first two were done by Pengqi Yin of Columbia University}, involves the studies on the pulse timing.
 
 \begin{figure}[ht]
     \centering
@@ -121,7 +121,7 @@ Solving \ref{LagrangeMult} with respect to $\mathbf{g}$ and $\lambda$ yields the
 
 The ZDC energy response changes significantly over the period of a run.  Therefore, it is imperative to create a time dependent calibration.
 
-The software to implement this calibration was created by the author of this thesis.  Some important practical details are described below.  Firstly, the data is broken a series of seperate consecutive time intervals with the condition that each time interval has about a million events, which was found to be sufficient for a stable calibration.  Next, within each interval, a  histogram is created out of the sum of ZDC module amplitudes for a given event $\Sigma_i^{4} A_i$.  The single neutron peak is apperent in the spectrum of $\Sigma_i^{4} A_i$, and a window $\pm 1.5\sigma$ around the peak is defined by a simple Gaussian fit.
+The software to implement this calibration was created by the author of this dissertation.  Some important practical details are described below.  Firstly, the data is broken a series of seperate consecutive time intervals with the condition that each time interval has about a million events, which was found to be sufficient for a stable calibration.  Next, within each interval, a  histogram is created out of the sum of ZDC module amplitudes for a given event $\Sigma_i^{4} A_i$.  The single neutron peak is apperent in the spectrum of $\Sigma_i^{4} A_i$, and a window $\pm 1.5\sigma$ around the peak is defined by a simple Gaussian fit.
 Then, for each time interval, fourteen histograms are defined corresponding to the unaveraged matrix elements of Equation~\ref{LagrangeMatrix} and are filled with events falling inside the single neutron window defined in the previous step.
 Next the histograms are averaged over and Equation~\ref{LagrangeMatrix} can be solved for the optimal \textbf{g} for each time interval.  Once the optimal \textbf{g} for every time interval is decided, a cubic spline is used to interpolate smoothly between the sucsessive time intervals.  Then, on an event by event basis the calibraited ZDC energy is equal to $\mathbf{g(t)}^T\mathbf{A} $.
 

@@ -12,7 +12,7 @@ As the system size decreases from that of central \AxA\ collisions, these experi
 \subsubsection{Collectivity in small systems}
 
 Flow-like signatures have been observed in \pxp~\cite{HION-2015-09}, \pxPb~\cite{HION-2012-13}, \pxAu, \dxAu, and \HexAu~\cite{PHENIX:SmallFlow}, \OxO, \NexNe~\cite{HION-2025-02}, and peripheral \PbxPb~\cite{HION-2016-06}.
-\TCR{Discuss the OSU model and add plots of flow observables.}
+\TCR{Discuss and add plots of flow observables.}
 Collectivity has also been studied in systems even ``smaller'' than those listed above, such as electron--positron annihilation measured by the ALEPH detector at LEP~\cite{Belle:collective}.
 The collectivity signal in $e^{+}e^{-}$ collisions was not significant and could be explained by \textsc{Pythia}6.
 
@@ -145,24 +145,119 @@ Figure~\ref{fig:atlas_xp_rcp} shows that the \RCP\ scales directly with the prot
 \end{figure}
 
 The observed suppression of the central \Raa\ in \dxAu\ and \pxPb\ can be explained by an event-activity bias arising from color-transparency effects.
-Since the, if any, jet quenching signal in \pxA\ is expected to be small and inclusive \pxA\ measurements show no such evidence it is of great interest to perform centrality differentiated measurements that are less biased.
+Since any jet-quenching signal in \pxA\ is expected to be small, and inclusive \pxA\ measurements show no such evidence, it is of great interest to perform less-biased, centrality-differentiated measurements.
 One proposed way to reduce the CT bias is to use centrality estimators that are less sensitive to CT than event activity~\cite{Dennis:EABias}\footnote{Event activity at forward rapidities has been used as the centrality estimator in the measurements mentioned above.}.
 One such CE selects centrality classes in \pxA\ events based on the number of spectator neutrons measured at $|\eta|>8$ by a Zero-Degree Calorimeter (ZDC) located in the nucleus-going direction~\cite{HION-2021-17,ALICE:ZdcCent}.
-This thesis includes a measurement that directly probes the impact of CT effects on two CEs, event activity and forward neutrons, as a function of the Bjorken-$x$ of the parton extracted from the proton in the hard scattering.
+This dissertation includes a measurement that directly probes the impact of CT effects on two CEs, event activity and forward neutrons, as a function of the Bjorken-$x$ of the parton extracted from the proton in the hard scattering.
 This inverts the previous approach~\cite{HION-2013-08,HION-2023-05} by directly measuring the quantities used to estimate centrality as a function of the jet kinematics, providing the first quantitative investigation of global observables in the presence of CF effects.
+The details of this analysis are presented in~\ref{ch:pPb} of this dissertation.
 
-\subsubsection{Jet quenching in peripheral \texorpdfstring{\AxAlight}{AAlight} collisions}
+\subsubsection{Jet quenching in \texorpdfstring{\AxAlight}{AAlight} collisions}
+Light-ion collisions provide a fertile new system for searching for the onset of partonic energy loss.
+As seen in Figure~\ref{fig:qgp_small_systemsize_theory}, minimum-bias \OxO\ collisions have a similar \NPART\ to peripheral \PbxPb\ collisions, where observing jet quenching is precluded by the aforementioned issues.
+Figure~\ref{fig:qgp_small_systemsize_theory} also shows hadron and jet \Raa\ measurements in several systems as a function of \NPART.
+Following the trends of the experimental points and taking experimental uncertainties into account, this indicates that the \Raa\ for minimum-bias \OxO\ collisions should be around 0.8.
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.6\linewidth,
+        alt={Theoretical prediction for system-size dependence of partonic rescattering in light-nucleus collisions.}
+    ]{chapters/background/sections/qgp_small/figures/systemsizeUrs.png}
+    \caption{Figure 1 from Ref.~\cite{SmallSystems:Theory1}.}
+    \label{fig:qgp_small_systemsize_theory}
+\end{figure}
 
-\TCR{Motivate the second measurement.}
+However, this argument based simply on \NPART\ is weak, as it ignores the geometry of the collision system.
+The $\hat{q}$ parameter is a function of path length in the medium~\cite{QGP:Ldep}, not \NCOLL.
+For hard probes measured near midrapidity, the transverse extent of the overlap region controls the path length.
+For central collisions, the radius of the QGP formed in an A+B nuclear collision is approximately limited by the radius of the smaller nucleus.
+Table~\ref{tab:small_system_radii} summarizes the radii of all collision species that have collided at the LHC.
+Light-ion collisions, such as \OxO\ and \NexNe, provide a bridge between systems with small and large transverse sizes.
 
-{\color{red}
-    \begin{itemize}
-        \item Define small collision systems, such as proton--proton, proton--nucleus and light-ion collisions, and explain why QGP formation there was initially unexpected.
-        \item Summarize collective signatures in small systems, including long-range correlations and flow-like patterns, and compare them with heavy-ion results.
-        \item Discuss possible origins of these signatures, including hydrodynamic response, initial-state correlations, and the role of event activity.
-        \item Review jet-quenching observables in pp and pPb collisions.
-        \item Discuss how centrality-differential jet-quenching measurements in proton--nucleus collisions can be biased by projectile-configuration effects, as mentioned earlier, and motivate the first measurement in this thesis.
-        \item Review jet-quenching observables in light-ion collisions.
-        \item Motivate a measurement of dijet asymmetry in light-ion collisions as a method for searching for jet quenching.
-    \end{itemize}
-}
+\begin{table}[H]
+    \centering
+    \caption{Approximate radius scales for collision species studied at the LHC~\cite{pdg,Glauber:LightIon,Glauber:PbNuclearRho}.}
+    \label{tab:small_system_radii}
+    \begin{tabular}{|l|c|c|c|c|c|}
+        \hline
+        Species & Proton & ${}^{16}\mathrm{O}$ & ${}^{20}\mathrm{Ne}$ & ${}^{129}\mathrm{Xe}$ & ${}^{208}\mathrm{Pb}$ \\
+        \hline
+        Radius (fm) & $0.84$ & $2.61$ & $2.81$ & $5.36$ & $6.62$ \\
+        \hline
+    \end{tabular}
+\end{table}
+As an aside, these transverse size arguments can shed light on why jet quenching is so elusive in \pxPb.
+A medium created in \pxPb\ collisions cannot be much larger than 1 fm since it is limited by the proton size.
+A jet could very easily escape from the overlap region before the hydrodynamic stage, given that a QGP formation time is $\approx$1 fm/c.
+
+ALICE and CMS reported \Roo\ results in \OxO\ collisions shortly after the data became available~\cite{CMS-HIN-25-008,ALICE:ROO}.
+The CMS results (left panel) show the evolution of the charged-hadron \Raa\ from \pxPb\ to \PbxPb\, with the \Roo\ falling squarely in between the two.
+The \Roo\ is significantly below unity over a broad range of \PT. Compared with models incorporating only nPDF effects and models incorporating both nPDF effects and jet quenching, the data favor the model that includes jet quenching.
+The ALICE measurement (right panel) shows that the $\pi^0$ \Roo\ is suppressed relative to nPDF-only baseline scenarios; however, this effect is less pronounced at high \PT\ when experimental uncertainties are taken into account.
+ALICE also reports an \Raa\ in \pxO\ collisions, based on the expectation that if no jet quenching is observed in \pxPb\ then there should also be none in an even smaller system \pxO.
+The \Rpo\ is consistent with unity across a broad range of \PT.
+All of these \Raa\ measurements are minimum-bias measurements (using the left expression in Equation~\ref{eq:RAA}), meaning they have no Glauber model dependence.
+This lack of centrality differentiation is motivated by expected centrality biases for \Raa\ measurements in light-ion collisions~\cite{CentBias:OO}.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.59\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={CMS charged-hadron nuclear modification factor in oxygen--oxygen collisions.}
+        ]{chapters/background/sections/qgp_small/figures/ROOCMS.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.40\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={ALICE neutral-pion nuclear modification factors in oxygen--oxygen and proton--oxygen collisions.}
+        ]{chapters/background/sections/qgp_small/figures/ROORpOALICE.pdf}
+    \end{subfigure}
+    \caption{Nuclear modification measurements in light-ion collisions. Left: CMS charged-hadron $R_{\mathrm{OO}}$ in \OxO\ collisions~\cite{CMS-HIN-25-008}. Right: ALICE neutral-pion $R_{\mathrm{OO}}$ and $R_{\mathrm{pO}}$~\cite{ALICE:ROO}.}
+    \label{fig:qgp_small_oxygen_nuclear_modification}
+\end{figure}
+The CMS results report suppression relative to unity with a significance greater than $5\sigma$, while the ALICE results report a significance of $9.2\sigma$.
+To further constrain nPDF effects, ALICE measures the double ratio \RooDrpoSq\ to factor out cold nuclear matter effects coming from the oxygen nuclei.
+The factor of two accounts for the two nuclei participating in the \OxO\ collision\footnote{Note that the \OxO\ and \pxO\ collisions were taken at different values of \SNN, so this ratio does not account for the \SNN\ dependence of nPDFs}.
+Taking this ratio greatly reduces the impact of nPDFs on the interpretation, as shown in the left panel of Figure~\ref{fig:qgp_small_oxygen_double_ratio_icp}.
+The double ratio is suppressed beyond the nPDF-only predictions and is consistent with calculations from two separate jet-quenching models.
+Taking nPDF uncertainties into account, the double ratio is suppressed with a significance of $4.9\sigma$.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={ALICE double ratio of neutral-pion oxygen--oxygen nuclear modification to the square of the proton--oxygen nuclear modification.}
+        ]{chapters/background/sections/qgp_small/figures/ROOpO2_DoubleRatioAlice.pdf}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.54\linewidth}
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            alt={STAR central-to-peripheral ratio of semi-inclusive jets recoiling from a high-transverse-momentum hadron in oxygen--oxygen collisions.}
+        ]{chapters/background/sections/qgp_small/figures/ICPStar.pdf}
+    \end{subfigure}
+    \caption{Additional probes of nuclear effects and jet quenching in oxygen collisions. Left: ALICE neutral-pion double ratio $R_{\mathrm{OO}}/(R_{\mathrm{pO}})^2$~\cite{ALICE:ROO}. Right: STAR central-to-peripheral ratio of semi-inclusive jets recoiling from a high-\PT\ hadron in \OxO\ collisions~\cite{Star:ICP}.}
+    \label{fig:qgp_small_oxygen_double_ratio_icp}
+\end{figure}
+At RHIC, STAR measured the semi-inclusive yield of hadrons and jets in \OxO\ collisions at 200 \GeV~\cite{Star:ICP}.
+Figure~\ref{fig:qgp_small_oxygen_double_ratio_icp} (right panel) shows the central-to-peripheral ratio of semi-inclusive jets ($I_{\mathrm{CP}}$).
+The jets used in the STAR analysis are charged-particle jets, which lack sensitivity to neutral hadrons.
+The numerator selection in the ratio is varied, while the peripheral selection is always 40--60\%.
+For the most central selection (0--10\%), the suppression of $I_{\mathrm{CP}}$ relative to unity has a significance of $4.3\sigma$, increasing to $5\sigma$ when the most extreme nPDF effects are considered.
+Using a correlation observable (hadron-triggered jets) instead of a spectrum (\Raa) is expected to mitigate centrality biases in light-ion collisions~\cite{CentBias:OO}.
+However, using peripheral data as a reference can be susceptible to projectile-configuration biases affecting the nucleon from which the jet is extracted; these biases can appear as a reduction in the central-to-peripheral ratio~\cite{HION-2023-05}.
+
+Concurrently with the light-ion jet-quenching searches presented above, the author of this dissertation was the main analyzer for an ATLAS measurement of dijet balance in \OxO\ and \NexNe\ collisions~\cite{HION-2025-16}.
+Since this analysis is of the correlations of dijets, the quenching observable can be studied differentially in centrality with minimal centrality-bias effects~\cite{CentBias:OO}.
+By measuring the dijet balance across centralities, the analysis correlates the onset of jet quenching with increasing nuclear overlap.
+The measurement includes a reference \pxp\ sample taken at the same energy and with similar detector conditions; therefore, it avoids potential biases from projectile configurations while reducing experimental uncertainties.
+Furthermore, this is the first analysis of \OxO\ data utilizing fully reconstructed calorimeter jets.
+ATLAS has a great deal of institutional knowledge from past measurements of dijet balance~\cite{HION-2010-02,HION-2012-11,HION-2019-02,HION-2018-28,HION-2024-03}, and focused that expertise on a fast analysis of \OxO\ collisions, culminating in a preliminary result two months post data-taking.
+That preliminary result, presented by the author at the Initial Stages 2025 conference in Taipei, was quickly followed by a final publication in June 2026.
+The details of this analysis are presented in~\ref{ch:xj} of this dissertation.
