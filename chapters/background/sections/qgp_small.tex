@@ -4,17 +4,31 @@
 The umbrella term ``small systems'' covers many different collision scenarios, each with its own advantages and challenges.
 Generally, \pxp, \pxA, \AxAlight, and peripheral \AxA\ collisions can all be considered small systems.
 Here, \AxAlight\ refers to light-ion collisions with mass number $A\lesssim 30$.
-Light-ion data have only recently become available at RHIC (2026) and the LHC (2025).
+Light-ion data have only recently become available at RHIC (2021,2026) and the LHC (2025).
 
 Evidence for QGP formation includes partonic energy loss and collective flow.
 As the system size decreases from that of central \AxA\ collisions, these experimental signatures are expected to weaken as the fireball, if formed, becomes progressively smaller.
+Generally speaking, experimental evidence shows that there is collective flow in small systems but not jet quenching.
+Embedding these two experimental trends into a QCD-based model that can effectively describe different observables in data is a main subject of research in high-energy nuclear physics.
 
 \subsubsection{Collectivity in small systems}
 
-Flow-like signatures have been observed in \pxp~\cite{HION-2015-09}, \pxPb~\cite{HION-2012-13}, \pxAu, \dxAu, and \HexAu~\cite{PHENIX:SmallFlow}, \OxO, \NexNe~\cite{HION-2025-02}, and peripheral \PbxPb~\cite{HION-2016-06}.
-\TCR{Discuss and add plots of flow observables.}
-Collectivity has also been studied in systems even ``smaller'' than those listed above, such as electron--positron annihilation measured by the ALEPH detector at LEP~\cite{Belle:collective}.
-The collectivity signal in $e^{+}e^{-}$ collisions was not significant and could be explained by \textsc{Pythia}6.
+Flow-like signatures have been observed in \pxp~\cite{HION-2015-09,HION-2016-01,CMS-HIN-16-010}, \pxPb~\cite{HION-2012-13,CMS-HIN-13-002}, \pxAu, \dxAu~\cite{STAR:OOFlow}, and \HexAu~\cite{PHENIX:SmallFlow}, \OxO, \NexNe~\cite{HION-2025-02,CMS-HIN-25-009,ALICE:OOFlow,STAR:OOFlow}, and peripheral \PbxPb~\cite{HION-2016-06,CMS-HIN-13-002,ALICE:PBPBFlow}.
+Figure~\label{fig:qgp_small_flow_systems} shows that experimental data from small to large system size can be described by the superSONIC model~\cite{SmallSystemsFlow}.
+This suggests the the origin of the the observed non-zero flow coefficents is hydrodynamic in origin from \pxp\ to \PbxPb\ collisions.
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.9\linewidth,
+        alt={Elliptic, triangular, and quadrupolar flow coefficients from superSONIC simulations compared with ATLAS, CMS, and ALICE data in proton--proton, proton--lead, and lead--lead collisions.}
+    ]{chapters/background/sections/qgp_small/figures/flowConnectionSystems.pdf}
+    \caption{Flow coefficients from superSONIC simulations (bands) compared with ATLAS, CMS, and ALICE measurements (symbols) in \pxp\ (left), \pxPb\ (center), and \PbxPb\ (right) collisions~\cite{SmallSystemsFlow}. Data from References~\cite{CMS-HIN-16-010,HION-2013-04,HION-2016-01,ALICE:PBPBFlow}}
+    \label{fig:qgp_small_flow_systems}
+\end{figure}
+
+Collectivity has also been studied in systems even ``smaller'' than those listed above, such as $\gamma A$ collisions at the LHC by ATLAS where non-zero flow coefficents were also found~\cite{HION-2018-27}.
+This can be explained by the propensity for a photon to fluctuate into a resoolved vector meson and act hadronically with the nucleus.
+The collectivity signal in $e^{+}e^{-}$ collisions measured by the ALEPH detector was not significant and could be explained by \textsc{Pythia}6~\cite{Belle:collective}.
 
 \subsubsection{\texorpdfstring{\pxp}{pp} collisions as a no-quenching baseline}
 
@@ -58,7 +72,7 @@ The most peripheral \Jaa\ measurement reported is for the 40--60\% centrality in
 The effects of nPDFs and centrality biases on these measurements have not been rigorously evaluated, so definitive conclusions about the presence of jet quenching remain elusive.
 
 \subsubsection{Complications to jet quenching measurements in \texorpdfstring{\pxA}{pA} collisions}
-
+\label{sec:jetquenchingpA}
 Measurements of inclusive-hadron and jet \Raa\ in \pxPb\ collisions at the LHC and \dxAu\ collisions at RHIC show no clear jet-quenching signal, as shown in Figure~\ref{fig:qgp_small_pPb_Rp}.
 The charged-hadron \Raa\ is approximately unity for hadrons with \PT\ > 5 \GeV and is consistent with the two pQCD predictions shown.
 The suppression at very low \PT\ can be explained by nPDF effects.
@@ -163,7 +177,7 @@ Following the trends of the experimental points and taking experimental uncertai
         width=0.6\linewidth,
         alt={Theoretical prediction for system-size dependence of partonic rescattering in light-nucleus collisions.}
     ]{chapters/background/sections/qgp_small/figures/systemsizeUrs.png}
-    \caption{Figure 1 from Ref.~\cite{SmallSystems:Theory1}.}
+    \caption{\NCOLL\ and \NPART\ for different collision species at the LHC; \Raa\ as a function of \NPART\ for LHC jet and hadron data.  Taken from Reference~\cite{SmallSystems:Theory1}.}
     \label{fig:qgp_small_systemsize_theory}
 \end{figure}
 

@@ -118,10 +118,23 @@ The free parameters in this fit are the $x$ in the $N_{\mathrm{elem}}$ extractio
 Once the ion Monte Carlo CE fit has converged, typically to a value of $x\approx0.1$, the fraction of the total hadronic cross section sampled by the experiment, $f_{\mathrm{samp}}$, can be extracted.
 This is done by looking at the fraction of the ion Monte Carlo CE distribution above the low CE threshold; typical values are $f_{\mathrm{samp}} \approx 0.8\%$.
 The centrality percentiles can then be extracted from the data by dividing it into $f_{\mathrm{samp}} \times 100$ equal-sized percentile bins.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[
+        width=0.5\linewidth,
+        alt={Illustration of the centrality estimator in relativistic ion collisions.}
+    ]{chapters/background/sections/collision_systems/figures/centralityestimator.pdf}
+    \caption{Distribution of charged hadrons as a centrality estimator.  Centrality bins are related to impact parameter ($b$), number of particiapents, and fraction of total hadronic cross section. Figure taken from Reference~\cite{Jet:HI}, originally by T. Ullrich.}
+    \label{fig:centrality_estimator}
+\end{figure}
+
 Centrality percentiles are defined such that low percentiles correspond to collisions with large parton flux (low $b$), typically called \textit{central collisions}, while high percentiles correspond to collisions with low parton flux (high $b$), typically called \textit{peripheral collisions}.
 The most central percentile bin is $\left[0\%,1\%\right]$, corresponding to the highest CE values. The most peripheral percentile bin is $\left[f_{\mathrm{samp}} \times 100 - 1 \;\%, f_{\mathrm{samp}} \times 100\;\%\right]$, corresponding to the lowest CE values measured above the low threshold.
 Once these bins have been defined, the $\langle N_{\mathrm{coll}} \rangle_{\mathrm{bin}}$, $\langle N_{\mathrm{part}} \rangle_{\mathrm{bin}}$, and $\langle T_{A,B}\rangle_{\mathrm{bin}}$ can be extracted per-bin.
 In this way, subsets of the experimental data can be associated with geometric quantities from Glauber modeling, and observables can be studied as a function of centrality.
+Figure~\ref{fig:centrality_estimator} shows how the number of charged particles at midrapidity can be divided into centrality percentiles with the above procedure.
+Centrality bins are related to impact parameter ($b$), number of particiapents, and fraction of total hadronic cross section.
 \subsubsection{\texorpdfstring{Control Systems: $pp$ and $p$+A collisions}{Control Systems: pp and p+A collisions}}
 Reletvistic ion collisions are primarily oriented towards the goal of studying the QGP.
 To isolate the effects of the QGP, it is often the case than an obervable is measured in \AxA\ collisions and also in a control system.
@@ -154,8 +167,23 @@ However, impact parameter is not the only variable that impacts the $N_{\mathrm{
 As discussed in Section~\ref{sec:CT}, color transparency effects impact the interaction strength of the proton, leading to fewer wounded nucleons in the same target nucleus, all else being equal, as shown in Figure~\ref{fig:color_fluctuation_pA}.  The impact on $N_{\mathrm{coll}}$ is exactly the same as if the event was more periphiphral than it really is.
 This leads to a systematic bias, when events are partitioned in both centrality and some quantity that can be mapped onto the Bjorken-$x$ of the proton\footnote{For example jet \PT\ and $\eta$.}.
 
-\TCR{Introduce Aric measurment here or before paper?}
+\TCR{Introduce Aric measurment here or in Section~\ref{sec:jetquenchingpA} (where it currently is)?}
 
 \subsubsection{Luminosity}
 
-\TCR{Placeholder text for Luminosity}
+Instantaneous luminosity relates the measured event rate for a process to its cross section:
+\begin{equation}
+    \label{eq:luminosity_event_rate}
+    \frac{\mathrm{d}N}{\mathrm{d}t} = \mathcal{L}\sigma,
+\end{equation}
+where $\mathrm{d}N/\mathrm{d}t$ is the event rate, $\mathcal{L}$ is the instantaneous luminosity, and $\sigma$ is the process cross section.
+Using dimensional analysis, one sees that the units of instantaeos luminosity is area/time.
+Luminsity typically refres to \textit{integrated luminosity}, $L$,  given as
+\begin{equation}
+    \label{eq:int_luminosity}
+    L = \int \mathcal{L} dt
+\end{equation}
+which represents the sum of instantaneous luminosity.
+$L$ is has units of inverse area, typoically given in units of inverse barns (b$^{-1}$).
+Smaller values of integrated luminosity represent the possibility of sampling more rare processes.
+In Run 2 the ATLAS experiment collected 140~\FB\ of \pxp\ collisions~\cite{DAPR-2021-01}.
