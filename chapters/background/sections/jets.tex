@@ -88,7 +88,7 @@ The \texttt{Cambridge/Aachen} algorithm corresponds to $t=0$ and clusters consti
 Both the \kt\ and \texttt{Cambridge/Aachen} algorithms cluster constituents in a way that can lead to non-conical jet shapes in $\eta-\phi$ space.
 Finally, the \antikt\ algorithm corresponds to $t=-1$ and clusters the hardest constituents first~\cite{Jet:antiKT}.
 This makes the jets grow outward from hard ``seeds'', reminiscent of cone algorithms but without the IRC-safety concerns.
-The \antikt\ algorithm with $R=0.4$ and $E$-scheme recombination is the standard for jet physics at the LHC, including the two measurments presented in this dissertation\footnote{The choice of \antikt\ with $E$-scheme recombination is heavily favored in the field, however, many interesting results have come from varying the $R=0.4$ choice. }.
+The \antikt\ algorithm with $R=0.4$ and $E$-scheme recombination is the standard for jet physics at the LHC, including the two measurements presented in this dissertation\footnote{The choice of \antikt\ with $E$-scheme recombination is heavily favored in the field; however, many interesting results have come from varying the $R=0.4$ choice. }.
 
 \begin{figure}[htbp]
     \centering
@@ -100,12 +100,12 @@ The \antikt\ algorithm with $R=0.4$ and $E$-scheme recombination is the standard
     \label{fig:jet_algorithm_comparison}
 \end{figure}
 Figure~\ref{fig:jet_algorithm_comparison} displays an example of different jet clustering algorithms each applied to the same event.
-The \texttt{FastJet} package includes a publicly avalible, highly optimized version of jet clustering algoritms~\cite{Jet:FastJet}.
+The \texttt{FastJet} package includes a publicly available, highly optimized version of jet clustering algorithms~\cite{Jet:FastJet}.
 
 \subsubsection{Jet constituents}
 
 As previously mentioned, jets are reconstructed using underlying objects called jet constituents.
-From a theortical perpective jets are simply clusters of hadrons produced in the collision, each with an exact four-momentum that can be calculated and input into the \texttt{FastJet} package.
+From a theoretical perspective, jets are simply clusters of hadrons produced in the collision, each with an exact four-momentum that can be calculated and input into the \texttt{FastJet} package.
 From an experimental perspective, the picture is much more complicated.
 Below we will discuss several types of jets measured by experiments and their positives and negatives.
 \paragraph{Calorimeter Jets}
@@ -116,13 +116,13 @@ Track jets are reconstructed by clustering charged-particle tracks measured in t
 Particle-flow jets are built from particle-flow objects that combine tracking and calorimeter information to estimate the momenta of individual particles. Using tracks for charged particles and calorimeter clusters for neutral particles helps avoid double-counting charged-particle energy deposits while retaining sensitivity to both charged and neutral components.
 
 \subsubsection{Factorization of Jet Observables}
-Similar to Equation~\ref{eq:pp_factorization} jets observables can also be factorized into nonperturbative and perterbative parts~\cite{factorthrm}.
+Similar to Equation~\ref{eq:pp_factorization}, jet observables can also be factorized into nonperturbative and perturbative parts~\cite{factorthrm}.
 Here the PDF and hard scattering element stay the same.
-In the ideal case where the jet, captures all of the fragmented hadrons from the parton leaving the hard scattering, the factorization is complete.
-However, real jets do not always capture the product of the scattering as it is possible for a realivly hard radiaion to push some jet energy outside of the perscribed cone.
+In the ideal case where the jet captures all of the fragmented hadrons from the parton leaving the hard scattering, the factorization is complete.
+However, real jets do not always capture the product of the scattering as it is possible for a relatively hard radiation to push some jet energy outside of the prescribed cone.
 %Additionally, background from Multiparton interactions (MPI) in \pxp\ collisions can introduce background enegrgy into the jet cone.
-To account for these real-world effects, perturbativly calculable semi-inclusive jet functions $\left(J_i \left(z,R,\mu_R\right)\right)$ take the place of fragmentation functions in Equation~\ref{eq:pp_factorization} to account for effects on the jets~\cite{Jet:FF}.
-It parameterizes the likleihood for a jet with a certain clustering algoirthm with radius $R$ to be produced in the final-state carrying a fraction of the energetic partons momentum $z$.
+To account for these real-world effects, perturbatively calculable semi-inclusive jet functions $\left(J_i \left(z,R,\mu_R\right)\right)$ take the place of fragmentation functions in Equation~\ref{eq:pp_factorization} to account for effects on the jets~\cite{Jet:FF}.
+It parameterizes the likelihood for a jet with a certain clustering algorithm with radius $R$ to be produced in the final-state carrying a fraction of the energetic parton's momentum $z$.
 \begin{equation}
     \label{eq:jet_factorization}
     \begin{aligned}
