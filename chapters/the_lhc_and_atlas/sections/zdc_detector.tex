@@ -1,7 +1,7 @@
 \subsection{The Zero Degree Calorimeter and Technical Work}
 \label{sec:ZDC}
 \subsubsection{The Zero Degree Calorimeter}
-The ATLAS Zero Degree Calorimeter (ZDC) is designed to detect neutral particles that very close to the beampipe~\cite{PERF-2007-01, GENR-2019-02, ZDC:Run3Tech}. It consists of two detectors located in absorbers along the beamline $\pm 140$ m from the ATLAS interaction point. Each side (or arm) consists of four modules each with a material budet of 1.14 hadronic interaction lengths.  The absorber layers consist of tungsten plates, and the active layers consist of Cherenkov radiators.  These Cherenkov radiators transport Cherenkov radiation\footnote{Cherenkov radiation is emitted in a mach cone when particles travel faster than the local speed of light in the material medium} induced by the particle shower to the lens of a Photomultiplier tupe (PMT).  Each of the four modules are instrumented with a single PMT.  Cherenkov radiators were chosen since they offer substantial radiation hardness, quite necessary for a location that receives a very high dose.  In Run 2, the active layers consisted of Quartz rods as the active layer.  The radiation hardness of the detector was improved considerably in Run 3 when the active layer was replaced with doped fused silica rods.
+The ATLAS Zero Degree Calorimeter (ZDC) is designed to detect neutral particles that very close to the beampipe~\cite{PERF-2007-01, GENR-2019-02, ZDC:Run3Tech}. It consists of two detectors located in absorbers along the beamline $\pm 140$ m from the ATLAS interaction point. Each side (or arm) consists of four modules each with a material budget of 1.14 hadronic interaction lengths.  The absorber layers consist of tungsten plates, and the active layers consist of Cherenkov radiators.  These Cherenkov radiators transport Cherenkov radiation\footnote{Cherenkov radiation is emitted in a mach cone when particles travel faster than the local speed of light in the material medium} induced by the particle shower to the lens of a Photomultiplier tube (PMT).  Each of the four modules are instrumented with a single PMT.  Cherenkov radiators were chosen since they offer substantial radiation hardness, necessary for a location that receives a very high dose.  In Run 2, the active layers consisted of Quartz rods as the active layer.  The radiation hardness of the detector was improved considerably in Run 3 when the active layer was replaced with doped fused silica rods.
 Several views for a 3D model of the ZDC in Run~3 are shown in Figure~\ref{fig:zdc_detector_overview}.
 \begin{figure}[htbp]
     \centering
@@ -16,18 +16,18 @@ Several views for a 3D model of the ZDC in Run~3 are shown in Figure~\ref{fig:zd
 As a calorimeter, the ZDC destructively samples the energy of the particles that enter it.
 Since dipole magnets between the IP and the ZDC swipe away forward charged particles, only neutral particles enter the ZDC.
 In ion running, the nucleons that do not participate in the collisions number $2A - $\NPART and are termed ``spectator'' nucleons.
-Measurments of the energy flow at zero degrees can provide input into the initial conditions of the QGP.
-However, not all spectator nucleons are netrons.
-Charged spectators, like protons or charged nuclear fragments will be bent out of the ZDC acceptence.
+Measurements of the energy flow at zero degrees can provide input into the initial conditions of the QGP.
+However, not all spectator nucleons are neutrons.
+Charged spectators, like protons or charged nuclear fragments will be bent out of the ZDC acceptance.
 Therefore, the particles that do impinge on the ZDC are a subset of the total number of spectators that are electrically neutral.
 Since these ``spectator'' neutrons do not interact in the collision at the IP they will impact the ZDC with roughly the same per nucleon energy as the beam.
 The number of spectator neutrons in non-trivially dependent on the event geometry, but they range from zero to roughly $(A-Z)/2$.
 
-Additinally, ZDC are useful in the study of UPCs.
-The pattern of energy in the ZDC can inform what type of process occured at the IP, by counting the number of neutrons in each arm of the ZDC i.e. on each side of the IP.
+Additionally, ZDC are useful in the study of UPCs.
+The pattern of energy in the ZDC can inform what type of process occurred at the IP, by counting the number of neutrons in each arm of the ZDC i.e. on each side of the IP.
 he $0n0n$ class denotes a coherent photon-photon process ($\gamma \gamma$), $0nXn/Xn0n$ represents a photo-nuclear interaction where the target nucleus breaks up resulting in forward neutron production ($\gamma A / A\gamma$), and $XnXn$ identifies a hadronic interaction with neutral spectators on both sides.
 The ZDC can be used to trigger on these processes at the hardware level.
-The correlation between energy deposted in either arm of the ZDC is displayed in Figure~\ref{fig:zdc_upc_vs_had} for a UPC selection and a hadronic selection. The UPC selection is dominated by  photon-photon and photonuclear events, while the hadronic selection is dominated by the $XnXn$ topology.
+The correlation between energy deposited in either arm of the ZDC is displayed in Figure~\ref{fig:zdc_upc_vs_had} for a UPC selection and a hadronic selection. The UPC selection is dominated by photon-photon and photonuclear events, while the hadronic selection is dominated by the $XnXn$ topology.
 
 \begin{figure}[htbp]
     \centering
@@ -52,10 +52,10 @@ Finally, the ZDC calibration transforms the above amplitudes, which have units o
 \FloatBarrier
 \subsubsection{Technical Work: ZDC L1 Trigger Simulation}
 As part of the process of becoming an ATLAS author, a prospective member is asked to complete a technical task as a contribution to the experiment.
-The task assigned to the author of this dissertation was to implement software simulating the new ZDC trigger configuration in Run~3 to properly estimate rates for novel trigger combinatinon from Run~2 data.
+The task assigned to the author of this dissertation was to implement software simulating the new ZDC trigger configuration in Run~3 to properly estimate rates for novel trigger combination from Run~2 data.
 
 \paragraph{Motivation for new ZDC trigger in Run~3}
-The ZDC trigger in Run~2 was designed from a simple nim threadhold for either ZDC arm, partitioning the trigger combinations into the classes described in the previous section, namely $\gamma \gamma$, $\gamma A$, and hadronic. The left panel of Figure~\ref{fig:zdc-trigger} displays this trigger scheme.
+The ZDC trigger in Run~2 was designed from a simple nim threshold for either ZDC arm, partitioning the trigger combinations into the classes described in the previous section, namely $\gamma \gamma$, $\gamma A$, and hadronic. The left panel of Figure~\ref{fig:zdc-trigger} displays this trigger scheme.
 
 \begin{figure}[h]
     \centering
@@ -88,10 +88,10 @@ Similarly, a photo-nuclear interaction can migrate from the $0nXn/Xn0n$ class to
 While these migrations can complicate the interpretation of UPC measurements in an exclusive neutron class, they also offer an opportunity to study the impact parameter dependence of UPC processes.
 For example, the impact parameter dependence of dielectron production~\cite{HION-2021-16} and nuclear PDF modification~\cite{HION-2024-12} have been studied by ATLAS.
 
-\paragraph{Trigger Implemention}
+\paragraph{Trigger Implementation}
 
-In order to implment the trigger simulation, a new subpackage was developed in the ATLAS software suite.
-First, ofline ZDC energies in 2018 \PbxPb\ data had to be converted into new Run~3 trigger decisions, emulating what is done in the ZDC trigger firmware, shown in Figure~\ref{fig:zdc-trigger-firmware}.
+In order to implement the trigger simulation, a new subpackage was developed in the ATLAS software suite.
+First, offline ZDC energies in 2018 \PbxPb\ data had to be converted into new Run~3 trigger decisions, emulating what is done in the ZDC trigger firmware, shown in Figure~\ref{fig:zdc-trigger-firmware}.
 Once these decisions were made, they had to be integrated into the Central Trigger Processing (CTP) emulation for use in combination with the full ATLAS trigger simulation.
 \begin{figure}[htbp]
     \centering
@@ -105,11 +105,11 @@ Once these decisions were made, they had to be integrated into the Central Trigg
     \label{fig:zdc-trigger-firmware}
 \end{figure}
 
-The ATLAS trigger simulation algorithm for extrapolating experimentally observed rates to different pileup condidtions (\avmu) implicity assumes that the process under study is sufficiently rare. (i.e. that the number of coincedent triggers for a certain process is very small)
+The ATLAS trigger simulation algorithm for extrapolating experimentally observed rates to different pileup conditions (\avmu) implicitly assumes that the process under study is sufficiently rare. (i.e. that the number of coincident triggers for a certain process is very small)
 Since EM dissociation has a very large cross section, this assumption was not valid for the ZDC triggers being considered.
-At higher instantaneous luminsoity, EM pileup rates increase accordingly and increase the probability for the type of migrations discuss above.
+At higher instantaneous luminosity, EM pileup rates increase accordingly and increase the probability for the type of migrations discuss above.
 To mitigate this effect, a pileup dependent correction was derived following Reference~\cite{EM:pileupcorr}.
-Assuming Poission statisitcs apply, the raw triggered rate for any number of a  given process can be calculated as $R^{t} = f  \times \left(1- e^{-\mu_{\mathrm{process}}}\right)$ where $f$ is the frequency of the LHC corrected for the number of bunches,  and $\mu_{\mathrm{process}}$ is the average number of processes per bunch crossing.
+Assuming Poisson statistics apply, the raw triggered rate for any number of a  given process can be calculated as $R^{t} = f  \times \left(1- e^{-\mu_{\mathrm{process}}}\right)$ where $f$ is the frequency of the LHC corrected for the number of bunches,  and $\mu_{\mathrm{process}}$ is the average number of processes per bunch crossing.
 Then a trigger rate for a single process is $R = f \times \mu_{\mathrm{process}} $.
 The EM pileup corrected rate for a process that puts neutrons in both the A and C arms of the ZDC can be written as,
 \begin{equation}
@@ -122,9 +122,9 @@ The EM pileup corrected rate for a process that puts neutrons in both the A and 
 \end{equation}
 Where $R^{t}_{\mathrm{AC}}$ is the number of triggered events for an ``AC'' process, $R^{t}_{\mathrm{A}}$ is the number of triggered events for an ``A'' process, and  $R^{t}_{\mathrm{C}}$ is the number of triggered events for a ``C'' process.
 The raw and pileup-corrected AC trigger rates over time are compared in Figure~\ref{fig:zdc-trigger-pileup-correction}.
-The instantaneous luminosity falls over time as the density of filled bunches is depleated through collisions and beam burnoff.
-The AC ZDC rate is very sensative to the changing \avmu\ but the correction in Equation~\ref{eq:lumicorr} is able to correctly describe and remove this effect.
-By understanding how the rates for ZDC triggers can change with \avmu\ it is possible to extrapolate across different run condiditions.
+The instantaneous luminosity falls over time as the density of filled bunches is depleted through collisions and beam burnoff.
+The AC ZDC rate is very sensitive to the changing \avmu\ but the correction in Equation~\ref{eq:lumicorr} is able to correctly describe and remove this effect.
+By understanding how the rates for ZDC triggers can change with \avmu\ it is possible to extrapolate across different run conditions.
 This was used to help predict the rates for ZDC triggers before the start of the first Run~3 \PbxPb\ run.
 
 \begin{figure}[htbp]
