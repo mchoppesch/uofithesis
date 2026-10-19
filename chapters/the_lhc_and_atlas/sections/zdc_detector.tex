@@ -1,50 +1,172 @@
-\subsection{Zero Degree Calorimeter}
+\subsection{The Zero Degree Calorimeter and Technical Work}
 \label{sec:ZDC}
-The ATLAS Zero Degree Calorimeter (ZDC) is designed to detect neutral particles that very close to the beampipe. It consists of two detectors located in absorbers along the beamline $\pm 140$ m from the ATLAS interaction point. Each side (or arm) consists of four modules each with a material budet of 1.14 hadronic interaction lengths.  The absorber layers consist of tungsten plates, and the active layers consist of Cherenkov radiators.  These Cherenkov radiators transport Cherenkov radiation\footnote{Cherenkov radiation is emitted in a mach cone when particles travel faster than the local speed of light in the material medium} induced by the particle shower to the lens of a Photomultiplier tupe (PMT).  Each of the four modules are instrumented with a single PMT.  Cherenkov radiators were chosen since they offer substantial radiation hardness, quite necessary for a location that receives a very high dose.  In Run 2, the active layers consisted of Quartz rods as the active layer.  The radiation hardness of the detector was improved considerably in Run 3 when the active layer was replaced with doped fused silica rods.
+\subsubsection{The Zero Degree Calorimeter}
+The ATLAS Zero Degree Calorimeter (ZDC) is designed to detect neutral particles that very close to the beampipe~\cite{PERF-2007-01, GENR-2019-02, ZDC:Run3Tech}. It consists of two detectors located in absorbers along the beamline $\pm 140$ m from the ATLAS interaction point. Each side (or arm) consists of four modules each with a material budet of 1.14 hadronic interaction lengths.  The absorber layers consist of tungsten plates, and the active layers consist of Cherenkov radiators.  These Cherenkov radiators transport Cherenkov radiation\footnote{Cherenkov radiation is emitted in a mach cone when particles travel faster than the local speed of light in the material medium} induced by the particle shower to the lens of a Photomultiplier tupe (PMT).  Each of the four modules are instrumented with a single PMT.  Cherenkov radiators were chosen since they offer substantial radiation hardness, quite necessary for a location that receives a very high dose.  In Run 2, the active layers consisted of Quartz rods as the active layer.  The radiation hardness of the detector was improved considerably in Run 3 when the active layer was replaced with doped fused silica rods.
+Several views for a 3D model of the ZDC in Run~3 are shown in Figure~\ref{fig:zdc_detector_overview}.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[
+        width=\linewidth,
+        alt={Three views of the ATLAS Zero Degree Calorimeter: a three-dimensional view, a side view of a module, and a top view of the module active area.}
+    ]{chapters/the_lhc_and_atlas/figures/zdc_detector/ZDCInt.001.png}
+    \caption{The ATLAS ZDC. Left: 3D view of the calorimeter as set up for the 2016 \pxPb\ run. Center: Side view of a ZDC module. Right: Top view of the module active area. Figure provided by R. Longo.}
+    \label{fig:zdc_detector_overview}
+\end{figure}
 
-As a calorimeter, the ZDC destructively samples the energy of the particles that enter it.  Since dipole magnets between the IP and the ZDC swipe away forward charged particles, only neutral particles enter the ZDC.  In ion running, the fragmentation of the ion's nucleus results in a population of neutrons interacting in the ZDC.  Since these so called "spectator" neutrons do not interact in the collision at the IP they will impact the ZDC with roughly the same per nucleon energy as the beam.  The number of spectator neutrons in non-trivially dependent on the event geometry, but they range from zero to roughly $(A-Z)/2$.
+As a calorimeter, the ZDC destructively samples the energy of the particles that enter it.
+Since dipole magnets between the IP and the ZDC swipe away forward charged particles, only neutral particles enter the ZDC.
+In ion running, the nucleons that do not participate in the collisions number $2A - $\NPART and are termed ``spectator'' nucleons.
+Measurments of the energy flow at zero degrees can provide input into the initial conditions of the QGP.
+However, not all spectator nucleons are netrons.
+Charged spectators, like protons or charged nuclear fragments will be bent out of the ZDC acceptence.
+Therefore, the particles that do impinge on the ZDC are a subset of the total number of spectators that are electrically neutral.
+Since these ``spectator'' neutrons do not interact in the collision at the IP they will impact the ZDC with roughly the same per nucleon energy as the beam.
+The number of spectator neutrons in non-trivially dependent on the event geometry, but they range from zero to roughly $(A-Z)/2$.
 
-In order to capture signals from a zero to many neutrons, the ZDC operates with two sets of readout instrumentation, denoted as high and low gain readouts.  The high gain readout is configured to have a dynamic range that saturates with a couple of neutrons.  The low gain readout has a range of a roughly ten times that of the high gain readout.
+Additinally, ZDC are useful in the study of UPCs.
+The pattern of energy in the ZDC can inform what type of process occured at the IP, by counting the number of neutrons in each arm of the ZDC i.e. on each side of the IP.
+he $0n0n$ class denotes a coherent photon-photon process ($\gamma \gamma$), $0nXn/Xn0n$ represents a photo-nuclear interaction where the target nucleus breaks up resulting in forward neutron production ($\gamma A / A\gamma$), and $XnXn$ identifies a hadronic interaction with neutral spectators on both sides.
+The ZDC can be used to trigger on these processes at the hardware level.
+The correlation between energy deposted in either arm of the ZDC is displayed in Figure~\ref{fig:zdc_upc_vs_had} for a UPC selection and a hadronic selection. The UPC selection is dominated by  photon-photon and photonuclear events, while the hadronic selection is dominated by the $XnXn$ topology.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[
+        width=0.9\linewidth,
+        alt={Correlation between the energy deposited in the two ZDC arms for an ultra-peripheral collision selection and for a hadronic selection.}
+    ]{chapters/the_lhc_and_atlas/figures/zdc_detector/zdcUPCvsHAD.pdf}
+    \caption{Correlation between the energy deposited in the two arms of the ZDC for a UPC selection and a hadronic selection.}
+    \label{fig:zdc_upc_vs_had}
+\end{figure}
+
+In order to capture signals from a zero to eighty-plus neutrons, the ZDC operates with two sets of readout instrumentation, denoted as high and low gain readouts.  The high gain readout is configured to have a dynamic range that saturates with a couple of neutrons.  The low gain readout has a range of a roughly ten times that of the high gain readout.
 %Each readout consisted of two 40 MHz ADCs (25 ns).  Both ADCs read out the same signal, but one is delayed by 12.5 ns.  This allows for the combined readout to have a sampling of 80 MHz (12.5 ns).
 
 The ZDC reconstruction software transforms the raw data read out from the above ADCs into module specific amplitudes.
 Firstly, each waveform must have its pedestal subtracted in order to make sure that the output amplitude represents only strength of the module signal and not any offset caused by the electronics configuration.  Then, the subtracted samples can be fit to a functional waveform.  The amplitude that minimize the $\chi^2$ of this fit is then considered to be the amplitude in that given event.
-\TCR{Prob need to include more details about the ZDC reconstruction}
-
+%\TCR{Prob need to include more details about the ZDC reconstruction}
 Finally, the ZDC calibration transforms the above amplitudes, which have units of ADC counts, into units of energy.
 
-\paragraph{Missing ZDC Module in 2016 Data}
-\label{sec:missing_zdc_mod}
-During the 2016 \pxPb\ run, the ZDC side C module 0 (EM) was removed and replaced with the Arm2 calorimeter of the LHCf experiment~\cite{Adriani:2135330}. Figure~\ref{fig:lhcf_v_zdc_acceptance} displays the transverse acceptance of both the ATLAS ZDC and LHCf. The ATLAS ZDC EM module is the first of four sequential calorimeter modules, counting from the perspective of looking at the ZDCs from the ATLAS interaction point; therefore, the LHCf calorimeter would see forward neutral products before they reach the side C ZDC. The LHCf detector was put in place to measure the forward neutral products of the proton-going side in the \textbf{Period B} orientation; however, in the \textbf{Period C} orientation the LHCf detector was retracted into the ``garage'' position to avoid radiation damage~\cite{Adriani:2135330}. The ``garage'' position indicates an upward vertical shift of 112~mm from the nominal position shown in Figure~\ref{fig:lhcf_v_zdc_acceptance}. This shift places the full LHCf Arm2 calorimeter outside of the full acceptance of the ATLAS ZDC. The side C ZDC has roughly 75\% of the material budget of side A. This effectively reduces the interaction length of the side C ZDC from 4.6 to 3.4, which in turn reduces the neutrons expected to shower in the ZDC from 99\% to 96.6\%.
-
-\begin{figure}[p]
-    \centering
-    \begin{subfigure}[c]{0.42\linewidth}
-        \includegraphics[
-            width=1\linewidth,
-            alt={Transverse acceptance of the LHCf Arm2 calorimeter viewed from the ATLAS interaction point.}
-        ]{chapters/geometry_estimators_pPb/figures/dataset_and_event_selection/lhcfAcceptence.png}
-    \end{subfigure}
-    \begin{subfigure}[c]{0.42\linewidth}
-        \includegraphics[
-            width=1\linewidth,
-            alt={Transverse acceptance of the ATLAS ZDC viewed from the ATLAS interaction point.}
-        ]{chapters/geometry_estimators_pPb/figures/dataset_and_event_selection/zdcAcceptence.png}
-    \end{subfigure}
-    \caption{Detector geometry for LHCf Arm2~\cite{Cekmecelioglu:2867369} (left) and the ATLAS ZDC~\cite{Jenni:1009649} (right), viewed from the ATLAS interaction point. Distances are given in mm. The blue oval in the left image corresponds to the boundary of the yellow oval in the right image. The active area of LHCf is represented by the filled blue squares, and the active area of the ZDC is bounded by the purple dashed line.}
-    \label{fig:lhcf_v_zdc_acceptance}
-\end{figure}
+% discuss physics case for ZDC typically
 
 \FloatBarrier
-\subsubsection{2016 \texorpdfstring{$p$}{p}+Pb ZDC Calibration}
+\subsubsection{Technical Work: ZDC L1 Trigger Simulation}
+As part of the process of becoming an ATLAS author, a prospective member is asked to complete a technical task as a contribution to the experiment.
+The task assigned to the author of this dissertation was to implement software simulating the new ZDC trigger configuration in Run~3 to properly estimate rates for novel trigger combinatinon from Run~2 data.
+
+\paragraph{Motivation for new ZDC trigger in Run~3}
+The ZDC trigger in Run~2 was designed from a simple nim threadhold for either ZDC arm, partitioning the trigger combinations into the classes described in the previous section, namely $\gamma \gamma$, $\gamma A$, and hadronic. The left panel of Figure~\ref{fig:zdc-trigger} displays this trigger scheme.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[
+        width=0.35\linewidth,
+        trim={0mm 0mm 0mm 0mm},
+        alt={Run 2 ZDC trigger scheme: a grid of neutron classes 0n and Xn on the A and C sides, with cells labeled photon-photon (0), A-photon (1), photon-A (2), and hadronic (3).}
+    ]{chapters/the_lhc_and_atlas/figures/zdc_detector/Run2Trigger.pdf}
+    \includegraphics[
+        width=0.35\linewidth,
+        trim={0mm 0mm 0mm 0mm},
+        alt={Run 3 ZDC trigger scheme: a finer grid of neutron classes on the A and C sides, with colored cells numbered by trigger category, including photon-photon, A-photon, photon-A, and hadronic regions.}
+    ]{chapters/the_lhc_and_atlas/figures/zdc_detector/Run3Trigger.pdf}
+    \caption{ZDC hardware trigger scheme in Run 2 (left) and Run 3 (right).  The axis A and C refer to the neutron classes on the A ($\eta>0$) and C ($\eta<0$) sides of the interaction point. }
+    \label{fig:zdc-trigger}       % Give a unique label
+\end{figure}
+
+The ZDC received upgrades before Run 3~\cite{ZDC:Run3Tech}, the most relevant here being the new front-end and readout ``LUCROD'' electronics.  The LUCROD boards have a sampling rate of 320 MHz and allow for a fully digital trigger.
+This digital trigger allows for a more complicated trigger scheme to be implemented in Run 3; the $Xn$ (any neutron) class was further broken up into $1-4n$ (one to four neutrons) and $>5n$ (five or more neutrons). The right panel of Figure~\ref{fig:zdc-trigger} displays this new trigger scheme for Run~3.
+
+Discriminating between these two classes is motivated by the prevalence of coincident UPC processes at LHC energies.
+The most common UPC process in \PbxPb\ collisions at LHC energies is the electromagnetic dissociation (EMD) of the Pb nucleus, occurring at a rate of around $200$ b for the excitation of a single nucleus~\cite{ALICE:EMD}.
+EMD proceeds by the exchange of a soft photon between nuclei, which excites the target nucleus into a resonant mode; this nucleus decays by low-energy emission of a few ($1-4$) neutrons.
+Since the neutrons are emitted in the rest frame of the beam energy nucleus, they are typically contained in the acceptance of the ZDC~\cite{ZDC:Run3Tech}.
+Hadronic backgrounds in the $1-4n$ neutron class can be removed by a simple total $E_{\mathrm{T}}$ requirement, since hadronic events with a small number of neutrons will be very-central and thus have high event activity.
+EMD often occurs coincidentally with other UPC processes under study.
+This coincident production causes migrations in the neutron classes defined above.
+For example, a coherent photon-photon interaction accompanied by EMD with neutron emission on one (both) side(s) will migrate from the $0n0n$ class to the $0nXn/Xn0n$ ($XnXn$) class.
+Similarly, a photo-nuclear interaction can migrate from the $0nXn/Xn0n$ class to the $XnXn$ class.
+While these migrations can complicate the interpretation of UPC measurements in an exclusive neutron class, they also offer an opportunity to study the impact parameter dependence of UPC processes.
+For example, the impact parameter dependence of dielectron production~\cite{HION-2021-16} and nuclear PDF modification~\cite{HION-2024-12} have been studied by ATLAS.
+
+\paragraph{Trigger Implemention}
+
+In order to implment the trigger simulation, a new subpackage was developed in the ATLAS software suite.
+First, ofline ZDC energies in 2018 \PbxPb\ data had to be converted into new Run~3 trigger decisions, emulating what is done in the ZDC trigger firmware, shown in Figure~\ref{fig:zdc-trigger-firmware}.
+Once these decisions were made, they had to be integrated into the Central Trigger Processing (CTP) emulation for use in combination with the full ATLAS trigger simulation.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[
+        width=0.8\linewidth,
+        trim={0pt 0pt 0pt 216pt},
+        clip,
+        alt={Lower half of the ZDC trigger firmware block diagram, showing four-channel pulse summing and two-stage lookup tables producing a three-bit decision.}
+    ]{chapters/the_lhc_and_atlas/figures/zdc_detector/LUCROD_ZDC_Block_fixupd.pdf}
+    \caption{Lower section of the ZDC trigger firmware block diagram, showing how pulses from the four channels in each calorimeter are summed and passed through two-stage lookup tables to produce the three-bit decision. Adapted from~\cite{ZDC:Run3Tech}.}
+    \label{fig:zdc-trigger-firmware}
+\end{figure}
+
+The ATLAS trigger simulation algorithm for extrapolating experimentally observed rates to different pileup condidtions (\avmu) implicity assumes that the process under study is sufficiently rare. (i.e. that the number of coincedent triggers for a certain process is very small)
+Since EM dissociation has a very large cross section, this assumption was not valid for the ZDC triggers being considered.
+At higher instantaneous luminsoity, EM pileup rates increase accordingly and increase the probability for the type of migrations discuss above.
+To mitigate this effect, a pileup dependent correction was derived following Reference~\cite{EM:pileupcorr}.
+Assuming Poission statisitcs apply, the raw triggered rate for any number of a  given process can be calculated as $R^{t} = f  \times \left(1- e^{-\mu_{\mathrm{process}}}\right)$ where $f$ is the frequency of the LHC corrected for the number of bunches,  and $\mu_{\mathrm{process}}$ is the average number of processes per bunch crossing.
+Then a trigger rate for a single process is $R = f \times \mu_{\mathrm{process}} $.
+The EM pileup corrected rate for a process that puts neutrons in both the A and C arms of the ZDC can be written as,
+\begin{equation}
+    \label{eq:lumicorr}
+    \begin{aligned}
+        R_{\mathrm{AC}} &= -f \ln \left(e^{-\mu_{\mathrm{A C}}}\right)
+        = -f \ln \left(e^{\mu_{\mathrm{AC \cup A \cup C}} - \mu_{\mathrm{AC \cup A}} - \mu_{\mathrm{AC \cup C}}}\right) \\
+        &= -f \ln \left[\frac{\left(1-R^{t}_{\mathrm{AC}}/f - R^{t}_{\mathrm{A}}/f\right)\left(1-R^{t}_{\mathrm{AC}}/f - R^{t}_{\mathrm{C}}/f\right)}{\left(1-R^{t}_{\mathrm{AC}}/f - R^{t}_{\mathrm{A}}/f - R^{t}_{\mathrm{C}}/f\right)}\right]
+    \end{aligned}
+\end{equation}
+Where $R^{t}_{\mathrm{AC}}$ is the number of triggered events for an ``AC'' process, $R^{t}_{\mathrm{A}}$ is the number of triggered events for an ``A'' process, and  $R^{t}_{\mathrm{C}}$ is the number of triggered events for a ``C'' process.
+The raw and pileup-corrected AC trigger rates over time are compared in Figure~\ref{fig:zdc-trigger-pileup-correction}.
+The instantaneous luminosity falls over time as the density of filled bunches is depleated through collisions and beam burnoff.
+The AC ZDC rate is very sensative to the changing \avmu\ but the correction in Equation~\ref{eq:lumicorr} is able to correctly describe and remove this effect.
+By understanding how the rates for ZDC triggers can change with \avmu\ it is possible to extrapolate across different run condiditions.
+This was used to help predict the rates for ZDC triggers before the start of the first Run~3 \PbxPb\ run.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[
+        width=\linewidth,
+        alt={Two-panel plot of ZDC AC trigger rates over time. The left panel shows the raw rate in barns, and the right panel shows the pileup-corrected rate in barns. Instantaneous luminosity decreases over time.}
+    ]{chapters/the_lhc_and_atlas/figures/zdc_detector/trigsimpileupcorr.pdf}
+    \caption{ZDC AC trigger rates as a function of time. Left: raw rate in barns. Right: rate after the pileup correction. The instantaneous luminosity decreases over the course of the run.}
+    \label{fig:zdc-trigger-pileup-correction}
+\end{figure}
+
+% During the 2016 \pxPb\ run, the ZDC side C module 0 (EM) was removed and replaced with the Arm2 calorimeter of the LHCf experiment~\cite{Adriani:2135330}. Figure~\ref{fig:lhcf_v_zdc_acceptance} displays the transverse acceptance of both the ATLAS ZDC and LHCf. The ATLAS ZDC EM module is the first of four sequential calorimeter modules, counting from the perspective of looking at the ZDCs from the ATLAS interaction point; therefore, the LHCf calorimeter would see forward neutral products before they reach the side C ZDC. The LHCf detector was put in place to measure the forward neutral products of the proton-going side in the \textbf{Period B} orientation; however, in the \textbf{Period C} orientation the LHCf detector was retracted into the ``garage'' position to avoid radiation damage~\cite{Adriani:2135330}. The ``garage'' position indicates an upward vertical shift of 112~mm from the nominal position shown in Figure~\ref{fig:lhcf_v_zdc_acceptance}. This shift places the full LHCf Arm2 calorimeter outside of the full acceptance of the ATLAS ZDC. The side C ZDC has roughly 75\% of the material budget of side A. This effectively reduces the interaction length of the side C ZDC from 4.6 to 3.4, which in turn reduces the neutrons expected to shower in the ZDC from 99\% to 96.6\%.
+
+% \begin{figure}[p]
+%     \centering
+%     \begin{subfigure}[c]{0.42\linewidth}
+%         \includegraphics[
+%             width=1\linewidth,
+%             alt={Transverse acceptance of the LHCf Arm2 calorimeter viewed from the ATLAS interaction point.}
+%         ]{chapters/geometry_estimators_pPb/figures/dataset_and_event_selection/lhcfAcceptence.png}
+%     \end{subfigure}
+%     \begin{subfigure}[c]{0.42\linewidth}
+%         \includegraphics[
+%             width=1\linewidth,
+%             alt={Transverse acceptance of the ATLAS ZDC viewed from the ATLAS interaction point.}
+%         ]{chapters/geometry_estimators_pPb/figures/dataset_and_event_selection/zdcAcceptence.png}
+%     \end{subfigure}
+%     \caption{Detector geometry for LHCf Arm2~\cite{Cekmecelioglu:2867369} (left) and the ATLAS ZDC~\cite{Jenni:1009649} (right), viewed from the ATLAS interaction point. Distances are given in mm. The blue oval in the left image corresponds to the boundary of the yellow oval in the right image. The active area of LHCf is represented by the filled blue squares, and the active area of the ZDC is bounded by the purple dashed line.}
+%     \label{fig:lhcf_v_zdc_acceptance}
+% \end{figure}
+
+\FloatBarrier
+\subsubsection{Technical Work: 2016 \texorpdfstring{$p$}{p}+Pb ZDC Calibration}
 
 Due to the asymmetric nature of the \pxPb\ collisions system in each period only one arm of the ZDC detector will receive ion fragments.
-
 In 2019, J. Nagle performed \TCR{ ref needed} the calibration of the 5.02 \TeV\ data, but concluded that the contamination from pileup in the high-\avmu\ \pxPb\ data made a calibration unfeasible.
-
 The author of this dissertation undertook the calibration of the high high-\avmu\ \pxPb\ data in 2023 after substantial improvements had been made to the ZDC reconstruction in order to mitigate the previously untenable issues.
+This technical work enabled the measurment detailed in~\ref{ch:pPb}.
 
-The first improvement made to the ZDC reconstruction comes from \cite{ATL-COM-PHYS-2019-1454}.  This note documents updates to the signal processing created mainly for the 2018 \PbxPb\ data, but that are useful for the 2016 \pxPb\ data as well.  These updates includes significant improvements to the reconstructions ability to fit pulses in the presence of out of time (OOT) pile up, both preceding and after the event in question.  Large OOT pileup pulses would saturate the high gain ADC, leading to the pulse being analyzed with the low gain ADC which has a roughly ten times worse resolution.  By excluding a few samples from the beginning or (end) of these pulses and looking at the high gain ADC values, the reconstruction will yield a reasonable fit for the current event. This is especially important given that the relatively high \avmu\ in the 2016 8.16 \TeV\ \pxPb\ has more events affected by out of time pileup.
+\paragraph{Improvments to ZDC Reconstruction}
+The first improvement made to the ZDC reconstruction comes from~\cite{ATL-COM-PHYS-2019-1454}.  This note documents updates to the signal processing created mainly for the 2018 \PbxPb\ data, but that are useful for the 2016 \pxPb\ data as well.  These updates includes significant improvements to the reconstructions ability to fit pulses in the presence of out of time (OOT) pile up, both preceding and after the event in question.  Large OOT pileup pulses would saturate the high gain ADC, leading to the pulse being analyzed with the low gain ADC which has a roughly ten times worse resolution.  By excluding a few samples from the beginning or (end) of these pulses and looking at the high gain ADC values, the reconstruction will yield a reasonable fit for the current event. This is especially important given that the relatively high \avmu\ in the 2016 8.16 \TeV\ \pxPb\ has more events affected by out of time pileup.
 
 The second significant improvement made to the ZDC reconstruction was the `two-pass' analysis method.  This method first uses a relatively high second derivative threshold to search for pulses in a ZDC event.  This high threshold helps to suppress noise from small background and pileup pulses.  However, if at least one module has a pulse that passes this threshold, all the modules on said ZDC arm are reanalyzed with a lower second derivative threshold. This `repass' recovers finer pulses that were too small to be `seen' on the first pass.
 
@@ -72,8 +194,11 @@ From a data quality standpoint, it would be useful to be able to reject pulses t
     \item There is a nonlinear dependence of the $t_0$ on the pulse amplitude that must be corrected.  \newline \textbf{Solution:} Fit the curvature induced by the nonlinear dependence to a 5th order polynomial.  Use that fit function to flatten the convex distribution.
 \end{enumerate}
 
+\paragraph{Data selection}
+
 The data used for the calibration of the high-\avmu\ \pxPb\ was read out into a dedicated ZDC calibration stream.  This dedicated readout only stores information about the ZDC detector for each accepted event\footnote{The per-event data footprint of the ZDC detector is roughly an order of magnitude smaller than the whole ATLAS detector including all detector subsystems} and can therefore accumulate substantial statistics needed for a precision calibration.  Events entering the stream fired the \triga~or~\trigc\ triggers, requiring that there was some substantial energy in at least one arm of the ZDC.  To get a set of events unbiased by trigger turn on thresholds, the set of events used to analyze Side A were triggered on a signal in Side C and vice versa.
 
+\paragraph{Calibration procedure}
 The ZDC is designed to sample neutral ion fragments with the same per-nucleon energy as the beam.  The lightest neutral fragment possible is a single beam energy neutron incident on the detector.  A single neutron that fragmented from a lead ion will, on average, be as energetic as the per-nucleon beam energy, which here is 2.5625~\TeV.  Therefore, the energy of single neutrons gives a well defined energy to calibrate against.  Of course single neutrons will not have the exact per-nucleon beam energy every time, since the exact energy of bound nucleons is stochastically modified by the so-called `fermi-momentum'~\TCR{citation needed}.  The variance of single neutrons given by fermi-momentum coupled with the experimental resolution of the ZDC should give the width of the detector response to a single neutron.
 
 Therefore the single neutron peak~\footnote{observed detector response to single neutrons} intrinsically contains information about the ZDC Energy Scale ($\mu_{\mathrm{1n}}$) and ZDC Energy Resolution ($\sigma_{\mathrm{1n}}$).  However, we are interested in not just any calibration, but the \textit{optimal} one. The optimal calibration is defined to be the one that puts the mean of the single neutron peak at 2.5625~\TeV\ and minimizes the variance (therefore maximizing experimental resolution).  The machinery of the calibration works as follows.
@@ -125,6 +250,7 @@ The software to implement this calibration was created by the author of this dis
 Then, for each time interval, fourteen histograms are defined corresponding to the unaveraged matrix elements of Equation~\ref{LagrangeMatrix} and are filled with events falling inside the single neutron window defined in the previous step.
 Next the histograms are averaged over and Equation~\ref{LagrangeMatrix} can be solved for the optimal \textbf{g} for each time interval.  Once the optimal \textbf{g} for every time interval is decided, a cubic spline is used to interpolate smoothly between the successive time intervals.  Then, on an event by event basis the calibrated ZDC energy is equal to $\mathbf{g(t)}^T\mathbf{A} $.
 
+\paragraph{Results}
 The optimized gains as a function of time ($\mathbf{g}(t)$) for Period B of the \pxPb\ run is displayed in Figure~\ref{fig:pPb_gains_time_evo}.\TCR{Citation needed}  Each module is denoted by a different color, but the overall trend is common to all modules.  Clusters of points on the time-axis represent individual LHC running periods.  Throughout individual running periods, the gains increase.  This increase is caused by accumulated radiation damage to the detector, which lowers the average module amplitudes ($\mathbf{A}$) requiring higher gain factors ($\mathbf{g}$) to calibrate to the same energy.  Running periods with higher levels of detector degradation (higher $\frac{d \mathbf{g}}{dt}$) correspond to periods of data taking with higher-\avmu\ and thus more incident radiation and integrated luminosity.  The gain increases in Figure~\ref{fig:pPb_gains_time_evo} are not monotonic as expected from continuous radiation damage.  This is because at certain points throughout the run, the operating power supply for the module PMTs were manually adjusted\footnote{The high voltage of the ZDC PMTs was increased} to elicit a stronger detector response.  Each of these changes was correlated with 2016 logbook entries from Peter Steinberg.  Additionally, the data quality recommendations had to be adjusted to make sure that no data was used when the detector configuration was actively being changed.
 \begin{figure}[ht]
     \centering
@@ -143,3 +269,7 @@ The functional form of the background term is chosen to facilitate fit convergen
     \caption{ZDC background estimation for run 313100, taken from \cite{HION-2024-11}.}
     \label{fig:zdc_fit_bkgd}
 \end{figure}
+
+\paragraph{Missing ZDC Module in 2016 Data}
+\label{sec:missing_zdc_mod}
+During the 2016 \pxPb\ run, the ZDC side C module 0 (EM) was removed and replaced with the Arm2 calorimeter of the LHCf experiment~\cite{Adriani:2135330}.
