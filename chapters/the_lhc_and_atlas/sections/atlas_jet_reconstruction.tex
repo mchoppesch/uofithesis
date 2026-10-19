@@ -29,7 +29,7 @@ A first estimate of the UE average transverse energy density, $\rho(\eta)$, is e
 
 \subsubsection{Jet Calibration}
 \label{sec:jet_calibration}
-This section describes the general features of the HI jet calibration strategy.  Since the two measurments reported in this dissertation were taken nine years apart, they use slightly different calibration strategies\footnote{Differences in the calibration strategies between the two measurments will be reported on a per measurment level}.
+This section describes the general features of the HI jet calibration strategy.  Since the two measurements reported in this dissertation were taken nine years apart, they use slightly different calibration strategies\footnote{Differences in the calibration strategies between the two measurements will be reported on a per measurement level}.
 
 Individual calorimeter cells are themselves calibrated to the EM scale, but there is a variety of factors (\textit{e.g.} passive material in the detector, gaps between cells, signal losses, etc. \cite{PERF-2011-03}) that allow only for a partial measurement of the energy deposited by a single jet in the detector. To compensate for these experimental effects, the energy scale of reconstructed jets needs to be calibrated to the truth energy scale.
 The calibration sequence for HI jets is presented in \cite{Krivos:2706256}.
@@ -45,5 +45,5 @@ A small pseudorapidity correction is also applied to the jet reconstructed \ETA,
 
 The EtaJES calibration is the larger between the two and is derived from \pythia\ simulated dijet events. The simulations are carried out using the MC conditions and the energy characteristic of the data taking. The scope of this calibration, common to both data and MC, is to correct from the EM scale to the truth hadronic scale. The per-jet energy correction factor is computed using a numerical inversion procedure~\cite{Kosek:1742072, Ouellette:2655891}, see~\cite{Cukierman:2016dkb} for a review of the procedure's math. A typical jet energy scale correction, $E_{\TN{T}}^{\TN{true}}/E_{\TN{T}}^{\TN{reco}}$, ranges from $\sim$ 1.2 to 2.0.
 
-The second calibration component is only applied to data to account for discrepancies between MC and data. The in-situ and \ETA-intercalibrations implement residual corrections to the jet energy scale based on the \PT\,balance in vector boson ($\gamma$, Z$^0$) - jet events (the \textit{in-situ} correction) and dijet events where mid-rapity jets are used to calibrate the forward rapidity jets (the \ETA-intercalibration).
+The second calibration component is only applied to data to account for discrepancies between MC and data. The in-situ and \ETA-intercalibrations implement residual corrections to the jet energy scale based on the \PT\,balance in vector boson ($\gamma$, Z$^0$) - jet events (the \textit{in-situ} correction) and dijet events where mid-rapidity jets are used to calibrate the forward rapidity jets (the \ETA-intercalibration).
 Calibration factors are derived in bins of \PT\ and \ETA\ and are applied as a correction to the jet \PT. 
