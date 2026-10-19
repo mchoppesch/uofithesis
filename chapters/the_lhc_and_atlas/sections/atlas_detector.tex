@@ -2,6 +2,7 @@
 
 The ATLAS detector~\cite{PERF-2007-01, GENR-2019-02} is a general-purpose particle physics detector with symmetrical cylindrical geometry and nearly 4$\pi$ solid angle coverage.\footnote{\AtlasCoordFootnote}
 The detector components include inner tracking detectors encased in a superconducting solenoid, electromagnetic (EM) and hadronic calorimeters, and a muon spectrometer which includes three large superconducting toroid magnets.
+The author of this dissertation is a member of the ATLAS collaboration, and the ATLAS detector and software suite was used for all measurements described.
 
 \subsubsection{Inner Detector}
 The inner detector (ID) system tracks charged particles within the range $|\eta|<2.5$ and full coverage in azimuth.
@@ -13,7 +14,7 @@ The IBL and Pixel typically provide 4 tracking points for charged particles.
 The SemiConductor Tracker (SCT) is a larger, further out tracker that typically provides 8 tracking points.
 Finally, the last layer of the ID is the Transition Radiation Detector (TRT), which uses straw drift tubes filled with a Xe-based gas mixture.
 The TRT provides basic PID as it is able to discriminate between electrons and photons.
-All together, The ID provided precise tracking of charged particles with \PT\ > 0.5 \GeV\
+Altogether, the ID provided precise tracking of charged particles with \PT\ > 0.5 \GeV.
 Figure~\ref{fig:atlas_inner_detector} displays the location and appearance of the different ID layers in ATLAS.
 \begin{figure}[htbp]
     \centering
@@ -27,18 +28,18 @@ Figure~\ref{fig:atlas_inner_detector} displays the location and appearance of th
 
 \FloatBarrier
 \subsubsection{Calorimeter System}
-The ATLAS calorimeter system consists of two parts, a Liquid Argon (LAr) calorimeter and a scintilating tile calorimeter.
-The system destructivly samples particles over a wide range of pseudorapidity (|$\eta$|<4.9) with full coverage in azimuth.
-The sampling calorimeter design consists of insterspered absorber material, which cause the incident particles to shower, and active material, which output a signal proportinal to the energy deposited by a secondary particle shower crossing that layer.
-Calorimeters typically consist of a EM and then a hadronic calorimeters, where the EM calorimeters are stationed before the hadronic calorimeters.
-This setup is because electrons and photons will lose energy over realitvly short distances due to pair production and bremsstrahlung while hadrons take longer distances to shower.
+The ATLAS calorimeter system consists of two parts, a Liquid Argon (LAr) calorimeter and a scintillating tile calorimeter.
+The system destructively samples particles over a wide range of pseudorapidity (|$\eta$|<4.9) with full coverage in azimuth.
+The sampling calorimeter design consists of interspersed absorber material, which cause the incident particles to shower, and active material, which output a signal proportional to the energy deposited by a secondary particle shower crossing that layer.
+Calorimeters typically consist of an EM and then a hadronic calorimeter, where the EM calorimeters are stationed before the hadronic calorimeters.
+This setup is because electrons and photons will lose energy over relatively short distances due to pair production and bremsstrahlung while hadrons take longer distances to shower.
 The LAr calorimeter consists of an EM calorimeter, a hadronic end-cap calorimeter (HEC), and a Forward Calorimeter (FCal).
 All the parts of the LAr calorimeter use liquid argon as the active material.
 The EM calorimeter uses Pb plates as passive material.
-Copper was used for the HEC and copper+tungstan were used for the FCal.
+Copper was used for the HEC and copper+tungsten were used for the FCal.
 Since the HEC and FCal are more geometrically constrained, copper helps with heat dissipation.
-The tile calorimeter sits outside of the LAr calorimeter in the central $\eta$ region; it uses steel tiles as an absorber and scintilating tiles as the active material.
-A diagram of the calorimeter system, with the different subcompoenets highlighted can be seen in Figure~\ref{fig:atlas_calorimeter_cross_section}.
+The tile calorimeter sits outside of the LAr calorimeter in the central $\eta$ region; it uses steel tiles as an absorber and scintillating tiles as the active material.
+A diagram of the calorimeter system, with the different subcomponents highlighted, can be seen in Figure~\ref{fig:atlas_calorimeter_cross_section}.
 Different $\eta$ coverages are denoted on the plot.
 
 \begin{figure}[htbp]
@@ -52,7 +53,7 @@ Different $\eta$ coverages are denoted on the plot.
 \end{figure}
 
 The material budget for the ATLAS calorimeter is displayed in the left panel of Figure~\ref{fig:atlas_calorimeter_material_pulse}, measured in units of nuclear interaction length.
-Over all pseudorapidity particles must traverse at least 9 nuclear interaction lenghts, ensuring that at least 99.98\% of hadronic energy is deposited in the calorimeter.
+Over all pseudorapidity, particles must traverse at least 9 nuclear interaction lengths, ensuring that at least 99.98\% of hadronic energy is deposited in the calorimeter.
 
 \begin{figure}[htbp]
     \centering
@@ -75,37 +76,66 @@ Over all pseudorapidity particles must traverse at least 9 nuclear interaction l
     \label{fig:atlas_calorimeter_material_pulse}
 \end{figure}
 In ATLAS, transverse energy (\ET\ ) deposited in the FCal is the most common type of centrality estimator (CE) used for Heavy Ion analyses.
-The \ET\ can be shown to be very well corratlted to the charged particle multiplicity at midrapidity.
-This \ET\ is calibrated to the EM scale, so the absolute energy scale is not gaurenteed to be correct when hadrons impinge on the detector.
-One problem that can effect centrality determination in this way is the presence of out-of-time pileup.
+The \ET\ can be shown to be very well correlated to the charged particle multiplicity at midrapidity.
+This \ET\ is calibrated to the EM scale, so the absolute energy scale is not guaranteed to be correct when hadrons impinge on the detector.
+One problem that can affect centrality determination in this way is the presence of out-of-time pileup.
 The right panel of Figure~\ref{fig:atlas_calorimeter_material_pulse} shows an example of a pulse shape in the LAr calorimeter.
 One can see that after a large pulse, the LAr readout amplitude will go negative for a long time (around 25 BCIDs).
-For heavy ion collisions, this can mean that an event that is preceeded by another high-activity event can have its energy measure biased.
+For heavy ion collisions, this can mean that an event that is preceded by another high-activity event can have its energy measurement biased.
 This is one of the reasons out-of-time pileup must be rejected in analyses utilizing centrality.
 
 \FloatBarrier
 \subsubsection{Muon Spectrometer}
 Muons weakly interact with ordinary matter and as such are able to escape the ID and calorimeter systems while losing little energy.
-As such a dedicated spectrometer is built surrounding these systems to identify and track muons over a pseudorapidity range of $|\eta| < 2.7$  with full coverage in azimuth.
+As such, a dedicated spectrometer is built surrounding these systems to identify and track muons over a pseudorapidity range of $|\eta| < 2.7$  with full coverage in azimuth.
 The muons are deflected by a set of superconducting air-core toroidal magnets with a strength of 2.0--6.0 T$\cdot$m.
 The spectrometer is built out of three layers, each made up of monitored drift tubes.
-To provide additional tracking precision, cathode-strip chambers were implemented in the endcap region in Run~2, but these were replaced by ``so-called'' the New Small Wheel detectors, which are small-strip thin-gap chambers and Micromegs champers in Run~3.
+To provide additional tracking precision, cathode-strip chambers were implemented in the endcap region in Run~2, but these were replaced by the so-called ``New Small Wheel'' detectors, which are small-strip thin-gap chambers and Micromegas chambers in Run~3.
 The muon trigger covers a slightly smaller range of pseudorapidity of $|\eta| < 2.4$.
 
 \FloatBarrier
 \subsubsection{Forward Detectors}
 The ATLAS forward detectors lie along the beampipe and cover very forward ranges of rapidity detecting particles that are missed by the coverage of the ATLAS central detector.
+Figure~\ref{fig:atlas_forward_detector_placement} shows the location of all the Forward detectors with respect to the beampipe and central detector.
+Note that at $\pm$140 m the two counter-circulating beams are split by magnets and go into separate beampipes for transport around the LHC.  Close to the IP the beams are kept in a single pipe.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[
+        width=0.9\linewidth,
+        alt={Diagram showing the placement of the ATLAS forward detectors along the beam line around the interaction point.}
+    ]{chapters/the_lhc_and_atlas/figures/atlas_detector/fwddet.png}
+    \caption{Placement of the forward detectors along the beam line around the ATLAS interaction point (IP). Taken from Reference~\cite{GENR-2019-02}.}
+    \label{fig:atlas_forward_detector_placement}
+\end{figure}
 
 \paragraph{LUCID}
-
-\paragraph{AFP}
+As described in Section~\ref{sec:lumi}, luminosity is crucial for calibrating experimental observations to absolute cross sections.
+LUCID (Luminosity measurement using Cherenkov Integrating Detector) is a forward detector, located at $\pm$17 m from the IP, primarily dedicated to Luminosity measurement.
+It detects inelastic scatterings in the forward direction using Cherenkov light produced in quartz windows located close to the beampipe, and LUCID can provide both online and offline luminosity information.
 
 \paragraph{ALFA}
+ALFA (Absolute Luminosity For ATLAS) measures the absolute luminosity by measuring elastic scatterings at very small angles.
+It is located $\pm$240 m from the ATLAS IP.
+They are measured by so-called ``Roman pots'' that can be moved very close to the beam itself, requiring specialized beam conditions.
 
-\paragraph{ZDC} The Zero Degree Calorimeter (ZDC) is a detecrtor employed mostly for heavy ion specific runs in the LHC.
-The author of this dissertation is a member of the ZDC group and as such this detector deserves a more detailed discussion, which is be given in Section~\ref{sec:ZDC}
+\paragraph{AFP}
+AFP (Atlas Forward Proton) also utilizes Roman Pot style detectors, located at $\pm$205 m and $\pm$217 m of the IP.
+It is also used for studying elastic \pxp\ collisions.
+
+\paragraph{ZDC} The Zero Degree Calorimeter (ZDC) is a detector employed mostly for heavy ion specific runs in the LHC.
+Due to the high radiation environment in high-\avmu\ \pxp\ runs, the ZDC is removed.
+The author of this dissertation is a member of the ZDC group and as such this detector deserves a more detailed discussion, which is given in Section~\ref{sec:ZDC}.
 
 \FloatBarrier
 \subsubsection{Trigger and Software}
 
-The author of this dissertation is a member of the ATLAS collaboration, and the ATLAS detector was used for all measurements described.
+ATLAS uses a sophisticated trigger system to select events of interest for further analysis in order to cope with the large 40 MHz rate of bunch crossings~\cite{TRIG-2016-01,TRIG-2022-01}.
+The first-level trigger, usually called L1 trigger, is implemented with custom triggering hardware to identify events.
+This reduces the sample rate of events to around 100 kHz.
+The selection at L1 is course and typically needs to be refined with a high-level trigger (HLT) where algorithms are run on a limited set of online reconstruted physics objects providing more sensetivity to physics processes of interest.
+This HLT selection further reduces the event rate at about 1.25 kHz and 3 kHz in Run~2 and Run~3, respectively.
+Events are then written to a disk and saved for offline analysis.
+
+A software suite~\cite{SOFT-2022-02} is used in data simulation, in the reconstruction
+and analysis of real and simulated data, in detector operations, and in the trigger and data acquisition
+systems of the experiment.
