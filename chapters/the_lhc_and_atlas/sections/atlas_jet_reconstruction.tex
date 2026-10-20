@@ -20,8 +20,8 @@ The subtracted transverse tower energy can be written as,
 Where $\rho\left(\eta\right)$ is the UE transverse energy density averaged over azimuth.
 $A$ is a factor for the area of a given tower $0.1\times \frac{\pi}{32}$.
 $\lambda\left(\eta,\phi\right)$ is a tower-by-tower correction for detector non-uniformities.
-$H(\phi)$ parameterizes the $\phi$ dependence of the UE arising from flow~\cite{HION-2016-06}.
-For the Run~2 \pxPb\ and Run~3 \OxO, \NexNe, and \pxp\ data used for the analysis presented in this dissertation, \textbf{no correction for aziumthal anisotropy was included} in the estimation of the UE average transverse energy density, i.e. $H_i = 1$ for all $\phi$.
+$H(\phi)$ parametrizes the $\phi$ dependence of the UE arising from flow~\cite{HION-2016-06}.
+For the Run~2 \pxPb\ and Run~3 \OxO, \NexNe, and \pxp\ data used for the analysis presented in this dissertation, \textbf{no correction for azimuthal anisotropy was included} in the estimation of the UE average transverse energy density, i.e. $H_i = 1$ for all $\phi$.
 This choice was made due to the relatively low multiplicity characterizing these small collision systems compared to \PbxPb.
 $\rho\left(\eta\right)$ is estimated from the following expression
 \begin{equation}
@@ -40,11 +40,11 @@ where the sum in the numerator is over towers not contained in a jet, and the su
 \end{figure}
 %The average transverse energy density ($\rho (\eta)$) is estimated using an iterative procedure that excludes regions populated by jets.
 The subtracted \ET\ is estimated using an iterative procedure that excludes regions populated by jets, as aluded to in Equation~\ref{eqn:rho_estim}.
-This procedure is skematically shown in Figure~\ref{fig:atlas_hi_jet_reconstruction}
+This procedure is schematically shown in Figure~\ref{fig:atlas_hi_jet_reconstruction}
 \begin{itemize}
     \item A first estimate (Iteration 0) of the subtracted transverse energy, $\Delta E_{\mathrm{T}}$, is evaluated in ($\eta,\phi$) excluding regions of the calorimeter populated by ``seed'' jets, in this case $R=0.2$ \antikt\ unsubtracted tower jets. To be considered a seed jet in iteration 0 the jet has to pass the discriminant cut on the value of maximal-over-mean tower energy, e.g. $\max/\mathrm{mean} > 4$ and the maximum tower energy must satisfy $\max > 3$ \GeV.
-    \item The next estimate (Iteration 1) of the subtracted transverse energy uses a different set of seed jets. This time seed jets are comprised of the union of two jet collections. The first being $R=0.2$ \antikt\ jets built from subtracted towers using the $\Delta E_{\mathrm{T}}$ estimated from Iteration 0.  The requierment on these jets is that \PT\ > 25 \GeV\ (\PT\ > 8 \GeV) in \PbxPb\ (small systems) collisions.  The next collection is $R = 0.4$ track jets with \PT\ > 7 \GeV, reconstructed from tracks with \PT\ > 4 \GeV.
-    \item The final estimate (Iteration 2) of the subtracted transverse energy uses yet another different set of seed jets. These $R=0.4$ \antikt\ seed jets are built from consistuent towers with a $\Delta E_{\mathrm{T}}$ estimated from Iteration 1. These jets also are fully calibrated, see Section~\ref{sec:jet_calibration}.  The requierment on these jets is again that \PT\ > 25 \GeV\ (\PT\ > 8 \GeV) in \PbxPb\ (small systems) collisions.
+    \item The next estimate (Iteration 1) of the subtracted transverse energy uses a different set of seed jets. This time seed jets are comprised of the union of two jet collections. The first being $R=0.2$ \antikt\ jets built from subtracted towers using the $\Delta E_{\mathrm{T}}$ estimated from Iteration 0.  The requirement on these jets is that \PT\ > 25 \GeV\ (\PT\ > 8 \GeV) in \PbxPb\ (small systems) collisions.  The next collection is $R = 0.4$ track jets with \PT\ > 7 \GeV, reconstructed from tracks with \PT\ > 4 \GeV.
+    \item The final estimate (Iteration 2) of the subtracted transverse energy uses yet another different set of seed jets. These $R=0.4$ \antikt\ seed jets are built from constituent towers with a $\Delta E_{\mathrm{T}}$ estimated from Iteration 1. These jets also are fully calibrated, see Section~\ref{sec:jet_calibration}.  The requirement on these jets is again that \PT\ > 25 \GeV\ (\PT\ > 8 \GeV) in \PbxPb\ (small systems) collisions.
 \end{itemize}
 
 After this iterative procedure is applied to calorimeter tower \ET\ in an event, \texttt{AntiKt4HIJets} can be reconstructed using the subtracted towers as constituents.
@@ -57,7 +57,7 @@ A dijet signature is preserved in the event while the noise from the UE is suppr
         width=0.9\linewidth,
         alt={Comparison of calorimeter transverse energy before and after underlying-event subtraction.}
     ]{chapters/the_lhc_and_atlas/figures/atlas_jet_reconstruction/Etbeforeaftersubtraction.pdf}
-    \caption{Calorimeter transverse energy before and after underlying-event subtraction. Figure courtsy of A. Ogrodnik.}
+    \caption{Calorimeter transverse energy before and after underlying-event subtraction. Figure courtesy of A. Ogrodnik.}
     \label{fig:atlas_jet_ue_subtraction}
 \end{figure}
 
