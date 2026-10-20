@@ -1,5 +1,66 @@
-\subsection{Measured Observables}
+\subsection{Analysis Strategy}
 
+In this work, the kinematics\footnote{Please note that the superscript CM indicates that the variables are computed in the nucleon-nucleon center-of-mass reference frame, and the subscripts `1' and `2' refer to the leading and subleading jet, respectively.} of the detected leading (\PT{$_{,1}$} and $y^\TN{CM}_{1}$) and sub-leading (\PT{$_{,2}$} and $y^\TN{CM}_{2}$) jets are used, together with the center of mass energy, to access the momentum fraction carried by the parton participating in the hard scattering which originate from the colliding nucleons.
+
+The CM value for the rapidity can be obtained by adding/subtracting $\Delta y = \pm 0.465$, as discussed in detail in Section\TCR{Add reference here}.
+This value arises from the fact that the center of mass frame of the proton--Lead system is boosted with respect to the lab frame.
+The proton beam has an energy of 6.5 TeV, while the Pb beam has an energy of 2.56 \TeV/A in the laboratory frame.
+
+The chosen kinematic variables allow for full access to the parton level kinematics:
+\begin{equation}
+    \label{eq:xp}
+    x_p =
+    \frac{ p_{\TN{T},1}e^{y^\TN{CM}_{1}}
+        +
+    p_{\TN{T},2}e^{y^\TN{CM}_{2}}}
+    {\sqrt{s}}
+\end{equation}
+\begin{equation}
+    \label{eq:xPb}
+    x_{\TN{Pb}}
+    =
+    \frac{ p_{\TN{T},1}e^{-y^\TN{CM}_{1}}
+        +
+    p_{\TN{T},2}e^{-y^\TN{CM}_{2}}}
+    {\sqrt{s}}
+\end{equation}
+
+At leading order in a perturbative approach, Equation~\ref{eq:xp} (Equation~\ref{eq:xPb}) is the Bjorken-x of the scattered parton in the proton (Lead)~\cite{pPb:xpapprox}.
+Estimates of the parton level kinematic using jets has precedence from other dijet measurments at the LHC~\cite{HION-2015-02,HION-2022-15,HION-2024-12} and RHIC~\cite{PHENIX:dAuSupression}.
+%In simulations, the \xp\ estimate based on final-state jet kinematics was found to be, on average, 6--8\% lower than the true parton-level value in the phase space covered by the analysis. The relative resolution of this estimate, $\sigma_{x_p^{\mathrm{reco}}/x_p^{\textsc{PYTHIA}}}$, is around 10\% for the lowest \xp\ events, decreasing to 4\% with increasing \xp.
+
+\subsubsection{Measured Quantities}
+The measured quantaties in this analysis are two detector-level quantaties that have been used in the past as centrality estimators (CEs) in \pxPb\ collisions.
+Measurements of detector-level quantities, while not directly relatable to theoretical predictions at a systematic level, can nonetheless be utilized to compare qualitative treads between experiment and theory.
+
+\begin{enumerate}
+    \item \textbf{Pb-going Forward \ET}: The transverse energy deposited in the FCal in the direction of the Pb nucleus, \ETPB.  This is defined as the sum of total transverse EM-level energy\footnote{EM-level energy measurments are calibrated relative to an EM probe, like a electron beam.} deposited in the forward calorimeter section $3.1\leq |\eta_{\mathrm{Pb}}| \leq 4.9$. The intrinsic asymetry of the projectiles in a \pxPb\ collision leads to an asymetry in the soft particle production, favoring the direction of the Pb nucleus. The lack of sensetivity of the proton going FCal to the soft particle production motivaties restricting the CE defintion to the Pb-side. \ETPB\ has been used by ATLAS for many \pxPb\ measurments~\cite{HION-2012-14,HION-2013-08,HION-2013-09,HION-2023-05}.
+    \item \textbf{Pb-going Forward Neutrons}: The total energy deposited in the ZDC in the direction of the Pb nucleus, \EZDC. In \pxA\ collisions forward neutron multiplicity grows monotonically with soft particle production. The exact mechanism for this is not well understood, but it has been suggested that soft nucleon--nucleon interactions excite the target nucleus. The nucleus then deexcites by neutron emission which are detected in the ZDC~\cite{pPb:woundednucleonevap}. \EZDC\ has been used as a CE by ATLAS~\cite{HION-2021-17} and ALICE~\cite{ALICE:pPbPP,ALICE:pPbDMeson,ALICE:pPbZdcIAA}, based on the expectation that a larger $|\Delta \eta|$ between the CE and midrapidity leads to a less biased CE\footnote{The bias being the projectile configuration bias, discussed in Section~\ref{sec:pAcentBias}}. This measurment utilizes the calibration detailed in Section~\ref{sec:zdc_calib}.
+\end{enumerate}
+
+\subsubsection{Binning}
+The analysis is carried out as a function of the initial state kinematic variable \xp.   For this variable, the binning was chosen as follows:
+\begin{itemize}
+    \item \textbf{\xp}: Logarithmic binning, defined as: \{ 0.00063, 0.00131, 0.00191, 0.00275, 0.00398, 0.00575, 0.00832, 0.01202, 0.01738, 0.02512, 0.03631, 0.05248, 0.07586, 0.10965, 0.15849, 0.22909, 0.33113, 0.47863, 1.00000 \}.
+\end{itemize}
+A linear binning was used to analyze the energy in the Pb-going side of the ZDC:
+\begin{itemize}
+    \item \textbf{\EZDC\ (in TeV)}: \{ 0.0, 1.0, 20.2, 39.4, 58.6, 77.8, 97.0, 116.2, 135.4, 154.6, 173.8, 193.0, 212.2, 231.4, 250.6, 269.8, 289.0, 308.2, 327.4, 346.6, 365.8, 385.0 \}.
+\end{itemize}
+A logarithmic binning is used for the transverse energy accumulated in the FCal:
+\begin{itemize}
+    \item \textbf{\ETPB\ (in TeV)}: \{ 0.0010, 0.0014, 0.0020, 0.0028, 0.0040, 0.0056, 0.0079, 0.0112, 0.0158, 0.0224, 0.0316, 0.0447, 0.0631, 0.0891, 0.1259, 0.1778, 0.2512, 0.3548, 0.5012, 0.7079, 1.0000 \}.
+\end{itemize}
+
+\paragraph{Intrinsic \texorpdfstring{\xp}{xp} resolution via dijet approximation}
+The relation in Equation~\ref{eq:xp} is an approximation of the true particle level \xp.
+The errors in this approximation come mainly from two sources:
+\begin{itemize}
+    \item Higher-order QCD diagrams (NLO and beyond) contribute in reality but are not accounted for in the expression above.
+    \item Experimentally reconstructed jets are not guaranteed to capture all of the parton energy. In particular, out-of-cone radiation can cause the observed jet kinematics to differ from those of the outgoing parton.
+\end{itemize}
+
+\TCR{AI Slop below}
 The measured observables are the neutral energy deposited in the Pb-going Zero Degree
 Calorimeter (ZDC), \EZDC, and the transverse energy measured in the Pb-going
 Forward Calorimeter (FCal), \ETPB. The ZDC is sensitive primarily to spectator
