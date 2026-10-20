@@ -39,7 +39,7 @@ The correlation between energy deposited in either arm of the ZDC is displayed i
     \label{fig:zdc_upc_vs_had}
 \end{figure}
 
-In order to capture signals from a zero to eighty-plus neutrons, the ZDC operates with two sets of readout instrumentation, denoted as high and low gain readouts.  The high gain readout is configured to have a dynamic range that saturates with a couple of neutrons.  The low gain readout has a range of a roughly ten times that of the high gain readout.
+In order to capture signals from a zero to eighty-plus neutrons, the ZDC operates with two sets of readout instrumentation, denoted as high and low gain Analog-to-Digital Converters (ADCs).  The high gain readout is configured to have a dynamic range that saturates with a couple of neutrons.  The low gain readout has a range of a roughly ten times that of the high gain readout.
 %Each readout consisted of two 40 MHz ADCs (25 ns).  Both ADCs read out the same signal, but one is delayed by 12.5 ns.  This allows for the combined readout to have a sampling of 80 MHz (12.5 ns).
 
 The ZDC reconstruction software transforms the raw data read out from the above ADCs into module specific amplitudes.
@@ -163,9 +163,9 @@ This was used to help predict the rates for ZDC triggers before the start of the
 Due to the asymmetric nature of the \pxPb\ collisions system in each period only one arm of the ZDC detector will receive ion fragments.
 In 2019, J. Nagle performed \TCR{ ref needed} the calibration of the 5.02 \TeV\ data, but concluded that the contamination from pileup in the high-\avmu\ \pxPb\ data made a calibration unfeasible.
 The author of this dissertation undertook the calibration of the high high-\avmu\ \pxPb\ data in 2023 after substantial improvements had been made to the ZDC reconstruction in order to mitigate the previously untenable issues.
-This technical work enabled the measurment detailed in~\ref{ch:pPb}.
+This technical work enabled the measurement detailed in~\ref{ch:pPb}.
 
-\paragraph{Improvments to ZDC Reconstruction}
+\paragraph{Improvements to ZDC Reconstruction}
 The first improvement made to the ZDC reconstruction comes from~\cite{ATL-COM-PHYS-2019-1454}.  This note documents updates to the signal processing created mainly for the 2018 \PbxPb\ data, but that are useful for the 2016 \pxPb\ data as well.  These updates includes significant improvements to the reconstructions ability to fit pulses in the presence of out of time (OOT) pile up, both preceding and after the event in question.  Large OOT pileup pulses would saturate the high gain ADC, leading to the pulse being analyzed with the low gain ADC which has a roughly ten times worse resolution.  By excluding a few samples from the beginning or (end) of these pulses and looking at the high gain ADC values, the reconstruction will yield a reasonable fit for the current event. This is especially important given that the relatively high \avmu\ in the 2016 8.16 \TeV\ \pxPb\ has more events affected by out of time pileup.
 
 The second significant improvement made to the ZDC reconstruction was the `two-pass' analysis method.  This method first uses a relatively high second derivative threshold to search for pulses in a ZDC event.  This high threshold helps to suppress noise from small background and pileup pulses.  However, if at least one module has a pulse that passes this threshold, all the modules on said ZDC arm are reanalyzed with a lower second derivative threshold. This `repass' recovers finer pulses that were too small to be `seen' on the first pass.
