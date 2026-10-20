@@ -15,7 +15,7 @@ Several views for a 3D model of the ZDC in Run~3 are shown in Figure~\ref{fig:zd
 
 As a calorimeter, the ZDC destructively samples the energy of the particles that enter it.
 Since dipole magnets between the IP and the ZDC swipe away forward charged particles, only neutral particles enter the ZDC.
-In ion running, the nucleons that do not participate in the collisions number $2A - $\NPART and are termed ``spectator'' nucleons.
+In ion running, the nucleons that do not participate in the collisions number $2A - $\NPART\ and are termed ``spectator'' nucleons.
 Measurements of the energy flow at zero degrees can provide input into the initial conditions of the QGP.
 However, not all spectator nucleons are neutrons.
 Charged spectators, like protons or charged nuclear fragments will be bent out of the ZDC acceptance.
@@ -24,8 +24,8 @@ Since these ``spectator'' neutrons do not interact in the collision at the IP th
 The number of spectator neutrons in non-trivially dependent on the event geometry, but they range from zero to roughly $(A-Z)/2$.
 
 Additionally, ZDC are useful in the study of UPCs.
-The pattern of energy in the ZDC can inform what type of process occurred at the IP, by counting the number of neutrons in each arm of the ZDC i.e. on each side of the IP.
-he $0n0n$ class denotes a coherent photon-photon process ($\gamma \gamma$), $0nXn/Xn0n$ represents a photo-nuclear interaction where the target nucleus breaks up resulting in forward neutron production ($\gamma A / A\gamma$), and $XnXn$ identifies a hadronic interaction with neutral spectators on both sides.
+The pattern of energy in the ZDC can inform what type of process occurred at the IP, by counting the number of neutrons in each arm of the ZDC, i.e. on each side of the IP.
+The $0n0n$ class denotes a coherent photon-photon process ($\gamma \gamma$), $0nXn/Xn0n$ represents a photo-nuclear interaction where the target nucleus breaks up resulting in forward neutron production ($\gamma A / A\gamma$), and $XnXn$ identifies a hadronic interaction with neutral spectators on both sides.
 The ZDC can be used to trigger on these processes at the hardware level.
 The correlation between energy deposited in either arm of the ZDC is displayed in Figure~\ref{fig:zdc_upc_vs_had} for a UPC selection and a hadronic selection. The UPC selection is dominated by photon-photon and photonuclear events, while the hadronic selection is dominated by the $XnXn$ topology.
 
@@ -35,7 +35,7 @@ The correlation between energy deposited in either arm of the ZDC is displayed i
         width=0.9\linewidth,
         alt={Correlation between the energy deposited in the two ZDC arms for an ultra-peripheral collision selection and for a hadronic selection.}
     ]{chapters/the_lhc_and_atlas/figures/zdc_detector/zdcUPCvsHAD.pdf}
-    \caption{Correlation between the energy deposited in the two arms of the ZDC for a UPC selection and a hadronic selection.}
+    \caption{Correlation between the energy deposited in the two arms of the ZDC for a UPC selection (left) and a hadronic selection (right).}
     \label{fig:zdc_upc_vs_had}
 \end{figure}
 
@@ -55,7 +55,7 @@ As part of the process of becoming an ATLAS author, a prospective member is aske
 The task assigned to the author of this dissertation was to implement software simulating the new ZDC trigger configuration in Run~3 to properly estimate rates for novel trigger combination from Run~2 data.
 
 \paragraph{Motivation for new ZDC trigger in Run~3}
-The ZDC trigger in Run~2 was designed from a simple nim threshold for either ZDC arm, partitioning the trigger combinations into the classes described in the previous section, namely $\gamma \gamma$, $\gamma A$, and hadronic. The left panel of Figure~\ref{fig:zdc-trigger} displays this trigger scheme.
+The ZDC trigger in Run~2 was designed from a simple NIM threshold for either ZDC arm, partitioning the trigger combinations into the classes described in the previous section, namely $\gamma \gamma$, $\gamma A$, and hadronic. The left panel of Figure~\ref{fig:zdc-trigger} displays this trigger scheme.
 
 \begin{figure}[h]
     \centering
@@ -108,7 +108,7 @@ Once these decisions were made, they had to be integrated into the Central Trigg
 The ATLAS trigger simulation algorithm for extrapolating experimentally observed rates to different pileup conditions (\avmu) implicitly assumes that the process under study is sufficiently rare. (i.e. that the number of coincident triggers for a certain process is very small)
 Since EM dissociation has a very large cross section, this assumption was not valid for the ZDC triggers being considered.
 At higher instantaneous luminosity, EM pileup rates increase accordingly and increase the probability for the type of migrations discuss above.
-To mitigate this effect, a pileup dependent correction was derived following Reference~\cite{EM:pileupcorr}.
+To study this effect, a pileup dependent correction was derived following Reference~\cite{EM:pileupcorr}.
 Assuming Poisson statistics apply, the raw triggered rate for any number of a  given process can be calculated as $R^{t} = f  \times \left(1- e^{-\mu_{\mathrm{process}}}\right)$ where $f$ is the frequency of the LHC corrected for the number of bunches,  and $\mu_{\mathrm{process}}$ is the average number of processes per bunch crossing.
 Then a trigger rate for a single process is $R = f \times \mu_{\mathrm{process}} $.
 The EM pileup corrected rate for a process that puts neutrons in both the A and C arms of the ZDC can be written as,

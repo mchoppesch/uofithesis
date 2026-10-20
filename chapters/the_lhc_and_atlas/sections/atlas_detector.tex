@@ -1,17 +1,17 @@
 \subsection{ATLAS detector}
 
 The ATLAS detector~\cite{PERF-2007-01, GENR-2019-02} is a general-purpose particle physics detector with symmetrical cylindrical geometry and nearly 4$\pi$ solid angle coverage.\footnote{\AtlasCoordFootnote}
-The detector components include inner tracking detectors encased in a superconducting solenoid, electromagnetic (EM) and hadronic calorimeters, and a muon spectrometer which includes three large superconducting toroid magnets.
-The author of this dissertation is a member of the ATLAS collaboration, and the ATLAS detector and software suite was used for all measurements described.
+The detector components include inner tracking detectors encased in a superconducting solenoid magnet, electromagnetic (EM) and hadronic calorimeters, and a muon spectrometer which includes three large superconducting toroid magnets.
+The author of this dissertation is a member of the ATLAS collaboration, and the ATLAS detector and software suite were used for all measurements described.
 
 \subsubsection{Inner Detector}
 The inner detector (ID) system tracks charged particles within the range $|\eta|<2.5$ and full coverage in azimuth.
 The ID lies inside of a 2 T axial magnetic field, which bends the charged particles so their momentum can be measured.
 Counting outward from the beampipe, the first component is the Insertable B-Layer (IBL), which was a new silicon tracker for Run 2 and enhanced tracking performance in high-luminosity data-taking.
-The IBL needed to be radiation hard given its close proximity to the beam pipe.
-The Pixel detector is next, which is another silicon pixel tracker.
+The IBL is requiered to be radiation hard given its close proximity to the beam pipe.
+The Pixel detector is next, which is another silicon tracker.
 The IBL and Pixel typically provide 4 tracking points for charged particles.
-The SemiConductor Tracker (SCT) is a larger, further out tracker that typically provides 8 tracking points.
+The SemiConductor Tracker (SCT) is a larger, more distant tracker that typically provides 8 tracking points.
 Finally, the last layer of the ID is the Transition Radiation Detector (TRT), which uses straw drift tubes filled with a Xe-based gas mixture.
 The TRT provides basic PID as it is able to discriminate between electrons and photons.
 Altogether, the ID provided precise tracking of charged particles with \PT\ > 0.5 \GeV.
@@ -32,7 +32,7 @@ The ATLAS calorimeter system consists of two parts, a Liquid Argon (LAr) calorim
 The system destructively samples particles over a wide range of pseudorapidity (|$\eta$|<4.9) with full coverage in azimuth.
 The sampling calorimeter design consists of interspersed absorber material, which cause the incident particles to shower, and active material, which output a signal proportional to the energy deposited by a secondary particle shower crossing that layer.
 Calorimeters typically consist of an EM and then a hadronic calorimeter, where the EM calorimeters are stationed before the hadronic calorimeters.
-This setup is because electrons and photons will lose energy over relatively short distances due to pair production and bremsstrahlung while hadrons take longer distances to shower.
+This configuration is used because electrons and photons will lose energy over relatively short distances due to pair production and bremsstrahlung while hadrons take longer distances to shower.
 The LAr calorimeter consists of an EM calorimeter, a hadronic end-cap calorimeter (HEC), and a Forward Calorimeter (FCal).
 All the parts of the LAr calorimeter use liquid argon as the active material.
 The EM calorimeter uses Pb plates as passive material.
@@ -111,7 +111,8 @@ Note that at $\pm$140 m the two counter-circulating beams are split by magnets a
 \paragraph{LUCID}
 As described in Section~\ref{sec:lumi}, luminosity is crucial for calibrating experimental observations to absolute cross sections.
 LUCID (Luminosity measurement using Cherenkov Integrating Detector) is a forward detector, located at $\pm$17 m from the IP, primarily dedicated to Luminosity measurement.
-It detects inelastic scatterings in the forward direction using Cherenkov light produced in quartz windows located close to the beampipe, and LUCID can provide both online and offline luminosity information.
+It detects inelastic scatterings in the forward direction using Cherenkov light produced in quartz windows located close to the beampipe.
+LUCID can provide both online and offline luminosity information.
 
 \paragraph{ALFA}
 ALFA (Absolute Luminosity For ATLAS) measures the absolute luminosity by measuring elastic scatterings at very small angles.
