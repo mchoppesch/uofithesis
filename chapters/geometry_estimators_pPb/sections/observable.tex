@@ -2,7 +2,7 @@
 
 In this work, the kinematics\footnote{Please note that the superscript CM indicates that the variables are computed in the nucleon-nucleon center-of-mass reference frame, and the subscripts `1' and `2' refer to the leading and subleading jet, respectively.} of the detected leading (\PT{$_{,1}$} and $y^\TN{CM}_{1}$) and sub-leading (\PT{$_{,2}$} and $y^\TN{CM}_{2}$) jets are used, together with the center of mass energy, to access the momentum fraction carried by the parton participating in the hard scattering which originate from the colliding nucleons.
 
-The CM value for the rapidity can be obtained by adding/subtracting $\Delta y = \pm 0.465$, as discussed in detail in Section\TCR{Add reference here}.
+The CM value for the rapidity can be obtained by adding/subtracting $\Delta y = \pm 0.465$, as discussed in detail in Section~\ref{sec:pPbData}.
 This value arises from the fact that the center of mass frame of the proton--Lead system is boosted with respect to the lab frame.
 The proton beam has an energy of 6.5 TeV, while the Pb beam has an energy of 2.56 \TeV/A in the laboratory frame.
 
@@ -60,35 +60,21 @@ The errors in this approximation come mainly from two sources:
     \item Experimentally reconstructed jets are not guaranteed to capture all of the parton energy. In particular, out-of-cone radiation can cause the observed jet kinematics to differ from those of the outgoing parton.
 \end{itemize}
 
-\TCR{AI Slop below}
-The measured observables are the neutral energy deposited in the Pb-going Zero Degree
-Calorimeter (ZDC), \EZDC, and the transverse energy measured in the Pb-going
-Forward Calorimeter (FCal), \ETPB. The ZDC is sensitive primarily to spectator
-neutrons emitted during nuclear breakup, whereas the FCal transverse energy is
-an event-activity estimator sensitive to particle production by the collision
-participants. Both quantities have been used to characterize the geometry of
-proton--nucleus collisions.
+The impact of these errors on the determination of \xp\ was evaluated using a Monte Carlo dijet sample with \pythia, for more information on Monte Carlo used in this analysis see Section~\ref{sec:pPbMCSamples}.
+In the \xp\ bins defined above, the resolution of the \xp\ determination is studied.
+For each bin, the truth-\xp\footnote{The \xp\ determined from \pythia.} is compared to the truth jet-recnstructed \xp\footnote{The \xp\ determined from Equation~\ref{eq:xp} using truth-level \antikt\ $R=0.4$ jets.}
+The mean and width of the resolution between the above quantities is displayed in Figure~\ref{fig:xp_resolution}, where the ratio of the above quantities (\xp${}^{\mathrm{jet}}$ / \xp${}^{\mathrm{pythia}}$) has been histogramed and fit to a Gaussian.
+The study is done as a function of truth jet-reconstructed \xp.
 
-The hard-scattering kinematics are accessed using the two highest-transverse
-momentum jets in each event. The momentum fraction carried by the parton in the
-proton is estimated at leading order as
-\begin{equation}
-    \label{eq:geometry_xp}
-    x_p = \frac{p_{\mathrm{T},1}e^{y^{\mathrm{CM}}_1}
-    + p_{\mathrm{T},2}e^{y^{\mathrm{CM}}_2}}
-    {\sqrt{s_{\mathrm{NN}}}},
-\end{equation}
-where $p_{\mathrm{T},1}$ and $p_{\mathrm{T},2}$ are the transverse momenta of
-the leading and subleading jets and $y^{\mathrm{CM}}_1$ and
-$y^{\mathrm{CM}}_2$ are their rapidities in the nucleon--nucleon
-center-of-mass frame. This estimator reconstructs the Bjorken-$x$ of the
-scattered proton parton from final-state jet kinematics. Simulation studies
-show that the reconstructed quantity is, on average, $6$--$8\%$ lower than the
-parton-level value in the measurement phase space, with a relative resolution
-that improves from about $10\%$ at low $x_p$ to $4\%$ at high $x_p$.
-
-Normalized \EZDC\ and \ETPB\ distributions are measured in intervals of $x_p$,
-along with their means, \AZDC\ and \EATPB\. The distributions expose changes in
-shape, while the means provide compact measures of the $x_p$ dependence. The
-correlation between \EZDC\ and \ETPB\ is also studied in each $x_p$ interval to
-connect the spectator-neutron and participant-activity observables.
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}{.49\linewidth}
+        \includegraphics[width=\linewidth]{chapters/geometry_estimators_pPb/figures/observable/xp_mu.png}
+    \end{subfigure}
+    \begin{subfigure}{.49\linewidth}
+        \includegraphics[width=\linewidth]{chapters/geometry_estimators_pPb/figures/observable/xp_sig.png}
+    \end{subfigure}
+    \caption{Mean (left) and width (right) of the ratio of the dijet-reconstructed \xp\ to the truth \xp\ as a function of dijet-reconstructed \xp.}
+    \label{fig:xp_resolution}
+\end{figure}
+The truth jet-reconstructed \xp\ scale is in average 6-8\% below the parton-level value from the generator. This behavior can be explained in terms of radiation escaping the radius set for the jet reconstruction that, in average, leads to a lower than expected reconstructed value. The relative resolution of this estimate is around 10\% for the lowest \xp\ events, decreasing to 4\% with increasing \xp.

@@ -129,13 +129,46 @@ The author of this dissertation is a member of the ZDC group and as such this de
 
 \FloatBarrier
 \subsubsection{Trigger and Software}
-
+\label{sec:ATLASTrig}
 ATLAS uses a sophisticated trigger system to select events of interest for further analysis in order to cope with the large 40 MHz rate of bunch crossings~\cite{TRIG-2016-01,TRIG-2022-01}.
-The first-level trigger, usually called L1 trigger, is implemented with custom triggering hardware to identify events.
+The first-level trigger, usually called L1 or hardware trigger, is implemented with custom triggering hardware to identify events.
 This reduces the sample rate of events to around 100 kHz.
 The selection at L1 is course and typically needs to be refined with a high-level trigger (HLT) where algorithms are run on a limited set of online reconstructed physics objects providing more sensitivity to physics processes of interest.
 This HLT selection further reduces the event rate at about 1.25 kHz and 3 kHz in Run~2 and Run~3, respectively.
 Events are then written to a disk and saved for offline analysis.
+
+Triggers in ATLAS are named according to the concatination of their HLT tag and L1 tag.
+For example, consider a minimum bias trigger with the HLT tag \texttt{HLT\_mb\_sptrk} and the L1 tag \texttt{L1\_RDO\_FILLED}.
+The L1 tag describes a random first-level triger with a reqierment that requieres the interacting BCIDs to be filled with beam particles.
+The HLT tag requires that the software trigger check for the presence of at least one charged particle track in the ID.
+The total name of this trigger is \texttt{HLT\_mb\_sptrk\_L1\_RDO\_FILLED}; it is called a minimum bias trigger beacause it makes very little requierments on the event of intrest.
+
+Other triggers are more specialized and are designed to select events with various specific physics signatures present.
+Jet triggers are designed to select a sub-sample of all collions that contain jets of a certain \PT.
+For example, the \texttt{HLT\_j60\_L1\_J20} chooses events where the hardware trigger evaluates the event to contain at least one jet with \PT\ > 20 \GeV\ and the high-level trigger evaluates the event to contain at least one jet with \PT\ > 60 \GeV.
+The L1 jet selection is typically courser (i.e. less accurate), which is why the \PT\ threshold is lower than the HLT selection.
+In a similar way, jet triggers can also select events in certain ranges of $\eta$ to create an sample of only forward jets.
+
+To not saturate avalible bandwidth for writing events, triggers that select events at a high rate are typically prescaled.
+This means that only a fraction of total events that fired a given trigger are kept for analysis.
+The triggers \textit{prescale} is a number that describes the ratio of triggered events relative to events written to disk.
+A trigger with a prescale of ten will fire ten times for every one event kept and it will sample 10\% of the total luminosity seen by the experiment.
+Triggers selecting reativly rare processes are typically unprescaled, meaning they have a prescale of one and every event is kept.
+For example, because low-$Q^2$ QCD processes are far more likley to happen than high-$Q^2$ processes low-\PT\ jet triggers are typically prescaled while high-\PT\ jet triggers are typically unprescaled.
+Precales can be applied to both L1 and HLT items, and the total prescale is the product of the two.
+
+A trigger designed to select a certain physics object, like a jet, may have a charecteristic inefficency.
+Trigger efficiencies can be evaulated using fully efficent monitoring triggers which is independent of the signal trigger while providing good statistical precision.
+Typically, minimum bias triggers are used as monitoring triggers.
+The efficencey can be written as,
+\begin{equation}
+    \label{eq:trigeff}
+    \epsilon_{\mathrm{Trigger}} = \frac{N_{\mathrm{Signal}}\cap N_{\mathrm{Monitor}}}{N_{\mathrm{Monitor}}}
+\end{equation}
+Jet trigger efficiencies are evaluated as a function of \PT\ and are monitonalically increasing (sans staistical fluctuations).
+The quantity $\PTE^{99}$ represents the \PT\ above which a given jet trigger is more than 99\% efficent at selecting jets.
+In both of the analyses presented in this dissertation triggers are always used only above their $\PTE^{99}$ threshold.
+For jet triggers that make selections on $\eta$ a similar efficiency must be derived.
 
 Dedicated software~\cite{SOFT-2022-02} is constructed and used by ATLAS in data simulation, in the reconstruction
 and analysis of real and simulated data in detector operations, and in the trigger and data acquisition

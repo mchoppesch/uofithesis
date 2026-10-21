@@ -1,53 +1,85 @@
 \subsection{Data Sets}
 
 \subsubsection{2016 \texorpdfstring{\pxPb}{p+Pb} Data}
-The \pxPb\ data at \SNN~=~8.16~\TeV\ used for this analysis were delivered by the LHC to ATLAS in November and December of 2016. In \pxPb\ collisions at 8.16 \TeV\ the colliding beams have different energies per nucleon (6.5~\TeV\ protons colliding with $(Z/A)\times 6.5~\TeV\simeq 2.6~\TeV$ per nucleon in a lead nucleus), resulting in a collision system with \SNN~=~8.16~\TeV\ per nucleon pair. Under these conditions, the center-of-mass frame is shifted in rapidity, \RAP, by $\Delta\RAP=0.465$ in the direction of the proton beam. Data were collected in two different periods, characterized by opposite beam orientations. Due to technical issues with the ZDC instrumentation (see Section~\ref{sec:missing_zdc_mod}), only \textbf{Period B} was used for this measurement.
+\label{sec:pPbData}
+The \pxPb\ data at \SNN~=~8.16~\TeV\ used for this analysis were delivered by the LHC to ATLAS in November and December of 2016 as described in Section~\ref{sec:LHCpPbRun}. In \pxPb\ collisions at 8.16 \TeV\ the colliding beams have different energies per nucleon (6.5~\TeV\ protons colliding with $(Z/A)\times 6.5~\TeV\simeq 2.56~\TeV$ per nucleon in a lead nucleus), resulting in a collision system with \SNN~=~8.16~\TeV\ per nucleon pair. Under these conditions, the center-of-mass frame is shifted in rapidity, \RAP, by $\Delta\RAP=0.465$ in the direction of the proton beam. Data were collected in two different periods, characterized by opposite beam orientations. Due to technical issues with the ZDC instrumentation (see Section~\ref{sec:missing_zdc_mod}), only \textbf{Period B} was used for this measurement.
 
-The runs in this period were characterized by a total integrated luminosity of 55.9~\NB. Beam 1 consisted of protons and Beam 2 of Pb ions. The protons traveled toward negative rapidities in the ``A$\rightarrow$C'' direction, corresponding to clockwise motion in the accelerator according to ATLAS conventions.  All data sets used in this analysis, listed in Table~\ref{tab:datasets}, were processed using \textsc{ATHENA}~Release~21.
+The runs in this period were characterized by a total integrated luminosity of 55.9~\NB.
+Beam 1 consisted of protons and Beam 2 of Pb ions.
+The protons traveled toward negative rapidities in the ``A$\rightarrow$C'' direction, corresponding to clockwise motion in the accelerator according to ATLAS conventions.
+However, in order to maintain the convention from Reference~\cite{HION-2023-05} and Equation~\ref{eq:xp} the analysis reverses the rapidity of the dataset at the analysis level and \textbf{considers protons traveling from negative to positve rapitites}.
+All data sets used in this analysis, listed in Table~\ref{tab:datasets}, were processed using \textsc{ATHENA}~Release~21.
 
 \begin{table}[ht]
     \centering
-    \begin{tabular}{| c | c |}
-        \hline
-        \rule{0pt}{2.25ex}
-        \textbf{2016 \SNN\ = 8.16 \TeV\ Data Samples}  & \textcolor{black}{ \textbf{Luminosity [nb$^{-1}$] } } \\
-        \hline
-        \hline
-        data16\_hip8TeV.00313063.physics\_Main.merge.AOD.r11416\_p3868 & 0.021 \\
-        \hline
-        data16\_hip8TeV.00313067.physics\_Main.merge.AOD.r11416\_p3868 & 0.486 \\
-        \hline
-        data16\_hip8TeV.00313100.physics\_Main.merge.AOD.r11416\_p3868 & 8.787 \\
-        \hline
-        data16\_hip8TeV.00313107.physics\_Main.merge.AOD.r11416\_p3868 & 11.053 \\
-        \hline
-        data16\_hip8TeV.00313136.physics\_Main.merge.AOD.r11416\_p3868 & 9.602 \\
-        \hline
-        data16\_hip8TeV.00313187.physics\_Main.merge.AOD.r11416\_p3868 & 3.030 \\
-        \hline
-        data16\_hip8TeV.00313259.physics\_Main.merge.AOD.r11416\_p3868 & 4.659 \\
-        \hline
-        data16\_hip8TeV.00313285.physics\_Main.merge.AOD.r11416\_p3868 & 4.272 \\
-        \hline
-        data16\_hip8TeV.00313295.physics\_Main.merge.AOD.r11416\_p3868 & 9.923 \\
-        \hline
-        data16\_hip8TeV.00313333.physics\_Main.merge.AOD.r11416\_p3868 & 3.791 \\
-        \hline
-        data16\_hip8TeV.00313435.physics\_Main.merge.AOD.r11416\_p3868 & 0.301 \\
-        \hline
-        \hline
-    \end{tabular}
-    \caption{\textcolor{black}{Data samples from \SNN\,= 8.16 \TeV\,\pxPb\,collisions collected during the 2016 Heavy Ion Run. The luminosity collected for each run is reported. All the data were processed using \textsc{ATHENA}~Release~21.}}
+    {\footnotesize
+        \begin{tabular}{| c | c | c | }
+            \hline
+            \rule{0pt}{2.25ex}
+            \textbf{2016 \texorpdfstring{\pxPb}{p+Pb} \SNN\ = 8.16 \TeV\ Data Samples}  & \textcolor{black}{ \textbf{Luminosity [nb$^{-1}$] } } & \textbf{ Peak $\mu$} \\
+            \hline
+            \hline
+            \texttt{data16\_hip8TeV.00313063.physics\_Main.merge.AOD.r11416\_p3868} & 0.021  & 0.04\\ \hline
+            \texttt{data16\_hip8TeV.00313067.physics\_Main.merge.AOD.r11416\_p3868} & 0.486  & 0.25\\ \hline
+            \texttt{data16\_hip8TeV.00313100.physics\_Main.merge.AOD.r11416\_p3868} & 8.787  & 0.21\\ \hline
+            \texttt{data16\_hip8TeV.00313107.physics\_Main.merge.AOD.r11416\_p3868} & 11.053 & 0.25\\ \hline
+            \texttt{data16\_hip8TeV.00313136.physics\_Main.merge.AOD.r11416\_p3868} & 9.602  & 0.25\\ \hline
+            \texttt{data16\_hip8TeV.00313187.physics\_Main.merge.AOD.r11416\_p3868} & 3.030  & 0.24\\ \hline
+            \texttt{data16\_hip8TeV.00313259.physics\_Main.merge.AOD.r11416\_p3868} & 4.659  & 0.26\\ \hline
+            \texttt{data16\_hip8TeV.00313285.physics\_Main.merge.AOD.r11416\_p3868} & 4.272  & 0.24\\ \hline
+            \texttt{data16\_hip8TeV.00313295.physics\_Main.merge.AOD.r11416\_p3868} & 9.923  & 0.25\\ \hline
+            \texttt{data16\_hip8TeV.00313333.physics\_Main.merge.AOD.r11416\_p3868} & 3.791  & 0.26\\ \hline
+            \texttt{data16\_hip8TeV.00313435.physics\_Main.merge.AOD.r11416\_p3868} & 0.301  & 0.05\\
+            \hline
+            \hline
+            \textbf{Total \texorpdfstring{\pxPb}{p+Pb} Luminosity } & \textbf{55.9} & \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\textcolor{black}{Data samples from \SNN\,= 8.16 \TeV\,\pxPb\,collisions collected during the 2016 Heavy Ion Run. The online delivered luminosity collected for each run is reported, as well as the peak $\mu$ characterizing the beginning of the run. All the data were processed using \textsc{ATHENA}~Release~21.}}
     \label{tab:datasets}
 \end{table}
 
 \subsubsection{Trigger Configuration}
 
-Jet triggers used for Period B of the 2016 \pxPb\ run are listed in Table~\ref{tab:trigger_overview_pPb}
-All data comes from the physics\_Main stream. The working points of the triggers are described further in Section~\ref{sec:event_sel1}.
+Jet triggers used for Period B of the 2016 \pxPb\ run are listed in Table~\ref{tab:trigger_overview_pPb}.
+For an overview of triggers in ATLAS see Section~\ref{sec:ATLASTrig}
+All data comes from the physics\_Main stream.
+In experiments The prescale of a trigger
+The working points of the triggers are described further in Section~\ref{sec:event_sel1}.
+
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{ | c | c | c |}
+        \hline
+        \textbf{Trigger Chain}   & \textbf{$\mathscr{L}$ [ub$^{-1}$]} & \textbf{Average Prescale} \\
+        \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j30\_ion\_0eta490\_L1TE10}}            & 113.76 & 482.8\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j40\_ion\_L1J5}}                       & 468.1  & 121.3\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j50\_ion\_L1J10}}                      & 1120   & 50.7\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j60\_ion\_L1J20}}                      & 1562   & 36.3\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j75\_ion\_L1J20}}                      & 3468   & 16.4\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j100\_ion\_L1J20}}                     & 56671  & 1\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j15\_ion\_n320eta490\_L1MBTS\_1\_1}}   & 77.5   & 415.6\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j25\_ion\_n320eta490\_L1TE5}}          & 247.7  & 171.4\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j35\_ion\_n320eta490\_L1TE10}}         & 179.9  & 178.9\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j45\_ion\_n320eta490}}                 & 5288   & 10.2\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j55\_ion\_n320eta490}}                 & 16635  & 3.4\\ \hline
+        \multicolumn{1}{|l|}{\texttt{HLT\_j65\_ion\_n320eta490}}                 & 53571  & 1\\ \hline
+
+    \end{tabular}
+    \vspace{2mm}
+    \caption{
+        \textcolor{black}{
+            Overview of \pxPb, triggers used in the analysis. The sampled luminosity, $\mathscr{L}$, recorded by each trigger and the average luminosity-weighted prescale are reported.
+        }
+    }
+    \label{tab:trigger_overview_pPb}
+\end{table}
 
 \subsubsection{Monte Carlo Samples}
-
+\label{sec:p}
 In order to evaluate the performance of jet reconstruction and the jet response within ATLAS, dijet Monte Carlo samples generated using \pythia~\cite{Bierlich:2022pfr} with the A14 tune and the NNPDF23LO PDFs~\cite{Ball:2012cx} were produced. Dijet events are filtered using the JZ$*$R04 filters, which select events containing an \antikt\ $R=0.4$ jet in specific truth \PT{} ranges, referred to using the prefix ``JZ'' and an integer ranging from 1--5 in this analysis.
 
 The detector response was simulated using the full ATLAS detector simulation based on the Geant4 toolkit~\cite{Agostinelli:2002hh}. For \pxPb\ collisions, Pythia8 truth events are overlaid with real minimum-bias \pxPb\ data. For each event, the Pythia generation and subsequent simulations were run with conditions matching the collected data, allowing the simulation to account for underlying-event effects in the jet reconstruction. In this MC sample, the event activity originates mainly from the overlay contribution and therefore has no associated truth information.
